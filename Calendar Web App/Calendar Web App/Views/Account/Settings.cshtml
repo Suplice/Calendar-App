@@ -1,0 +1,155 @@
+﻿<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="/css/Modify_AddEeventForm.css" />
+	<link rel="stylesheet" href="/css/SettingsStyle.css" />
+	<script src="/js/SettingsScripts/MainScript.js"></script>
+	<script src="/js/SettingsScripts/ChangeUsername.js"></script>
+	<script src="/js/SettingsScripts/ChangeEmail.js"></script>
+	<script src="/js/SettingsScripts/ChangeName.js"></script>
+	<script src="/js/SettingsScripts/ChangePassword.js"></script>
+	<script src="/js/SettingsScripts/Logout.js"></script>
+	<script src="/js/SettingsScripts/CloseAccount.js"></script>
+
+
+    
+</head>
+<body>
+<div id="main-site">
+	<h1>Settings</h1>
+
+	<div>
+		<h2>Informations:</h2>
+			<p>Username: <span id="username">@ViewBag.Username</span> <button id="changeUsernameBtn">Change Username</button></p>
+			<p>Email address: <span id="email">@ViewBag.Email</span> <button id="changeEmailBtn">Change Email Address</button></p>
+			<p>Name: <span id="name">@ViewBag.Name</span> <button id="changeNameBtn">Change Name</button></p>
+			<p>Password: <span id="password">@ViewBag.Password</span> <button id="changePasswordBtn">Change Password</button></p>
+	</div>
+
+	<div>
+		<h2>Options:</h2>
+		<button id="logoutBtn">Wyloguj się</button>
+		<button id="closeAccountBtn">Zamknij konto</button>
+	</div>
+</div>
+
+<!--Change username form-->
+<div class="modal fade" id="UsernameUpdateModal" tabindex="-1" aria-labelledby="UsernameUpdateModalLabel" aria-hidden="true" data-bs-backdrop="false">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="UsernameUpdateModalLabel">Update username form</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form id="UsernameUpdateForm">
+					<div class="mb-3">
+						<label for="username" class="form-label" id="usernameLabel">New Username</label>
+						<input type="text" class="form-control" id="Username" name="Username">
+						<span id="Username-UpdateValidation" class="text-danger"></span>
+					</div>
+					<button type="submit" class="btn btn-primary">Update Username</button>
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--Change email form-->
+	<div class="modal fade" id="EmailUpdateModal" tabindex="-1" aria-labelledby="EmailUpdateModalLabel" aria-hidden="true" data-bs-backdrop="false">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="EmailUpdateModalLabel">Update email form</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form id="EmailUpdateForm">
+						<div class="mb-3">
+							<label for="email" class="form-label" id="usernameLabel">New Email</label>
+							<input type="email" class="form-control" id="Email" name="Email">
+							<span id="Email-UpdateValidation" class="text-danger"></span>
+						</div>
+						<button type="submit" class="btn btn-primary">Update Email</button>
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--Change Name form-->
+<div class="modal fade" id="NameUpdateModal" tabindex="-1" aria-labelledby="NameUpdateModalLabel" aria-hidden="true" data-bs-backdrop="false">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="NameUpdateModalLabel">Update Name form</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form id="NameUpdateForm">
+					<div class="mb-3">
+						<label for="name" class="form-label" id="usernameLabel">New Name</label>
+						<input type="name" class="form-control" id="Name" name="Name">
+						<span id="Name-UpdateValidation" class="text-danger"></span>
+					</div>
+					<button type="submit" class="btn btn-primary">Update Name</button>
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<!--Change Password form-->
+	<div class="modal fade" id="PasswordUpdateModal" tabindex="-1" aria-labelledby="PasswordUpdateModalLabel" aria-hidden="true" data-bs-backdrop="false">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="PasswordUpdateModalLabel">Update Name form</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form id="PasswordUpdateForm">
+						<div class="mb-3">
+							<label for="oldPassword" class="form-label" id="usernameLabel">Current Password</label>
+							<input type="password" class="form-control" id="OldPassword" name="OldPassword">
+							<span id="OldPassword-UpdateValidation" class="text-danger"></span>
+						</div>
+						<div class="mb-3">
+							<label for="NewPassword" class="form-label" id="usernameLabel">New Password</label>
+							<input type="password" class="form-control" id="NewPassword" name="NewPassword">
+							<span id="NewPassword-UpdateValidation" class="text-danger"></span>
+						</div>
+						<div class="mb-3">
+							<label for="ConfirmPassword" class="form-label" id="usernameLabel">Confirm New Password</label>
+							<input type="password" class="form-control" id="ConfirmPassword" name="ConfirmPassword">
+							<span id="ConfirmPassword-UpdateValidation" class="text-danger"></span>
+						</div>
+						<button type="submit" class="btn btn-primary">Update Password</button>
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Confirm Account close-->
+	<div class="modal fade" id="CloseAccountModal" tabindex="-1" aria-labelledby="CloseAccountModalLabel" aria-hidden="true" data-bs-backdrop="false">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<h5 class="modal-title" id="CloseAccountModalLabel">Are you sure that you want to close the account?, the action is irreversible.</h5>
+				</div>
+				<div class="modal-body">
+						<button id="ConfirmCloseAccount" class="btn btn-primary">Yes</button>
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>

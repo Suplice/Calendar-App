@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Calendar_Web_App</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/SharedLayoutStyle.css" asp-append-version="true" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="/js/LogoutScript/LogoutMain.js"></script>
+    <script src="/js/SettingsScripts/Logout.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                    <ul>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li>
+                                <span>Hello, @User.Identity.Name</span>
+                            </li>
+
+                            <li>
+                                <a  asp-area="" asp-controller="Calendar" asp-action="Calendar" >Calendar</a>
+                            </li>
+                        }
+
+                        @if (!User.Identity.IsAuthenticated)
+                        {
+                            <li>
+                                <a asp-area="" asp-controller="Home" asp-action="Index">Main Site</a>
+                            </li>
+                            <li>
+                                <a  asp-area="" asp-controller="Account" asp-action="Login">Login </a>
+                            </li>
+                            <li>
+                                <a  asp-area="" asp-controller="Account" asp-action="Register" >Register</a>
+                            </li>
+                        }
+
+
+                        @if (User.Identity.IsAuthenticated)
+                         {
+
+                            <li>
+                                    <a asp-area="" asp-controller="Account" asp-action="Settings" >Settings</a>
+                            </li>
+                            <li >
+                                    <button id="logoutBtnMain" >Logout</button>
+                            </li>
+
+                         }
+                    </ul>
+                             
+                    
+             </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

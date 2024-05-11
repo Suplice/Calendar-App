@@ -1,0 +1,20 @@
+﻿@model LoginViewModel
+
+<link rel="stylesheet" href="/css/LoginSiteStyle.css">
+
+<div class="login">
+<h1>Login</h1>
+<form asp-controller="Account" asp-action="Login" method="post">
+	@Html.AntiForgeryToken()
+	
+	<input type="text"  placeholder="Username" asp-for="Login"/>
+	<span asp-validation-for="Login" class="text-danger"></span>
+	
+	
+	<input type="password"  placeholder="Password" asp-for="Password" />
+	<span asp-validation-for="Password" class="text-danger"></span>
+
+
+	<button type="submit" class="btn btn-primary btn-block btn-large">Submit</button>
+</form>
+</div>

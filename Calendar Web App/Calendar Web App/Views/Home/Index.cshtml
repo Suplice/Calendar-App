@@ -1,0 +1,21 @@
+﻿<head>
+<title>Testuj Kalendarz</title>
+<link rel="stylesheet" href="/css/MainSiteStyle.css" />
+</head>
+<body>
+	@if (!User.Identity.IsAuthenticated){
+		<div id="test">
+			<h1 id="WelcomeText">Welcome</h1>
+			<div class="calendar-button">
+				<a asp-area="" asp-controller="Calendar" asp-action="TestCalendar">Test Calendar</a>
+			</div>
+		</div>
+		<a href="/Calendar/TestCalendar">
+			<img id="image" src="/Assets/CalendarView.png" alt="Your Photo Description">
+		</a>
+	}
+
+	@if (User.Identity.IsAuthenticated){
+
+	}
+</body>

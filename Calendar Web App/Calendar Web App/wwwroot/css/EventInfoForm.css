@@ -1,0 +1,85 @@
+﻿#eventModal {
+    display: none; 
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+
+#eventModal .modal-content {
+    background-color: #fefefe; 
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+#closeButton {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    #closeButton:hover,
+    #closeButton:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+#eventTitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+#eventDescription {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+#eventStart,
+#eventEnd {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#editEventBtn {
+    float: left;
+    margin-left: 3px;
+    margin-top: 20px;
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-width: 1px;
+    width: 120px;
+}
+
+#deleteEventBtn {
+    float: right;
+    margin-right: 3px;
+    margin-top: 20px;
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-width: 1px;
+    width: 120px;
+}
+
+
+
