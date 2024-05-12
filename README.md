@@ -35,6 +35,11 @@ Posiadając konto możemy wykonywać na nim wiele operacji takich jak:</b>
   - Zamknięcie konta (<b>Podczas korzystanie z tej opcji należy uważać, gdyż akcja jest ona nieodwracalna!!!</b>)
 <br>
 <br>
+<p align="center">
+  <img src="Assets/Calendar screen.png">
+</p>
+<br>
+<br>
 
 # <p align="center"> Funkcje Programu </p>
 
@@ -43,14 +48,18 @@ Posiadając konto możemy wykonywać na nim wiele operacji takich jak:</b>
 :red_square: Użytkownik po wejściu na stronę może utworzyć konto za pomocą przycisku "Register" znajdującego się w pasku nwigacyjnym.
 <br>
 <br>
-///Wprowadzić zdjęcie tego///
+<p align="center">
+  <img src="Assets/Register-button.png">
+</p>
 <br>
 <br>
 
 :red_square: Po naciśnięciu na przycisk zostajemy przekierowani na stronę z formularzem.
 <br>
 <br>
-///Zdjęcie formularze rejestrowania///
+<p align="center">
+  <img src="Assets/Register Form.png">
+</p>
 <br>
 <br>
 
@@ -69,7 +78,9 @@ Posiadając konto możemy wykonywać na nim wiele operacji takich jak:</b>
 
 <br>
 <br>
-///Wprowadzić zdjęcie formy logowania się/// 
+<p align="center">
+  <img src="Assets/Login Form.png">
+</p>
 
 :red_square: Aby zalogować się należy wprowadzić dane do odpowiednich pól, a następnie kliknąć submit.
 <b> <p align = "center">Należy zwrócić uwagę na wymagania wprowadzanych przez nas danych do formularza: </p></b> <br> 
@@ -82,7 +93,9 @@ Posiadając konto możemy wykonywać na nim wiele operacji takich jak:</b>
 <br>
 :red_square: Użytkownik może skorzystać z kalendarza testowego bez wstępnego utworzenia konta, w celu przetestowania działania programu.
 <br>
-///Zdjęcie przycisku Test Calendar///
+<p align="center">
+  <img src="Assets/TestCalendar Button.png">
+</p>
 
 :red_square:  Podczas korzystania z kalendarza testowego możemy:
 <br><br>
@@ -91,7 +104,9 @@ Posiadając konto możemy wykonywać na nim wiele operacji takich jak:</b>
  :large_blue_circle: Modyfikować eventy <br><br>
  :large_blue_circle: Usuwać eventy<br><br>
 
-///Dodać zdjęcie dodawania eventu///
+<p align="center">
+  <img src="Assets/AddEventForm.png">
+</p>
 
 :red_square: Podczas edycji lub dodawania elementów musimy zwrócić uwagę na wymagania wprowadzanych danych: <br><br>
  :large_blue_circle: Title (Pole obowiązkowe) <br> <br>
@@ -112,7 +127,9 @@ Posiadając konto możemy wykonywać na nim wiele operacji takich jak:</b>
 <b><h3 align="center">:arrow_forward: Ustawienia Konta :arrow_backward:</h3></b>
 <br>
 :red_square: Strona ustawień użytkownika wygląda następująco: <br>
-///Przedstawić zdjęcie stronę ustawień///
+<p align="center">
+  <img src="Assets/Settings Site.png">
+</p>
 
 :red_square: Na stronie ustawień możemy dokonywać zmian danych użytkownika, wylogować się oraz zamknąć konto <br><br>
 
