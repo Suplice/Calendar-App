@@ -1,7 +1,48 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\calendar app\\calendar web app\\calendar web app\\viewmodels\\accountsettingsviewmodels\\changenameviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\viewmodels\\accountsettingsviewmodels\\changenameviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\calendar app\\calendar web app\\calendar web app\\viewmodels\\accountsettingsviewmodels\\changeusernameviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\viewmodels\\accountsettingsviewmodels\\changeusernameviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\calendar app\\calendar web app\\calendar web app\\viewmodels\\accountsettingsviewmodels\\changepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\viewmodels\\accountsettingsviewmodels\\changepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\calendar app\\calendar web app\\calendar web app\\viewmodels\\accountsettingsviewmodels\\changeemailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\viewmodels\\accountsettingsviewmodels\\changeemailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\calendar app\\calendar web app\\calendar web app\\viewmodels\\eventviewmodels\\addeventviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\viewmodels\\eventviewmodels\\addeventviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\calendar app\\calendar web app\\calendar web app\\viewmodels\\accountaccessviewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\viewmodels\\accountaccessviewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\calendar app\\calendar web app\\calendar web app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\calendar app\\calendar web app\\calendar web app\\wwwroot\\css\\sharedlayoutstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\wwwroot\\css\\sharedlayoutstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\calendar app\\calendar web app\\calendar web app\\views\\calendar\\calendar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\views\\calendar\\calendar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\calendar app\\calendar web app\\calendar web app\\wwwroot\\css\\eventinfoform.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\wwwroot\\css\\eventinfoform.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +50,139 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChangeUsernameViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\ViewModels\\AccountSettingsViewModels\\ChangeUsernameViewModel.cs",
+              "RelativeDocumentMoniker": "Calendar Web App\\ViewModels\\AccountSettingsViewModels\\ChangeUsernameViewModel.cs",
+              "ToolTip": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\ViewModels\\AccountSettingsViewModels\\ChangeUsernameViewModel.cs",
+              "RelativeToolTip": "Calendar Web App\\ViewModels\\AccountSettingsViewModels\\ChangeUsernameViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T15:13:46.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ChangePasswordViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\ViewModels\\AccountSettingsViewModels\\ChangePasswordViewModel.cs",
+              "RelativeDocumentMoniker": "Calendar Web App\\ViewModels\\AccountSettingsViewModels\\ChangePasswordViewModel.cs",
+              "ToolTip": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\ViewModels\\AccountSettingsViewModels\\ChangePasswordViewModel.cs",
+              "RelativeToolTip": "Calendar Web App\\ViewModels\\AccountSettingsViewModels\\ChangePasswordViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T15:13:43.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChangeNameViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\ViewModels\\AccountSettingsViewModels\\ChangeNameViewModel.cs",
+              "RelativeDocumentMoniker": "Calendar Web App\\ViewModels\\AccountSettingsViewModels\\ChangeNameViewModel.cs",
+              "ToolTip": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\ViewModels\\AccountSettingsViewModels\\ChangeNameViewModel.cs*",
+              "RelativeToolTip": "Calendar Web App\\ViewModels\\AccountSettingsViewModels\\ChangeNameViewModel.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T15:13:41.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ChangeEmailViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\ViewModels\\AccountSettingsViewModels\\ChangeEmailViewModel.cs",
+              "RelativeDocumentMoniker": "Calendar Web App\\ViewModels\\AccountSettingsViewModels\\ChangeEmailViewModel.cs",
+              "ToolTip": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\ViewModels\\AccountSettingsViewModels\\ChangeEmailViewModel.cs",
+              "RelativeToolTip": "Calendar Web App\\ViewModels\\AccountSettingsViewModels\\ChangeEmailViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T15:13:39.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddEventViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\ViewModels\\EventViewModels\\AddEventViewModel.cs",
+              "RelativeDocumentMoniker": "Calendar Web App\\ViewModels\\EventViewModels\\AddEventViewModel.cs",
+              "ToolTip": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\ViewModels\\EventViewModels\\AddEventViewModel.cs",
+              "RelativeToolTip": "Calendar Web App\\ViewModels\\EventViewModels\\AddEventViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T15:03:58.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\Program.cs",
+              "RelativeDocumentMoniker": "Calendar Web App\\Program.cs",
+              "ToolTip": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\Program.cs",
+              "RelativeToolTip": "Calendar Web App\\Program.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T14:34:52.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\ViewModels\\AccountAccessViewModels\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "Calendar Web App\\ViewModels\\AccountAccessViewModels\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\ViewModels\\AccountAccessViewModels\\RegisterViewModel.cs",
+              "RelativeToolTip": "Calendar Web App\\ViewModels\\AccountAccessViewModels\\RegisterViewModel.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T14:32:43.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Calendar.cshtml",
+              "DocumentMoniker": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\Views\\Calendar\\Calendar.cshtml",
+              "RelativeDocumentMoniker": "Calendar Web App\\Views\\Calendar\\Calendar.cshtml",
+              "ToolTip": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\Views\\Calendar\\Calendar.cshtml",
+              "RelativeToolTip": "Calendar Web App\\Views\\Calendar\\Calendar.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACgAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T11:15:36.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SharedLayoutStyle.css",
+              "DocumentMoniker": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\SharedLayoutStyle.css",
+              "RelativeDocumentMoniker": "Calendar Web App\\wwwroot\\css\\SharedLayoutStyle.css",
+              "ToolTip": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\SharedLayoutStyle.css",
+              "RelativeToolTip": "Calendar Web App\\wwwroot\\css\\SharedLayoutStyle.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-12T11:10:00.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EventInfoForm.css",
+              "DocumentMoniker": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\EventInfoForm.css",
+              "RelativeDocumentMoniker": "Calendar Web App\\wwwroot\\css\\EventInfoForm.css",
+              "ToolTip": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\EventInfoForm.css",
+              "RelativeToolTip": "Calendar Web App\\wwwroot\\css\\EventInfoForm.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-12T11:09:55.727Z"
             }
           ]
         }

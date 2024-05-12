@@ -2,6 +2,11 @@
 
 header {
     background-image: linear-gradient(to top, #fcfef3 5%, rgb(19, 87, 133) 120%);
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    flex-direction: column;
+
 }
 
 body{
