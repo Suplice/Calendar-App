@@ -51,10 +51,20 @@ function hideAllErrorMessages() {
     $('.text-danger').hide(); 
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    //Select the form element
-    var form = document.getElementById('eventForm');
-    form.addEventListener('submit', handleFormSubmission);
 
-})
+//Show form and wait for submission
+function HandleAddEvent() {
+
+    $('#eventFormModal').modal('show');
+
+    document.addEventListener('DOMContentLoaded', function () {
+       
+        
+
+        //Select the form element
+        var form = document.getElementById('eventForm');
+        form.addEventListener('submit', handleFormSubmission);
+
+    })
+}
 

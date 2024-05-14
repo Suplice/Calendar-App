@@ -1,359 +1,363 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\Assets\\CalendarView.png",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\Assets\\CalendarView.png",
       "PackagePath": "staticwebassets\\Assets\\CalendarView.png"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\AddEvent.css",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\AddEvent.css",
       "PackagePath": "staticwebassets\\css\\AddEvent.css"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\CalendarStyle.css",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\CalendarStyle.css",
       "PackagePath": "staticwebassets\\css\\CalendarStyle.css"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\EventInfoForm.css",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\EventInfoForm.css",
       "PackagePath": "staticwebassets\\css\\EventInfoForm.css"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\LoginSiteStyle.css",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\LoginSiteStyle.css",
       "PackagePath": "staticwebassets\\css\\LoginSiteStyle.css"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\MainSiteStyle.css",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\MainSiteStyle.css",
       "PackagePath": "staticwebassets\\css\\MainSiteStyle.css"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\Modify_AddEeventForm.css",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\Modify_AddEeventForm.css",
       "PackagePath": "staticwebassets\\css\\Modify_AddEeventForm.css"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\SettingsStyle.css",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\SettingsStyle.css",
       "PackagePath": "staticwebassets\\css\\SettingsStyle.css"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\SharedLayoutStyle.css",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\SharedLayoutStyle.css",
       "PackagePath": "staticwebassets\\css\\SharedLayoutStyle.css"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\ShowEventInfo.css",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\ShowEventInfo.css",
       "PackagePath": "staticwebassets\\css\\ShowEventInfo.css"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\AddEvent.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\AddEvent.js",
       "PackagePath": "staticwebassets\\js\\CalendarScripts\\EventScripts\\AddEvent.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\DeleteEvent.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\DeleteEvent.js",
       "PackagePath": "staticwebassets\\js\\CalendarScripts\\EventScripts\\DeleteEvent.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\EventClickInfo.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\EventClickInfo.js",
       "PackagePath": "staticwebassets\\js\\CalendarScripts\\EventScripts\\EventClickInfo.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\EventResize.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\EventResize.js",
       "PackagePath": "staticwebassets\\js\\CalendarScripts\\EventScripts\\EventResize.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\UpdateEvent.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\UpdateEvent.js",
       "PackagePath": "staticwebassets\\js\\CalendarScripts\\EventScripts\\UpdateEvent.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\UpdateEventOnDrop.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\UpdateEventOnDrop.js",
       "PackagePath": "staticwebassets\\js\\CalendarScripts\\EventScripts\\UpdateEventOnDrop.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\InitializeCalendar.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\InitializeCalendar.js",
       "PackagePath": "staticwebassets\\js\\CalendarScripts\\InitializeCalendar.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\FullCalendar\\index.global.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestAddEvent.js",
+      "PackagePath": "staticwebassets\\js\\CalendarScripts\\TestEventScripts\\TestAddEvent.js"
+    },
+    {
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\FullCalendar\\index.global.js",
       "PackagePath": "staticwebassets\\js\\FullCalendar\\index.global.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\FullCalendar\\index.global.min.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\FullCalendar\\index.global.min.js",
       "PackagePath": "staticwebassets\\js\\FullCalendar\\index.global.min.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\SettingsScripts\\ChangeEmail.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\SettingsScripts\\ChangeEmail.js",
       "PackagePath": "staticwebassets\\js\\SettingsScripts\\ChangeEmail.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\SettingsScripts\\ChangeName.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\SettingsScripts\\ChangeName.js",
       "PackagePath": "staticwebassets\\js\\SettingsScripts\\ChangeName.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\SettingsScripts\\ChangePassword.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\SettingsScripts\\ChangePassword.js",
       "PackagePath": "staticwebassets\\js\\SettingsScripts\\ChangePassword.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\SettingsScripts\\ChangeUsername.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\SettingsScripts\\ChangeUsername.js",
       "PackagePath": "staticwebassets\\js\\SettingsScripts\\ChangeUsername.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\SettingsScripts\\CloseAccount.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\SettingsScripts\\CloseAccount.js",
       "PackagePath": "staticwebassets\\js\\SettingsScripts\\CloseAccount.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\SettingsScripts\\Logout.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\SettingsScripts\\Logout.js",
       "PackagePath": "staticwebassets\\js\\SettingsScripts\\Logout.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\SettingsScripts\\MainScript.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\SettingsScripts\\MainScript.js",
       "PackagePath": "staticwebassets\\js\\SettingsScripts\\MainScript.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\bootstrap5\\index.global.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\bootstrap5\\index.global.js",
       "PackagePath": "staticwebassets\\js\\bootstrap5\\index.global.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\bootstrap5\\index.global.min.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\bootstrap5\\index.global.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap5\\index.global.min.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\logoutscript\\LogoutMain.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\logoutscript\\LogoutMain.js",
       "PackagePath": "staticwebassets\\js\\logoutscript\\LogoutMain.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\skire\\Desktop\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
