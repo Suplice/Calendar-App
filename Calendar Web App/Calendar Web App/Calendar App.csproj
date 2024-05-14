@@ -22,6 +22,7 @@
 
   <ItemGroup>
     <Folder Include="Migrations\" />
+    <Folder Include="wwwroot\js\CalendarScripts\TestEventScripts\" />
     <Folder Include="wwwroot\js\LogoutScript\" />
     <Folder Include="wwwroot\Assets\" />
   </ItemGroup>

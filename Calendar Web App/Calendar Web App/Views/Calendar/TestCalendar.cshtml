@@ -8,6 +8,7 @@
 	<script src="/js/FullCalendar/index.global.js"></script>
 	<script src="/lib/jquery/dist/jquery.min.js"></script>
 	<script src="/js/bootstrap5/index.global.js"></script>
+	<script src="/js/CalendarScripts/TestEventScripts/TestAddEvent.js"></script>
 
 	<script type="module">
 		import { InitializeTestCalendar } from "/js/CalendarScripts/InitializeCalendar.js"
@@ -25,5 +26,40 @@
 <body>
 
 <div id='calendar'></div>
+
+	<div class="modal fade" id="TestEventFormModal" tabindex="-1" aria-labelledby="estEventFormModalLabel" aria-hidden="true" data-bs-backdrop="false">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="TestEventFormModalLabel">Add Event</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form id="TestEventForm">
+						<div class="mb-3">
+							<input type="text" placeholder="Title" class="form-control" id="title" name="title">
+							<span id="Title-AddValidation" class="text-danger"></span>
+						</div>
+						<div class="mb-3">
+							<input type="text" placeholder="Description" class="form-control" id="Description" name="Description">
+							<span id="Description-AddValidation" class="text-danger"></span>
+						</div>
+						<div class="mb-3">
+							<label for="StartDate" class="form-label">Start Date:</label>
+							<input type="datetime-local" class="form-control" id="start" name="StartDate">
+							<span id="StartDate-AddValidation" class="text-danger"></span>
+						</div>
+						<div class="mb-3">
+							<label for="EndDate" class="form-label">End Date:</label>
+							<input type="datetime-local" class="form-control" id="end" name="EndDate">
+							<span id="EndDate-AddValidation" class="text-danger"></span>
+						</div>
+						<button type="submit" class="btn btn-primary">Add Event</button>
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
 </body>

@@ -25,8 +25,8 @@
             addEventButton: {
                 text: 'Add Event',
                 click: function () {
-                    $('#eventFormModal').modal('show');
-                }
+                    HandleAddEvent();
+                },
             }
         },
         initialView: 'dayGridMonth'
@@ -59,6 +59,7 @@ export function InitializeTestCalendar() {
     let calendar = new FullCalendar.Calendar(calendarEl, {
         headerToolbar: {
             left: 'prev,next today',
+            center: 'addEventButton',
             right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
         },
         events: [
@@ -73,6 +74,14 @@ export function InitializeTestCalendar() {
                 end: new Date(new Date().getTime() + 4 * 60 * 60 * 1000) // Add 2 more hours
             }
         ],
+        customButtons: {
+            addEventButton: {
+                text: 'Add Event',
+                click: function () {
+                    TestHandleAddEvent()
+                },
+            }
+        },
         editable: true,
         selectable: true,
         dayMaxEvents: true,
