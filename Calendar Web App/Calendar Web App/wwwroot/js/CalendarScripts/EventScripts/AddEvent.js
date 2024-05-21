@@ -42,6 +42,7 @@ function handleFormSubmission(event) {
     //Get the form data
     var formData = $(this).serialize();
 
+
     //Call the function to add the event
     addEvent(formData);
 }
@@ -52,19 +53,12 @@ function hideAllErrorMessages() {
 }
 
 
-//Show form and wait for submission
 function HandleAddEvent() {
 
+  
     $('#eventFormModal').modal('show');
 
-    document.addEventListener('DOMContentLoaded', function () {
-       
-        
 
-        //Select the form element
-        var form = document.getElementById('eventForm');
-        form.addEventListener('submit', handleFormSubmission);
+    $('#eventForm').on('submit', handleFormSubmission);
 
-    })
 }
-
