@@ -3,52 +3,76 @@
   "WorkspaceRootPath": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\wwwroot\\js\\calendarscripts\\testeventscripts\\testdeleteevent.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\wwwroot\\js\\calendarscripts\\testeventscripts\\testdeleteevent.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\wwwroot\\js\\calendarscripts\\testeventscripts\\testeventclickinfo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\wwwroot\\js\\calendarscripts\\testeventscripts\\testeventclickinfo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\wwwroot\\js\\calendarscripts\\initializecalendar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\wwwroot\\js\\calendarscripts\\initializecalendar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\wwwroot\\js\\calendarscripts\\eventscripts\\eventclickinfo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\wwwroot\\js\\calendarscripts\\eventscripts\\eventclickinfo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\wwwroot\\js\\calendarscripts\\eventscripts\\deleteevent.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\wwwroot\\js\\calendarscripts\\eventscripts\\deleteevent.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\views\\calendar\\testcalendar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\views\\calendar\\testcalendar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\views\\calendar\\calendar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\views\\calendar\\calendar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\wwwroot\\js\\calendarscripts\\testeventscripts\\testupdateevent.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\wwwroot\\js\\calendarscripts\\testeventscripts\\testupdateevent.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\models\\eventmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\models\\eventmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\repositories\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\repositories\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\viewmodels\\eventviewmodels\\updateeventviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\viewmodels\\eventviewmodels\\updateeventviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\wwwroot\\js\\calendarscripts\\testeventscripts\\testaddevent.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\wwwroot\\js\\calendarscripts\\testeventscripts\\testaddevent.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\wwwroot\\js\\calendarscripts\\testeventscripts\\testeventclickinfo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\wwwroot\\js\\calendarscripts\\testeventscripts\\testeventclickinfo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\wwwroot\\js\\calendarscripts\\testeventscripts\\testdeleteevent.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\wwwroot\\js\\calendarscripts\\testeventscripts\\testdeleteevent.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\wwwroot\\js\\calendarscripts\\eventscripts\\updateevent.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\wwwroot\\js\\calendarscripts\\eventscripts\\updateevent.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\controllers\\calendarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\controllers\\calendarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\wwwroot\\js\\calendarscripts\\eventscripts\\addevent.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\wwwroot\\js\\calendarscripts\\eventscripts\\addevent.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\wwwroot\\js\\calendarscripts\\eventscripts\\eventclickinfo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\wwwroot\\js\\calendarscripts\\eventscripts\\eventclickinfo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\wwwroot\\js\\calendarscripts\\eventscripts\\updateeventondrop.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\wwwroot\\js\\calendarscripts\\eventscripts\\updateeventondrop.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\wwwroot\\js\\calendarscripts\\eventscripts\\eventresize.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\wwwroot\\js\\calendarscripts\\eventscripts\\eventresize.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\controllers\\testcalendarcontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\controllers\\testcalendarcontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\wwwroot\\js\\calendarscripts\\eventscripts\\updateeventondrop.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\wwwroot\\js\\calendarscripts\\eventscripts\\updateeventondrop.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\wwwroot\\js\\calendarscripts\\initializecalendar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\wwwroot\\js\\calendarscripts\\initializecalendar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\wwwroot\\js\\calendarscripts\\eventscripts\\deleteevent.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\wwwroot\\js\\calendarscripts\\eventscripts\\deleteevent.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\views\\calendar\\calendar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\views\\calendar\\calendar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\wwwroot\\js\\calendarscripts\\eventscripts\\addevent.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\wwwroot\\js\\calendarscripts\\eventscripts\\addevent.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -94,7 +118,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -102,46 +126,189 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EventClickInfo.js",
-              "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\EventClickInfo.js",
-              "RelativeDocumentMoniker": "Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\EventClickInfo.js",
-              "ToolTip": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\EventClickInfo.js",
-              "RelativeToolTip": "Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\EventClickInfo.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "EventModel.cs",
+              "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\Models\\EventModel.cs",
+              "RelativeDocumentMoniker": "Calendar Web App\\Models\\EventModel.cs",
+              "ToolTip": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\Models\\EventModel.cs",
+              "RelativeToolTip": "Calendar Web App\\Models\\EventModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T20:03:47.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UpdateEventViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\ViewModels\\EventViewModels\\UpdateEventViewModel.cs",
+              "RelativeDocumentMoniker": "Calendar Web App\\ViewModels\\EventViewModels\\UpdateEventViewModel.cs",
+              "ToolTip": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\ViewModels\\EventViewModels\\UpdateEventViewModel.cs",
+              "RelativeToolTip": "Calendar Web App\\ViewModels\\EventViewModels\\UpdateEventViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T20:03:14.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UpdateEvent.js",
+              "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\UpdateEvent.js",
+              "RelativeDocumentMoniker": "Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\UpdateEvent.js",
+              "ToolTip": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\UpdateEvent.js",
+              "RelativeToolTip": "Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\UpdateEvent.js",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAwwDMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-05-22T19:14:28.724Z",
+              "WhenOpened": "2024-05-22T19:29:04.087Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "TestUpdateEvent.js",
+              "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestUpdateEvent.js",
+              "RelativeDocumentMoniker": "Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestUpdateEvent.js",
+              "ToolTip": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestUpdateEvent.js",
+              "RelativeToolTip": "Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestUpdateEvent.js",
+              "ViewState": "AQIAADIAAAAAAAAAAAAIwEMAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-22T19:29:02.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "TestEventClickInfo.js",
               "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestEventClickInfo.js",
               "RelativeDocumentMoniker": "Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestEventClickInfo.js",
               "ToolTip": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestEventClickInfo.js",
               "RelativeToolTip": "Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestEventClickInfo.js",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBYAAAAgAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-05-22T18:55:02.773Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "TestDeleteEvent.js",
               "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestDeleteEvent.js",
               "RelativeDocumentMoniker": "Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestDeleteEvent.js",
               "ToolTip": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestDeleteEvent.js",
               "RelativeToolTip": "Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestDeleteEvent.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-05-22T19:09:15.018Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 14,
+              "Title": "InitializeCalendar.js",
+              "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\InitializeCalendar.js",
+              "RelativeDocumentMoniker": "Calendar Web App\\wwwroot\\js\\CalendarScripts\\InitializeCalendar.js",
+              "ToolTip": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\InitializeCalendar.js",
+              "RelativeToolTip": "Calendar Web App\\wwwroot\\js\\CalendarScripts\\InitializeCalendar.js",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAAwFsAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-22T17:11:56.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CalendarController.cs",
+              "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\Controllers\\CalendarController.cs",
+              "RelativeDocumentMoniker": "Calendar Web App\\Controllers\\CalendarController.cs",
+              "ToolTip": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\Controllers\\CalendarController.cs",
+              "RelativeToolTip": "Calendar Web App\\Controllers\\CalendarController.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAlwDEAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T17:07:55.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TestAddEvent.js",
+              "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestAddEvent.js",
+              "RelativeDocumentMoniker": "Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestAddEvent.js",
+              "ToolTip": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestAddEvent.js",
+              "RelativeToolTip": "Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestAddEvent.js",
+              "ViewState": "AQIAADIAAAAAAAAAAAAwwBgAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-22T17:02:26.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TestCalendar.cshtml",
+              "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\Views\\Calendar\\TestCalendar.cshtml",
+              "RelativeDocumentMoniker": "Calendar Web App\\Views\\Calendar\\TestCalendar.cshtml",
+              "ToolTip": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\Views\\Calendar\\TestCalendar.cshtml",
+              "RelativeToolTip": "Calendar Web App\\Views\\Calendar\\TestCalendar.cshtml",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAE4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-22T19:02:43.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EventRepository.cs",
+              "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\Repositories\\EventRepository.cs",
+              "RelativeDocumentMoniker": "Calendar Web App\\Repositories\\EventRepository.cs",
+              "ToolTip": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\Repositories\\EventRepository.cs",
+              "RelativeToolTip": "Calendar Web App\\Repositories\\EventRepository.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAgwDIAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T20:03:35.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UpdateEventOnDrop.js",
+              "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\UpdateEventOnDrop.js",
+              "RelativeDocumentMoniker": "Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\UpdateEventOnDrop.js",
+              "ToolTip": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\UpdateEventOnDrop.js",
+              "RelativeToolTip": "Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\UpdateEventOnDrop.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-22T17:53:51.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EventClickInfo.js",
+              "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\EventClickInfo.js",
+              "RelativeDocumentMoniker": "Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\EventClickInfo.js",
+              "ToolTip": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\EventClickInfo.js",
+              "RelativeToolTip": "Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\EventClickInfo.js",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-22T19:14:28.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EventResize.js",
+              "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\EventResize.js",
+              "RelativeDocumentMoniker": "Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\EventResize.js",
+              "ToolTip": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\EventResize.js",
+              "RelativeToolTip": "Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\EventResize.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-22T19:36:29.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "DeleteEvent.js",
               "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\DeleteEvent.js",
               "RelativeDocumentMoniker": "Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\DeleteEvent.js",
@@ -149,61 +316,24 @@
               "RelativeToolTip": "Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\DeleteEvent.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-05-22T18:31:19.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T18:31:19.408Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "InitializeCalendar.js",
-              "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\InitializeCalendar.js",
-              "RelativeDocumentMoniker": "Calendar Web App\\wwwroot\\js\\CalendarScripts\\InitializeCalendar.js",
-              "ToolTip": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\InitializeCalendar.js",
-              "RelativeToolTip": "Calendar Web App\\wwwroot\\js\\CalendarScripts\\InitializeCalendar.js",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAAwFsAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-05-22T17:11:56.086Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CalendarController.cs",
-              "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\Controllers\\CalendarController.cs",
-              "RelativeDocumentMoniker": "Calendar Web App\\Controllers\\CalendarController.cs",
-              "ToolTip": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\Controllers\\CalendarController.cs",
-              "RelativeToolTip": "Calendar Web App\\Controllers\\CalendarController.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAnwDEAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T17:07:55.325Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TestAddEvent.js",
-              "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestAddEvent.js",
-              "RelativeDocumentMoniker": "Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestAddEvent.js",
-              "ToolTip": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestAddEvent.js",
-              "RelativeToolTip": "Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestAddEvent.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-05-22T17:02:26.985Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "TestCalendarContoller.cs",
               "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\Controllers\\TestCalendarContoller.cs",
               "RelativeDocumentMoniker": "Calendar Web App\\Controllers\\TestCalendarContoller.cs",
               "ToolTip": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\Controllers\\TestCalendarContoller.cs",
               "RelativeToolTip": "Calendar Web App\\Controllers\\TestCalendarContoller.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAEAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwCwAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T16:59:32.166Z"
+              "WhenOpened": "2024-05-22T16:59:32.166Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\appsettings.json",
               "RelativeDocumentMoniker": "Calendar Web App\\appsettings.json",
@@ -215,7 +345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "AddEvent.js",
               "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\AddEvent.js",
               "RelativeDocumentMoniker": "Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\AddEvent.js",
@@ -227,7 +357,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 16,
               "Title": "Calendar.cshtml",
               "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\Views\\Calendar\\Calendar.cshtml",
               "RelativeDocumentMoniker": "Calendar Web App\\Views\\Calendar\\Calendar.cshtml",
@@ -239,19 +369,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TestCalendar.cshtml",
-              "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\Views\\Calendar\\TestCalendar.cshtml",
-              "RelativeDocumentMoniker": "Calendar Web App\\Views\\Calendar\\TestCalendar.cshtml",
-              "ToolTip": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\Views\\Calendar\\TestCalendar.cshtml",
-              "RelativeToolTip": "Calendar Web App\\Views\\Calendar\\TestCalendar.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-22T19:02:43.489Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Calendar Web App\\Controllers\\HomeController.cs",
@@ -263,19 +381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UpdateEventOnDrop.js",
-              "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\UpdateEventOnDrop.js",
-              "RelativeDocumentMoniker": "Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\UpdateEventOnDrop.js",
-              "ToolTip": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\UpdateEventOnDrop.js",
-              "RelativeToolTip": "Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\UpdateEventOnDrop.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-05-22T17:53:51.343Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "Calendar App.csproj",
               "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\Calendar App.csproj",
               "RelativeDocumentMoniker": "Calendar Web App\\Calendar App.csproj",
@@ -287,7 +393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "ChangeUsernameViewModel.cs",
               "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\ViewModels\\AccountSettingsViewModels\\ChangeUsernameViewModel.cs",
               "RelativeDocumentMoniker": "Calendar Web App\\ViewModels\\AccountSettingsViewModels\\ChangeUsernameViewModel.cs",
@@ -299,7 +405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "ChangePasswordViewModel.cs",
               "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\ViewModels\\AccountSettingsViewModels\\ChangePasswordViewModel.cs",
               "RelativeDocumentMoniker": "Calendar Web App\\ViewModels\\AccountSettingsViewModels\\ChangePasswordViewModel.cs",
@@ -311,7 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 24,
               "Title": "ChangeNameViewModel.cs",
               "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\ViewModels\\AccountSettingsViewModels\\ChangeNameViewModel.cs",
               "RelativeDocumentMoniker": "Calendar Web App\\ViewModels\\AccountSettingsViewModels\\ChangeNameViewModel.cs",
@@ -323,7 +429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "ChangeEmailViewModel.cs",
               "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\ViewModels\\AccountSettingsViewModels\\ChangeEmailViewModel.cs",
               "RelativeDocumentMoniker": "Calendar Web App\\ViewModels\\AccountSettingsViewModels\\ChangeEmailViewModel.cs",
@@ -335,7 +441,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\Program.cs",
               "RelativeDocumentMoniker": "Calendar Web App\\Program.cs",
@@ -347,7 +453,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "RegisterViewModel.cs",
               "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\ViewModels\\AccountAccessViewModels\\RegisterViewModel.cs",
               "RelativeDocumentMoniker": "Calendar Web App\\ViewModels\\AccountAccessViewModels\\RegisterViewModel.cs",

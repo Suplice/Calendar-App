@@ -27,7 +27,7 @@ namespace Calendar_Web_App.Controllers
 			return Ok(model);
 		}
 
-		public IActionResult UpdateEvent()
+		public IActionResult UpdateEvent(UpdateEventViewModel model)
 		{
 
 			//Validate Model
@@ -40,7 +40,7 @@ namespace Calendar_Web_App.Controllers
 				return BadRequest(errors);
 			}
 
-			return Ok();
+			return Ok(model);
 		}
 	}
 }

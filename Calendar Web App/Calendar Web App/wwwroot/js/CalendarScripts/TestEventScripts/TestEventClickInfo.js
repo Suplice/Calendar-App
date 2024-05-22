@@ -25,7 +25,7 @@ function TestHandleEventClick(info, calendar) {
 
 
         //Edit event in calendar (via ajax)
-        HandleEditEvent(info, calendar);
+        TestHandleEditEvent(info, calendar);
 
 
     });

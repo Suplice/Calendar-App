@@ -20,6 +20,6 @@ namespace Calendar_Web_App.ViewModels.EventViewModels
         public DateTime EndDate { get; set; }
         public string? UserId { get; set; }
 
-        public int EventId { get; set; }
+        public string EventId { get; set; }
     }
 }

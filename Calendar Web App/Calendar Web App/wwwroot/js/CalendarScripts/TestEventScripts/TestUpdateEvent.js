@@ -1,15 +1,19 @@
-﻿///Update event 
+///Update event 
 //Send ajax POST to server
-function UpdateEvent(formData) {
+function UpdateEvent(formData, info, calendar) {
     $.ajax({
-        url: "/Calendar/UpdateEvent",
+        url: "/TestCalendar/UpdateEvent",
         type: "POST",
         data: formData,
 
         success: function (response) {
             console.log('Event updated successfully');
             //close the modal after adding event
-            $('#eventUpdateModal').modal('hide');
+            updateCalendar(response, info, calendar);
+
+
+
+            $('#TestEventUpdateModal').modal('hide');
 
         },
         error: function (xhr, status, error) {
@@ -23,6 +27,22 @@ function UpdateEvent(formData) {
 
     });
 }
+
+function updateCalendar(response, info, calendar) {
+    var eventId = info.event.id;
+
+    var event = calendar.getEventById(eventId);
+
+
+    event.setProp('description', response.description)
+    event.setProp('description', response.description)
+    event.setStart(response.startDate);
+    event.setEnd(response.endDate)
+
+    calendar.refetchEvents();
+
+}
+
 function displayUpdateEventValidationErrors(errors) {
     // Loop through the errors object and display validation messages above corresponding fields
     hideAllErrorMessages();
@@ -34,19 +54,21 @@ function displayUpdateEventValidationErrors(errors) {
     }
 }
 
-function handleUpdateFormSubmission(event) {
+function handleUpdateFormSubmission(event, info, calendar) {
     //Prevent the default form submission
     event.preventDefault();
 
     //Get the form data
-    var formData = $(this).serialize();
-
-    UpdateEvent(formData)
+    var formData = $(event.target).serialize();
+    debugger
+    UpdateEvent(formData, info,  calendar);
 
 }
-function HandleEditEvent(info) {
-    var form = document.getElementById('eventUpdateForm');
-    form.addEventListener('submit', handleUpdateFormSubmission)
+function TestHandleEditEvent(info, calendar) {
+    var form = document.getElementById('TestEventUpdateForm');
+    form.addEventListener('submit', function (event) {
+        handleUpdateFormSubmission(event, info, calendar);
+    })
 
     document.getElementById('eventId').value = info.event.id;
 }
