@@ -1,3 +1,6 @@
+
+
+
 function ValidateOnServer(formData, calendar) {
 
 
@@ -10,7 +13,10 @@ function ValidateOnServer(formData, calendar) {
         success: function (response) {
             console.log('event added successfully');
 
+            var eventId = 'event-' + Date.now() + '-' + Math.floor(Math.random() * 1000);
+
             var event = {
+                id: eventId,
                 description: response.description,
                 title: response.title,
                 start: response.startDate,
@@ -73,3 +79,4 @@ function TestHandleAddEvent(calendar) {
     });
 
 }
+

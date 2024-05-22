@@ -9,7 +9,7 @@ function HandleDeleteEvent(info) {
         data: {eventId: eventId},
 
         success: function () {
-            console.log('Event deletes succesfully');
+            console.log('Event deleted succesfully');
         },
 
         error: function (xhr, status, eroor) {

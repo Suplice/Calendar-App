@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -22,7 +22,6 @@
 
   <ItemGroup>
     <Folder Include="Migrations\" />
-    <Folder Include="wwwroot\js\CalendarScripts\TestEventScripts\" />
     <Folder Include="wwwroot\js\LogoutScript\" />
     <Folder Include="wwwroot\Assets\" />
   </ItemGroup>

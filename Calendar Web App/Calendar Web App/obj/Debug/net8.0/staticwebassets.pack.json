@@ -81,6 +81,10 @@
       "PackagePath": "staticwebassets\\js\\CalendarScripts\\TestEventScripts\\TestAddEvent.js"
     },
     {
+      "Id": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestEventClickInfo.js",
+      "PackagePath": "staticwebassets\\js\\CalendarScripts\\TestEventScripts\\TestEventClickInfo.js"
+    },
+    {
       "Id": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\FullCalendar\\index.global.js",
       "PackagePath": "staticwebassets\\js\\FullCalendar\\index.global.js"
     },

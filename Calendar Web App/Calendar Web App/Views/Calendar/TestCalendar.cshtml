@@ -9,6 +9,8 @@
 	<script src="/lib/jquery/dist/jquery.min.js"></script>
 	<script src="/js/bootstrap5/index.global.js"></script>
 	<script src="/js/CalendarScripts/TestEventScripts/TestAddEvent.js"></script>
+	<script src="/js/CalendarScripts/TestEventScripts/TestEventClickInfo.js"></script>
+	<script src="/js/CalendarScripts//TestEventScripts/TestDeleteEvent.js"></script>
 	<script type="module">
 		import { InitializeTestCalendar } from "/js/CalendarScripts/InitializeCalendar.js"
 
@@ -23,6 +25,8 @@
     </script>
 
    <link rel="stylesheet" href="/css/CalendarStyle.css" />
+	<link rel="stylesheet" href="/css/Modify_AddEeventForm.css" />
+	<link rel="stylesheet" href="/css/EventInfoForm.css" />
 
 
 </head>
@@ -30,6 +34,8 @@
 
 <div id='calendar'></div>
 
+
+	<!--Add event form-->
 	<div class="modal fade" id="TestEventFormModal" tabindex="-1" aria-labelledby="estEventFormModalLabel" aria-hidden="true" data-bs-backdrop="false">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -65,4 +71,86 @@
 		</div>
 	</div>
 
+
+
+
+
+
+
+	<!--Update event form-->
+<div class="modal fade" id="TestEventUpdateModal" tabindex="-1" aria-labelledby="eventUpdateModalLabel" aria-hidden="true" data-bs-backdrop="false">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="eventUpdateModalLabel">Update Form</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form id="eventUpdateForm">
+					<input type="hidden" id="eventId" name="eventId" value="" />
+					<div class="mb-3">
+						<label for="title" class="form-label">Title:</label>
+						<input type="text" class="form-control" id="title" name="title">
+						<span id="Title-UpdateValidation" class="text-danger"></span>
+					</div>
+					<div class="mb-3">
+						<label for="Description" class="form-label">Description:</label>
+						<input type="text" class="form-control" id="Description" name="Description">
+						<span id="Description-AddValidation" class="text-danger"></span>
+					</div>
+					<div class="mb-3">
+						<label for="StartDate" class="form-label">Start Date:</label>
+						<input type="datetime-local" class="form-control" id="start" name="StartDate">
+						<span id="StartDate-UpdateValidation" class="text-danger"></span>
+					</div>
+					<div class="mb-3">
+						<label for="EndDate" class="form-label">End Date:</label>
+						<input type="datetime-local" class="form-control" id="end" name="EndDate">
+						<span id="EndDate-UpdateValidation" class="text-danger"></span>
+					</div>
+					<button type="submit" class="btn btn-primary">Update Event</button>
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Event info form-->
+<div class="modal fade" id="TestEventModal" tabindex="-1" aria-labelledby="TestEventUpdateModalLabel" aria-hidden="true" data-bs-backdrop="false">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="TestEventUpdateModalLabel">Event Info</h5>
+				<button id="closeButton" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<h2 id="eventTitle"></h2>
+				<p id="eventDescription"></p>
+				<p id="eventStart"></p>
+				<p id="eventEnd"></p>
+				<button id="editEventBtn">Edit</button>
+				<button id="deleteEventBtn">Delete</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
 </body>
+

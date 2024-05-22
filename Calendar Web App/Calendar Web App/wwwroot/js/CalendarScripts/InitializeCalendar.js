@@ -1,6 +1,4 @@
-﻿
-
-export function InitializeCalendar() {
+﻿export function InitializeCalendar() {
     let calendarEl = document.getElementById('calendar');
     var calendar = new FullCalendar.Calendar(calendarEl, {
         headerToolbar: {
@@ -84,6 +82,12 @@ export function InitializeTestCalendar() {
                     calendar.refetchEvents();
                 },
             }
+        },
+        eventDrop: function (info) {
+            
+        },
+        eventClick: function (info) {
+            TestHandleEventClick(info);
         },
         editable: true,
         selectable: true,

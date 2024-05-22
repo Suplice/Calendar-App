@@ -42,7 +42,7 @@ function handleFormSubmission(event) {
     //Get the form data
 
     var formData = $(this).serialize();
-=
+
 
     //Call the function to add the event
     addEvent(formData);
