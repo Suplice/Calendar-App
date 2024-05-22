@@ -1,20 +1,33 @@
-function ValidateOnServer(formData) {
+function ValidateOnServer(formData, calendar) {
 
-    debugger
+
     
     $.ajax({
-        url: 'TestCalendar/AddEvent',
+        url: '/TestCalendar/AddEvent',
         type: 'POST',
         data: formData,
 
-        success: function () {
+        success: function (response) {
             console.log('event added successfully');
+
+            var event = {
+                description: response.description,
+                title: response.title,
+                start: response.startDate,
+                end: response.endDate
+            };
+            debugger
+            $('#TestEventFormModal').modal('hide');
+
+            calendar.addEvent(event);
+
+           
         },
 
 
         error: function (xhr, status, event) {
             console.log('there was an error while trying to add event', event);
-            
+            console.log(xhr.responseText);
             displayAddEventValidationErrors(xhr.responseJSON);
         }
     });
@@ -35,25 +48,28 @@ function hideAllErrorMessages() {
     $('.text-danger').hide();
 }
 
-function TestHandleFormSubmission(event) {
+function TestHandleFormSubmission(event, calendar) {
  
     
     event.preventDefault();
 
-    
-    var formData = $(this).serialize();
 
-    ValidateOnServer(formData);
+    var formData = $(event.target).serialize();
+   
+
+    ValidateOnServer(formData, calendar);
 
 }
 
 
-function TestHandleAddEvent() {
+function TestHandleAddEvent(calendar) {
 
 
     $('#TestEventFormModal').modal('show');
 
 
-    $('#TestEventForm').on('submit', TestHandleFormSubmission);
+    $('#TestEventForm').on('submit', function (event) {
+        TestHandleFormSubmission(event, calendar);
+    });
 
 }

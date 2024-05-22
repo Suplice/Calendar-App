@@ -1,13 +1,15 @@
-﻿using Calendar_Web_App.ViewModels.EventViewModels;
+﻿using Calendar_Web_App.Interfaces;
+using Calendar_Web_App.Repositories;
+using Calendar_Web_App.ViewModels.EventViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Calendar_Web_App.Controllers
 {
-	public class TestCalendarContoller : Controller
+	public class TestCalendarController : Controller
 	{
 
-		[AllowAnonymous]
+
 		[HttpPost]
 		public IActionResult AddEvent(AddEventViewModel model)
 		{
@@ -22,7 +24,7 @@ namespace Calendar_Web_App.Controllers
 				return BadRequest(errors);
 			}
 
-			return Ok();
+			return Ok(model);
 		}
 
 		public IActionResult UpdateEvent()

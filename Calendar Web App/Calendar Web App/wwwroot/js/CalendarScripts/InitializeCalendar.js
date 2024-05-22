@@ -1,6 +1,8 @@
-﻿export function InitializeCalendar() {
+﻿
+
+export function InitializeCalendar() {
     let calendarEl = document.getElementById('calendar');
-    let calendar = new FullCalendar.Calendar(calendarEl, {
+    var calendar = new FullCalendar.Calendar(calendarEl, {
         headerToolbar: {
             left: 'prev,next today',
             center: 'addEventButton',
@@ -56,7 +58,7 @@
 
 export function InitializeTestCalendar() {
     let calendarEl = document.getElementById('calendar');
-    let calendar = new FullCalendar.Calendar(calendarEl, {
+    var calendar = new FullCalendar.Calendar(calendarEl, {
         headerToolbar: {
             left: 'prev,next today',
             center: 'addEventButton',
@@ -78,7 +80,8 @@ export function InitializeTestCalendar() {
             addEventButton: {
                 text: 'Add Event',
                 click: function () {
-                    TestHandleAddEvent()
+                    TestHandleAddEvent(calendar);
+                    calendar.refetchEvents();
                 },
             }
         },
