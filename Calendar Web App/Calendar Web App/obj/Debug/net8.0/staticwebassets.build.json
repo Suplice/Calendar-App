@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wbf73RH7/T6PqDXY+p1ThjeivhOV+anpCTMau4Fdak0=",
+  "Hash": "j3TDHJjotA9rKZNZDMfuAvaw4W8w+maJAEn+AHVxF7U=",
   "Source": "Calendar App",
   "BasePath": "_content/Calendar App",
   "Mode": "Default",
@@ -433,6 +433,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestAddEvent.js"
+    },
+    {
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestDeleteEvent.js",
+      "SourceId": "Calendar App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "BasePath": "_content/Calendar App",
+      "RelativePath": "js/CalendarScripts/TestEventScripts/TestDeleteEvent.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestDeleteEvent.js"
     },
     {
       "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestEventClickInfo.js",

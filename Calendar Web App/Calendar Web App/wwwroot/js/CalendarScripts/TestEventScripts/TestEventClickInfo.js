@@ -36,7 +36,7 @@ function TestHandleEventClick(info, calendar) {
         $('#TestEventModal').modal('hide');
 
         //Delete event from calendar (via ajax)
-        HandleDeleteEvent(info, calendar);
+        TestHandleDeleteEvent(info, calendar);
 
     });
 }

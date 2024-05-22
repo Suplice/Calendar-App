@@ -64,11 +64,13 @@ export function InitializeTestCalendar() {
         },
         events: [
             {
+                id: '1',
                 title: 'Event 1',
                 start: new Date(),
                 end: new Date(new Date().getTime() + 2 * 60 * 60 * 1000) // Add 2 hours
             },
             {
+                id: '2',
                 title: 'Event 2',
                 start: new Date(new Date().getTime() + 2 * 60 * 60 * 1000), // Start 2 hours after the current time
                 end: new Date(new Date().getTime() + 4 * 60 * 60 * 1000) // Add 2 more hours
@@ -87,7 +89,7 @@ export function InitializeTestCalendar() {
             
         },
         eventClick: function (info) {
-            TestHandleEventClick(info);
+            TestHandleEventClick(info, calendar);
         },
         editable: true,
         selectable: true,
