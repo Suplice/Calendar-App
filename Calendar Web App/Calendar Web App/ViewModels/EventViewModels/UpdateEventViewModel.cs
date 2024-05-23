@@ -14,10 +14,11 @@ namespace Calendar_Web_App.ViewModels.EventViewModels
         [DataType(DataType.DateTime)]
         public DateTime StartDate { get; set; }
 
-        [Required(ErrorMessage = "The End Date field is required")]
+
         [DataType(DataType.DateTime)]
         [CompareDates("StartDate", "EndDate")]
-        public DateTime EndDate { get; set; }
+        [Required(ErrorMessage = "The End Date field is required")]
+		public DateTime EndDate { get; set; }
         public string? UserId { get; set; }
 
         public string EventId { get; set; }

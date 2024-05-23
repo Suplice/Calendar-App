@@ -69,16 +69,30 @@ namespace Calendar_Web_App.Repositories
 
         public void RemoveEvent(string eventId)
         {
-            //Find event to remove
-            var eventToDelete = _context.Events.First(test => test.Id == eventId);
+			try
+			{
+				// Find event to remove
+				var eventToDelete = _context.Events.Find(eventId);
 
-            //check whether event exists
-            if (eventToDelete != null)
-            {
-                _context.Events.Remove(eventToDelete);
-                _context.SaveChanges();
-            }
-        }
+				// Check whether event exists
+				if (eventToDelete != null)
+				{
+					_context.Events.Remove(eventToDelete);
+					_context.SaveChanges();
+				}
+			}
+			catch (InvalidOperationException ex)
+			{
+				// Handle the case where the event was not found
+				// Log the exception or take other appropriate actions
+				Console.WriteLine($"An error occurred: {ex.Message}");
+			}
+			catch (Exception ex)
+			{
+				// Handle other potential exceptions
+				Console.WriteLine($"An unexpected error occurred: {ex.Message}");
+			}
+		}
 
    
     }

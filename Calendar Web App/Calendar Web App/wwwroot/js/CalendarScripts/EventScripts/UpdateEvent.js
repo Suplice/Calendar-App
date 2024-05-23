@@ -39,14 +39,30 @@ function handleUpdateFormSubmission(event) {
     event.preventDefault();
 
     //Get the form data
-    var formData = $(this).serialize();
+    var formData = $(event.target).serialize();
 
     UpdateEvent(formData)
 
 }
+
+function bindUpdateFormHandler(form) {
+    function wrappedHandler(event) {
+        handleUpdateFormSubmission(event);
+    }
+
+    // Unbind any previous event listener
+    form.removeEventListener('submit', form._submitHandler);
+
+    // Bind the new event listener and store it in the form's property
+    form._submitHandler = wrappedHandler;
+    form.addEventListener('submit', wrappedHandler);
+}
+
 function HandleEditEvent(info) {
     var form = document.getElementById('eventUpdateForm');
-    form.addEventListener('submit', handleUpdateFormSubmission)
+
+    bindUpdateFormHandler(form); 
 
     document.getElementById('eventId').value = info.event.id;
 }
+

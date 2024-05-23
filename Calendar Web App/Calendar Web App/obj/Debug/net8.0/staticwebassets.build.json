@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8LGJZ2QY4BW5jatDwFMoHYya5TIJ2ZE1rcv+q+AW62o=",
+  "Hash": "TOSNytiD+gLMUkvSAdqK37N2Bj4DYUiub7F+MAf1xvw=",
   "Source": "Calendar App",
   "BasePath": "_content/Calendar App",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Calendar App\\wwwroot",
       "Source": "Calendar App",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\Assets\\CalendarView.png",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\Assets\\CalendarView.png",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "Assets/CalendarView.png",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\Assets\\CalendarView.png"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\AddEvent.css",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\AddEvent.css",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "css/AddEvent.css",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\css\\AddEvent.css"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\CalendarStyle.css",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\CalendarStyle.css",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "css/CalendarStyle.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\CalendarStyle.css"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\EventInfoForm.css",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\EventInfoForm.css",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "css/EventInfoForm.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\css\\EventInfoForm.css"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\LoginSiteStyle.css",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\LoginSiteStyle.css",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "css/LoginSiteStyle.css",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\css\\LoginSiteStyle.css"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\MainSiteStyle.css",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\MainSiteStyle.css",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "css/MainSiteStyle.css",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\css\\MainSiteStyle.css"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\Modify_AddEeventForm.css",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\Modify_AddEeventForm.css",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "css/Modify_AddEeventForm.css",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Modify_AddEeventForm.css"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\SettingsStyle.css",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\SettingsStyle.css",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "css/SettingsStyle.css",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\css\\SettingsStyle.css"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\SharedLayoutStyle.css",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\SharedLayoutStyle.css",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "css/SharedLayoutStyle.css",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\css\\SharedLayoutStyle.css"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\ShowEventInfo.css",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\ShowEventInfo.css",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "css/ShowEventInfo.css",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ShowEventInfo.css"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\css\\site.css",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\favicon.ico",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\bootstrap5\\index.global.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\bootstrap5\\index.global.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "js/bootstrap5/index.global.js",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap5\\index.global.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\bootstrap5\\index.global.min.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\bootstrap5\\index.global.min.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "js/bootstrap5/index.global.min.js",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap5\\index.global.min.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\AddEvent.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\AddEvent.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "js/CalendarScripts/EventScripts/AddEvent.js",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CalendarScripts\\EventScripts\\AddEvent.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\DeleteEvent.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\DeleteEvent.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "js/CalendarScripts/EventScripts/DeleteEvent.js",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CalendarScripts\\EventScripts\\DeleteEvent.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\EventClickInfo.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\EventClickInfo.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "js/CalendarScripts/EventScripts/EventClickInfo.js",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CalendarScripts\\EventScripts\\EventClickInfo.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\EventResize.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\EventResize.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "js/CalendarScripts/EventScripts/EventResize.js",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CalendarScripts\\EventScripts\\EventResize.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\UpdateEvent.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\UpdateEvent.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "js/CalendarScripts/EventScripts/UpdateEvent.js",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CalendarScripts\\EventScripts\\UpdateEvent.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\UpdateEventOnDrop.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\EventScripts\\UpdateEventOnDrop.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "js/CalendarScripts/EventScripts/UpdateEventOnDrop.js",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CalendarScripts\\EventScripts\\UpdateEventOnDrop.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\InitializeCalendar.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\InitializeCalendar.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "js/CalendarScripts/InitializeCalendar.js",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CalendarScripts\\InitializeCalendar.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestAddEvent.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestAddEvent.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "js/CalendarScripts/TestEventScripts/TestAddEvent.js",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestAddEvent.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestDeleteEvent.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestDeleteEvent.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "js/CalendarScripts/TestEventScripts/TestDeleteEvent.js",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestDeleteEvent.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestEventClickInfo.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestEventClickInfo.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "js/CalendarScripts/TestEventScripts/TestEventClickInfo.js",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestEventClickInfo.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestUpdateEvent.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestUpdateEvent.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "js/CalendarScripts/TestEventScripts/TestUpdateEvent.js",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CalendarScripts\\TestEventScripts\\TestUpdateEvent.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\FullCalendar\\index.global.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\FullCalendar\\index.global.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "js/FullCalendar/index.global.js",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\js\\FullCalendar\\index.global.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\FullCalendar\\index.global.min.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\FullCalendar\\index.global.min.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "js/FullCalendar/index.global.min.js",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\js\\FullCalendar\\index.global.min.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\logoutscript\\LogoutMain.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\logoutscript\\LogoutMain.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "js/logoutscript/LogoutMain.js",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\js\\logoutscript\\LogoutMain.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\SettingsScripts\\ChangeEmail.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\SettingsScripts\\ChangeEmail.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "js/SettingsScripts/ChangeEmail.js",
       "AssetKind": "All",
@@ -568,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\js\\SettingsScripts\\ChangeEmail.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\SettingsScripts\\ChangeName.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\SettingsScripts\\ChangeName.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "js/SettingsScripts/ChangeName.js",
       "AssetKind": "All",
@@ -587,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\js\\SettingsScripts\\ChangeName.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\SettingsScripts\\ChangePassword.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\SettingsScripts\\ChangePassword.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "js/SettingsScripts/ChangePassword.js",
       "AssetKind": "All",
@@ -606,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\js\\SettingsScripts\\ChangePassword.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\SettingsScripts\\ChangeUsername.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\SettingsScripts\\ChangeUsername.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "js/SettingsScripts/ChangeUsername.js",
       "AssetKind": "All",
@@ -625,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\js\\SettingsScripts\\ChangeUsername.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\SettingsScripts\\CloseAccount.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\SettingsScripts\\CloseAccount.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "js/SettingsScripts/CloseAccount.js",
       "AssetKind": "All",
@@ -644,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\js\\SettingsScripts\\CloseAccount.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\SettingsScripts\\Logout.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\SettingsScripts\\Logout.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "js/SettingsScripts/Logout.js",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\js\\SettingsScripts\\Logout.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\SettingsScripts\\MainScript.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\SettingsScripts\\MainScript.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "js/SettingsScripts/MainScript.js",
       "AssetKind": "All",
@@ -682,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\js\\SettingsScripts\\MainScript.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\js\\site.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -720,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -739,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -758,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -777,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -796,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -834,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -853,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -872,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -891,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -910,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -929,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -948,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -967,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1005,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1024,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1043,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1062,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1081,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1100,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1119,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1138,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1176,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1195,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1233,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1252,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1271,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1290,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1328,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1347,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1366,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1385,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1404,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1423,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1442,10 +1442,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1461,10 +1461,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1480,10 +1480,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1499,10 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1518,10 +1518,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1537,10 +1537,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1556,10 +1556,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1575,10 +1575,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1594,10 +1594,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1613,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1651,10 +1651,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1670,10 +1670,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1689,10 +1689,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1708,10 +1708,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1727,10 +1727,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1746,10 +1746,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1765,10 +1765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Calendar App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Justynka\\Desktop\\repos\\CalendarApp\\Calendar-App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\wwwroot\\",
       "BasePath": "_content/Calendar App",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",

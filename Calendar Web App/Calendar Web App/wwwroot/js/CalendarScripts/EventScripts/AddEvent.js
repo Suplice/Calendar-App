@@ -42,7 +42,7 @@ function handleFormSubmission(event) {
     //Get the form data
 
     var formData = $(this).serialize();
-
+    debugger
 
     //Call the function to add the event
     addEvent(formData);
@@ -58,8 +58,7 @@ function HandleAddEvent() {
 
   
     $('#eventFormModal').modal('show');
-
-
-    $('#eventForm').on('submit', handleFormSubmission);
-
 }
+$(document).ready(function () {
+    $('#eventForm').on('submit', handleFormSubmission);
+});

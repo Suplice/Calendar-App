@@ -34,8 +34,8 @@ function updateCalendar(response, info, calendar) {
     var event = calendar.getEventById(eventId);
 
 
-    event.setProp('description', response.description)
-    event.setProp('description', response.description)
+    event.setExtendedProp('description', response.description)
+    event.setProp('title', response.description)
     event.setStart(response.startDate);
     event.setEnd(response.endDate)
 
@@ -60,15 +60,29 @@ function handleUpdateFormSubmission(event, info, calendar) {
 
     //Get the form data
     var formData = $(event.target).serialize();
-    debugger
+
     UpdateEvent(formData, info,  calendar);
 
 }
+
+function bindUpdateFormHandler(form, info, calendar) {
+    function wrappedHandler(event) {
+        handleUpdateFormSubmission(event, info, calendar);
+    }
+
+    // Unbind any previous event listener
+    form.removeEventListener('submit', form._submitHandler);
+
+    // Bind the new event listener and store it in the form's property
+    form._submitHandler = wrappedHandler;
+    form.addEventListener('submit', wrappedHandler);
+}
+
+
 function TestHandleEditEvent(info, calendar) {
     var form = document.getElementById('TestEventUpdateForm');
-    form.addEventListener('submit', function (event) {
-        handleUpdateFormSubmission(event, info, calendar);
-    })
+    
+    bindUpdateFormHandler(form, info, calendar);
 
     document.getElementById('eventId').value = info.event.id;
-}
+} 

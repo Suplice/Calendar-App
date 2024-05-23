@@ -13,6 +13,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped<IEventRepository, EventRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<EventRepository>();
 builder.Services.Configure<StaticFileOptions>(options =>
 {
     options.DefaultContentType = "application/javascript";

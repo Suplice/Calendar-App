@@ -74,9 +74,8 @@ function TestHandleAddEvent(calendar) {
     $('#TestEventFormModal').modal('show');
 
 
-    $('#TestEventForm').on('submit', function (event) {
+    $('#TestEventForm').off('submit').on('submit', function (event) {
         TestHandleFormSubmission(event, calendar);
     });
 
 }
-
