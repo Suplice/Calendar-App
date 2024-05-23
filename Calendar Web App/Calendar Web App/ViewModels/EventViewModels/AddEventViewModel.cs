@@ -19,6 +19,7 @@ namespace Calendar_Web_App.ViewModels.EventViewModels
         [DataType(DataType.DateTime)]
         [CompareDates("StartDate", "EndDate")]
         public DateTime EndDate { get; set; }
+        public string eventId { get; set; }
         public string? UserId { get; set; }
     }
 }

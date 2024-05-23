@@ -69,7 +69,7 @@ namespace Calendar_Web_App.Controllers
 		}
         [HttpPost]
 		[Authorize]
-        public IActionResult RemoveEvent(int eventId)
+        public IActionResult RemoveEvent(string eventId)
         {
             _eventRepository.RemoveEvent(eventId);
             return Ok();

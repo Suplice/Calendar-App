@@ -8,7 +8,7 @@ namespace Calendar_Web_App.Interfaces
         IEnumerable<Event> GetAllEvents(String UserId);
         Event GetEventById(int id);
         void AddEvent(AddEventViewModel newEvent);
-        void RemoveEvent(int id);
+        void RemoveEvent(string id);
         void UpdateEvent(UpdateEventViewModel toUpdate);
 
     }

@@ -27,12 +27,15 @@ namespace Calendar_Web_App.Repositories
 
         public void AddEvent(AddEventViewModel newEvent)
         {
+         
+
 			//Check if User exists
             if (newEvent.UserId != null)
             {
                 //Create new Event
                 var EventToAdd = new Event
                 {
+                    Id = Guid.NewGuid().ToString(),
                     UserId = newEvent.UserId,
                     title = newEvent.Title,
                     description = newEvent.Description,
@@ -64,10 +67,10 @@ namespace Calendar_Web_App.Repositories
             _context.SaveChanges();
 	    }
 
-        public void RemoveEvent(int eventId)
+        public void RemoveEvent(string eventId)
         {
             //Find event to remove
-            var eventToDelete = _context.Events.Find(eventId);
+            var eventToDelete = _context.Events.First(test => test.Id == eventId);
 
             //check whether event exists
             if (eventToDelete != null)
