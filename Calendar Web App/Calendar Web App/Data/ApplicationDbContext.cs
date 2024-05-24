@@ -11,7 +11,7 @@ namespace Calendar_Web_App.Data
 
         }
 
-        public DbSet<Event> Events { get; set; }
+		public DbSet<Event> Events { get; set; }
         public DbSet<User> Users { get; set; }
 
        

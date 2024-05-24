@@ -6,7 +6,7 @@ namespace Calendar_Web_App.Interfaces
     public interface IEventRepository
     {
         IEnumerable<Event> GetAllEvents(String UserId);
-        Event GetEventById(int id);
+        Event GetEventById(string id);
         void AddEvent(AddEventViewModel newEvent);
         void RemoveEvent(string id);
         void UpdateEvent(UpdateEventViewModel toUpdate);

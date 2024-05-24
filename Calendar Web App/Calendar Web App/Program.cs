@@ -5,15 +5,28 @@ using Calendar_Web_App.Repositories;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+
+builder.Host.UseSerilog();
+
 builder.Services.AddScoped<IEventRepository, EventRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<EventRepository>();
+builder.Services.AddScoped<UserRepository>();
+
+
 builder.Services.Configure<StaticFileOptions>(options =>
 {
     options.DefaultContentType = "application/javascript";
@@ -22,7 +35,11 @@ builder.Services.Configure<StaticFileOptions>(options =>
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+    options.UseLazyLoadingProxies();
+    
 });
+
+
 
 builder.Services.AddIdentity<User, IdentityRole>(options =>
 {
@@ -33,6 +50,11 @@ builder.Services.AddIdentity<User, IdentityRole>(options =>
     options.Password.RequireNonAlphanumeric = true;
 }).AddEntityFrameworkStores<ApplicationDbContext>();
 
+
+builder.Services.AddRazorPages().AddMvcOptions(options =>
+{
+    options.ModelBindingMessageProvider.SetValueMustNotBeNullAccessor(_ => "The field is Required");
+});
 
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
@@ -61,7 +83,7 @@ app.UseRouting();
 app.UseAuthentication();
 
 
-
+app.UseAntiforgery();
 app.UseAuthorization();
 
 app.MapControllerRoute(
