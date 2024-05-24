@@ -44,12 +44,13 @@ namespace Calendar_Web_App.Controllers
             return Json(events);
         }
 
+        [ValidateAntiForgeryToken]
         [HttpPost]
         [Authorize]
-		public IActionResult AddEvent(AddEventViewModel newEvent)
+		public IActionResult AddEvent(AddEventViewModel newEventModel)
 		{
 			string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            newEvent.UserId = userId;
+			newEventModel.UserId = userId;
 			//Remove User, UserId from HttpPost Input
 
 			if (!ModelState.IsValid)
@@ -62,11 +63,13 @@ namespace Calendar_Web_App.Controllers
                 return BadRequest(errors);
 			}
 
-            _eventRepository.AddEvent(newEvent);
+            _eventRepository.AddEvent(newEventModel);
 
             return Ok();
 		
 		}
+
+        [ValidateAntiForgeryToken]
         [HttpPost]
 		[Authorize]
         public IActionResult RemoveEvent(string eventId)
@@ -75,12 +78,14 @@ namespace Calendar_Web_App.Controllers
             return Ok();
         }
 
+
+        [ValidateAntiForgeryToken]
         [HttpPost]
         [Authorize]
-        public IActionResult UpdateEvent(UpdateEventViewModel updatedEvent)
+        public IActionResult UpdateEvent(UpdateEventViewModel updatedEventModel)
         {
             string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            updatedEvent.UserId = userId;
+            updatedEventModel.UserId = userId;
 
 			if (!ModelState.IsValid)
 			{
@@ -92,7 +97,7 @@ namespace Calendar_Web_App.Controllers
 				return BadRequest(errors);
 			}
 
-			_eventRepository.UpdateEvent(updatedEvent);
+			_eventRepository.UpdateEvent(updatedEventModel);
 
 			return Ok();
 		}

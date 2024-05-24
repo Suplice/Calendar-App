@@ -29,17 +29,17 @@ namespace Calendar_Web_App.Repositories
             {
                 _logger.LogInformation("Executing GetCurrentUserAsync operation in User Repository");
 
-                var user = await _userManager.GetUserAsync(User);
+                var CurrentUser = await _userManager.GetUserAsync(User);
 
-                if (user == null)
+                if (CurrentUser == null)
                 {
                     _logger.LogWarning("User {Username} does not exist", User.Identity.Name);
                 }
                 else
                 {
-                    _logger.LogInformation("User {Username} with Id {UserId} was successfully found", user.Name, user.Id);
+                    _logger.LogInformation("User {Username} with Id {UserId} was successfully found", CurrentUser.Name, CurrentUser.Id);
                 }
-                return user;
+                return CurrentUser;
             }
             catch (Exception ex)
             {
@@ -55,9 +55,9 @@ namespace Calendar_Web_App.Repositories
             {
                 _logger.LogInformation("Executing LoginUserAsync operation in User Repository");
 
-                var result = await _signInManager.PasswordSignInAsync(LoginModel.Login, LoginModel.Password, true, false);
+                var PasswordSignInResult = await _signInManager.PasswordSignInAsync(LoginModel.Login, LoginModel.Password, true, false);
 
-                if (result.Succeeded)
+                if (PasswordSignInResult.Succeeded)
                 {
                     _logger.LogInformation("Successfully logged in");
                 }
@@ -65,7 +65,7 @@ namespace Calendar_Web_App.Repositories
                 {
                     _logger.LogWarning("User could not be logged in");
                 }
-                return result;
+                return PasswordSignInResult;
 			}
             catch (Exception ex)
             {
@@ -83,7 +83,7 @@ namespace Calendar_Web_App.Repositories
                 _logger.LogInformation("Executing RegisterUserAsync operation in UserRepository");
 
                 //Create new user to be added
-                var User = new User
+                var CurrentUser = new User
                 {
                     Name = RegisterModel.Name,
                     Email = RegisterModel.Email,
@@ -91,9 +91,9 @@ namespace Calendar_Web_App.Repositories
                 };
 
                 //Try to add new user to database
-                var result = await _userManager.CreateAsync(User, RegisterModel.Password);
+                var RegisterUserResult = await _userManager.CreateAsync(CurrentUser, RegisterModel.Password);
 
-                if(result.Succeeded)
+                if(RegisterUserResult.Succeeded)
                 {
                     _logger.LogInformation("Registering User was successful");
                 }
@@ -101,7 +101,7 @@ namespace Calendar_Web_App.Repositories
                 {
                     _logger.LogWarning("User could not be registered");
                 }
-                return result;
+                return RegisterUserResult;
             }
             catch(Exception ex)
             {
@@ -122,9 +122,9 @@ namespace Calendar_Web_App.Repositories
                 var CurrentUser = await GetCurrentUserAsync(User);
 
                 //Try to change password in database
-                var result = await _userManager.ChangePasswordAsync(CurrentUser, ChangePasswordModel.OldPassword, ChangePasswordModel.NewPassword);
+                var ChangePasswordResult = await _userManager.ChangePasswordAsync(CurrentUser, ChangePasswordModel.OldPassword, ChangePasswordModel.NewPassword);
 
-                if(result.Succeeded)
+                if(ChangePasswordResult.Succeeded)
                 {
                     _logger.LogInformation("Changing User {Username} password was successful", CurrentUser.Name);
                 }
@@ -132,7 +132,7 @@ namespace Calendar_Web_App.Repositories
                 {
                     _logger.LogWarning("Changing User {Username} password has failed", CurrentUser.Name);
                 }
-                return result;
+                return ChangePasswordResult;
 			}
             catch (Exception ex)
             {
@@ -157,7 +157,7 @@ namespace Calendar_Web_App.Repositories
             }
         }
 
-        public async Task<IdentityResult> ChangeUsernameAsync(ClaimsPrincipal User, ChangeUsernameViewModel newUsername)
+        public async Task<IdentityResult> ChangeUsernameAsync(ClaimsPrincipal User, ChangeUsernameViewModel newUsernameModel)
         {
             try
             {
@@ -167,12 +167,12 @@ namespace Calendar_Web_App.Repositories
                 var CurrentUser = await GetCurrentUserAsync(User);
 
                 //Change username
-                CurrentUser.UserName = newUsername.Username;
+                CurrentUser.UserName = newUsernameModel.Username;
 
                 //Update user in database
-                var UpdateResult =  await _userManager.UpdateAsync(CurrentUser);
+                var UpdateUsernameResult =  await _userManager.UpdateAsync(CurrentUser);
 
-                if(UpdateResult.Succeeded)
+                if(UpdateUsernameResult.Succeeded)
                 {
                     _logger.LogInformation("Updating Username was successful");
                 }
@@ -180,7 +180,7 @@ namespace Calendar_Web_App.Repositories
                 {
                     _logger.LogWarning("Updating Username has failed");
                 }
-                return UpdateResult;
+                return UpdateUsernameResult;
             }
             catch (Exception ex)
             {
@@ -189,7 +189,7 @@ namespace Calendar_Web_App.Repositories
             }
         }
 
-        public async Task<IdentityResult> ChangeEmailAsync(ClaimsPrincipal User, ChangeEmailViewModel newUsername)
+        public async Task<IdentityResult> ChangeEmailAsync(ClaimsPrincipal User, ChangeEmailViewModel newEmailModel)
         {
             try
             {
@@ -198,10 +198,12 @@ namespace Calendar_Web_App.Repositories
                 //Get current user
                 var CurrentUser = await GetCurrentUserAsync(User);
 
-                //update user in database
-                var result =  await _userManager.UpdateAsync(CurrentUser);
+                CurrentUser.Email = newEmailModel.Email;
 
-                if (result.Succeeded)
+                //update user in database
+                var ChangeEmailResult =  await _userManager.UpdateAsync(CurrentUser);
+
+                if (ChangeEmailResult.Succeeded)
                 {
                     _logger.LogInformation("Successfully updated {Username}'s email", CurrentUser.Name);
                 }
@@ -209,7 +211,7 @@ namespace Calendar_Web_App.Repositories
                 {
                     _logger.LogWarning("Changing {Username}'s email has failed", CurrentUser.Name);
                 }
-                return result;
+                return ChangeEmailResult;
             }
             catch (Exception ex)
             {
@@ -218,7 +220,7 @@ namespace Calendar_Web_App.Repositories
             }
         }
 
-        public async Task<IdentityResult> ChangeNameAsync(ClaimsPrincipal User, ChangeNameViewModel newName)
+        public async Task<IdentityResult> ChangeNameAsync(ClaimsPrincipal User, ChangeNameViewModel newNameModel)
         {
             try
             {
@@ -229,7 +231,7 @@ namespace Calendar_Web_App.Repositories
 
 
                 //Change Name
-                CurrentUser.Name = newName.Name;
+                CurrentUser.Name = newNameModel.Name;
 
 
                 //Update user in database
@@ -252,28 +254,28 @@ namespace Calendar_Web_App.Repositories
             }
         }
 
-        public async Task<IdentityResult> CloseAccountAsync(User User)
+        public async Task<IdentityResult> CloseAccountAsync(User CurrentUser)
         {
             try
             {
                 _logger.LogInformation("Executing CloseAccountAsync operation in User Repository");
 
                 //Delete user from Db
-                var CloseAccountResult =  await _userManager.DeleteAsync(User);
+                var CloseAccountResult =  await _userManager.DeleteAsync(CurrentUser);
 
                 if(CloseAccountResult.Succeeded)
                 {
-                    _logger.LogInformation("Closing {Username}'s account was successful", User.Name);
+                    _logger.LogInformation("Closing {Username}'s account was successful", CurrentUser.Name);
                 }
                 else
                 {
-                    _logger.LogWarning("Closing {Username}'s account has failed", User.Name);
+                    _logger.LogWarning("Closing {Username}'s account has failed", CurrentUser.Name);
                 }
                 return CloseAccountResult;
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "An unexpected error occured while trying to Close {Username}'s account", User.Name);
+                _logger.LogError(ex, "An unexpected error occured while trying to Close {Username}'s account", CurrentUser.Name);
                 throw;
             }
         }

@@ -8,10 +8,10 @@ namespace Calendar_Web_App.Controllers
 {
 	public class TestCalendarController : Controller
 	{
-
-
+		[ValidateAntiForgeryToken]
+		[AllowAnonymous]
 		[HttpPost]
-		public IActionResult AddEvent(AddEventViewModel model)
+		public IActionResult AddEvent(AddEventViewModel NewEventModel)
 		{
 
 			//validate Model 
@@ -24,10 +24,13 @@ namespace Calendar_Web_App.Controllers
 				return BadRequest(errors);
 			}
 
-			return Ok(model);
+			return Ok(NewEventModel);
 		}
 
-		public IActionResult UpdateEvent(UpdateEventViewModel model)
+		[ValidateAntiForgeryToken]
+		[AllowAnonymous]
+		[HttpPost]
+		public IActionResult UpdateEvent(UpdateEventViewModel UpdateEventModel)
 		{
 
 			//Validate Model
@@ -40,7 +43,7 @@ namespace Calendar_Web_App.Controllers
 				return BadRequest(errors);
 			}
 
-			return Ok(model);
+			return Ok(UpdateEventModel);
 		}
 	}
 }

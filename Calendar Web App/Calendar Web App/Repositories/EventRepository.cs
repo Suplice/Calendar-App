@@ -49,9 +49,9 @@ namespace Calendar_Web_App.Repositories
             {
                 _logger.LogInformation("Executing GetEventById operation in Event Repository");
 
-                var data = _context.Events.Find(eventId);
+                var Event = _context.Events.Find(eventId);
 
-                if(data == null)
+                if(Event == null)
                 {
                     _logger.LogWarning("Event {eventId} does not exist", eventId);
 				}
@@ -59,7 +59,7 @@ namespace Calendar_Web_App.Repositories
                 {
                     _logger.LogInformation("event {eventId} was successfully found", eventId); 
 				}
-                return data;
+                return Event;
 			}
             catch (Exception ex) 
             {
@@ -70,24 +70,24 @@ namespace Calendar_Web_App.Repositories
 
         }
 
-        public void AddEvent(AddEventViewModel newEvent)
+        public void AddEvent(AddEventViewModel newEventModel)
         {
             try
             {
                 _logger.LogInformation("Executing AddEvent operation in Event Repository");
 
                 //Check if User exists
-                if (newEvent.UserId != null)
+                if (newEventModel.UserId != null)
                 {
                     //Create new Event
                     var EventToAdd = new Event
                     {
                         Id = Guid.NewGuid().ToString(),
-                        UserId = newEvent.UserId,
-                        title = newEvent.Title,
-                        description = newEvent.Description,
-                        start = newEvent.StartDate,
-                        end = newEvent.EndDate
+                        UserId = newEventModel.UserId,
+                        title = newEventModel.Title,
+                        description = newEventModel.Description,
+                        start = newEventModel.StartDate,
+                        end = newEventModel.EndDate
                     };
                     //Add event to Db
                     _context.Events.Add(EventToAdd);
@@ -97,7 +97,7 @@ namespace Calendar_Web_App.Repositories
                 }
                 else
                 {
-                    _logger.LogWarning("User with Id {UserId} does not exist", newEvent.UserId);
+                    _logger.LogWarning("User with Id {UserId} does not exist", newEventModel.UserId);
                 }
             }
             catch (Exception ex)
@@ -107,38 +107,38 @@ namespace Calendar_Web_App.Repositories
             }
         }
 
-        public void UpdateEvent(UpdateEventViewModel toUpdate)
+        public void UpdateEvent(UpdateEventViewModel UpdateEventModel)
         {
             try
             {
                 _logger.LogInformation("Executing UpdateEvent method in Event Respository");
 
                 //Find event to update
-                Event UpdatedEvent = _context.Events.FirstOrDefault(e => e.Id == toUpdate.EventId);
+                Event UpdatedEvent = _context.Events.FirstOrDefault(e => e.Id == UpdateEventModel.EventId);
 
                 //Check whether event is connected to actual User
-                if (UpdatedEvent.UserId != toUpdate.UserId)
+                if (UpdatedEvent.UserId != UpdateEventModel.UserId)
                 {
-                    _logger.LogWarning("The event with Id {eventId} does not belong to User {toUpdate.UserId}", toUpdate.EventId, toUpdate.UserId);
+                    _logger.LogWarning("The event with Id {eventId} does not belong to User {toUpdate.UserId}", UpdateEventModel.EventId, UpdateEventModel.UserId);
                 }
                 else if(UpdatedEvent == null)
                 {
-                    _logger.LogWarning("Event with Id {eventId} does not exist", toUpdate.EventId);
+                    _logger.LogWarning("Event with Id {eventId} does not exist", UpdateEventModel.EventId);
                     return;
                 }
                 else {
                     //Change event details
-                    UpdatedEvent.title = toUpdate.Title;
-                    UpdatedEvent.description = toUpdate.Description;
-                    UpdatedEvent.start = toUpdate.StartDate;
-                    UpdatedEvent.end = toUpdate.EndDate;
+                    UpdatedEvent.title = UpdateEventModel.Title;
+                    UpdatedEvent.description = UpdateEventModel.Description;
+                    UpdatedEvent.start = UpdateEventModel.StartDate;
+                    UpdatedEvent.end = UpdateEventModel.EndDate;
                     _context.SaveChanges();
-                    _logger.LogInformation("Event {eventId} was successfully updated", toUpdate.EventId);
+                    _logger.LogInformation("Event {eventId} was successfully updated", UpdateEventModel.EventId);
                 }
             }
             catch(Exception ex)
             {
-                _logger.LogError(ex, "an unexpected error occured while trying to update Event {eventId}", toUpdate.EventId);
+                _logger.LogError(ex, "an unexpected error occured while trying to update Event {eventId}", UpdateEventModel.EventId);
                 throw;
             }
             

@@ -1,4 +1,5 @@
 using Calendar_Web_App.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -13,6 +14,8 @@ namespace Calendar_Web_App.Controllers
             _logger = logger;
         }
 
+        [HttpGet]
+        [AllowAnonymous]
         public IActionResult Index()
         {
             if (User.Identity.IsAuthenticated)
@@ -20,9 +23,11 @@ namespace Calendar_Web_App.Controllers
                 return RedirectToAction("Calendar", "Calendar");
             }
 
-            return View();
+            return RedirectToAction("Login", "Account");
         }
 
+        [HttpGet]
+        [AllowAnonymous]
         public IActionResult Privacy()
         {
             return View();

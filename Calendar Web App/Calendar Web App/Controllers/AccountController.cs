@@ -31,30 +31,30 @@ namespace Calendar_Web_App.Controllers
 
 
         [HttpPost]
-		public async Task<IActionResult> Login(LoginViewModel user)
+		public async Task<IActionResult> Login(LoginViewModel UserLoginModel)
         {
 	        
 			if (!ModelState.IsValid)
             {
                 //Model invalid - action returns login view with old model as parameter
-                return View(user);
+                return View(UserLoginModel);
             }
 
 
          
             //validating user data
-            var validate = await _userRepository.LoginUserAsync(user);
+            var UserLoginResult = await _userRepository.LoginUserAsync(UserLoginModel);
 
 
             //data is correct, log in and proceed to Calendar view
-            if (validate.Succeeded)
+            if (UserLoginResult.Succeeded)
             {
 	            return RedirectToAction("Calendar", "Calendar");
 			}
 
 
 			//Account is on lockout
-			if (validate.IsLockedOut)
+			if (UserLoginResult.IsLockedOut)
             {
                 ModelState.AddModelError(string.Empty, "Account is on Lockout");
             }
@@ -65,7 +65,7 @@ namespace Calendar_Web_App.Controllers
 
 
 			//validation is incorrect, return login view with odl model
-			return View(user);
+			return View(UserLoginModel);
         }
 
 
@@ -90,7 +90,6 @@ namespace Calendar_Web_App.Controllers
         [HttpGet]
         public IActionResult Register()
         {
-            
             return View();
         }
 
@@ -98,22 +97,22 @@ namespace Calendar_Web_App.Controllers
 
 
         [HttpPost]
-		public async Task<IActionResult> Register(RegisterViewModel newUser)
+		public async Task<IActionResult> Register(RegisterViewModel NewUserModel)
         {
             //Checking whether model state is valid
             if (!ModelState.IsValid)
             {
                 //Model state is invalid - action returns to Register view with old model as parameter
-                return View(newUser);
+                return View(NewUserModel);
             }
 
             
             //validating User data
-            var validate = await _userRepository.RegisterUserAsync(newUser);
+            var UserRegisterResult = await _userRepository.RegisterUserAsync(NewUserModel);
 
 
 
-            if (validate.Succeeded)
+            if (UserRegisterResult.Succeeded)
             {
                 //validation succeeded - redirect to Login action
                 return RedirectToAction("Login", "Account");
@@ -121,7 +120,7 @@ namespace Calendar_Web_App.Controllers
             else
             {
                 //Validation is incorrect - add all errors
-                foreach (var error in validate.Errors)
+                foreach (var error in UserRegisterResult.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
                     Console.WriteLine($"Error: {error.Description}");
@@ -129,7 +128,7 @@ namespace Calendar_Web_App.Controllers
 
 
                 //return to register view with old model as parameter
-                return View(newUser);
+                return View(NewUserModel);
             }
 
 
@@ -139,7 +138,7 @@ namespace Calendar_Web_App.Controllers
 
         [Authorize]
         [HttpPost]
-		public async Task<IActionResult> UpdatePassword(ChangePasswordViewModel PasswordModel)
+		public async Task<IActionResult> UpdatePassword(ChangePasswordViewModel NewPasswordModel)
         {
 
             //Checking whether model is valid
@@ -154,9 +153,9 @@ namespace Calendar_Web_App.Controllers
 
 
             //validating user data
-            var validate = await _userRepository.ChangePasswordAsync(HttpContext.User, PasswordModel);
+            var UserChangePasswordResult = await _userRepository.ChangePasswordAsync(HttpContext.User, NewPasswordModel);
 
-            if (validate.Succeeded)
+            if (UserChangePasswordResult.Succeeded)
             {
                 return Ok();
             }
@@ -165,7 +164,7 @@ namespace Calendar_Web_App.Controllers
 
 
 				//Validation failed, return all errors
-				foreach (var error in validate.Errors)
+				foreach (var error in UserChangePasswordResult.Errors)
 				{
                     if (error.Description == "Incorrect password.")
                     {
@@ -190,7 +189,7 @@ namespace Calendar_Web_App.Controllers
 
         [HttpPost]
         [Authorize]
-		public async Task<IActionResult> UpdateUsername(ChangeUsernameViewModel newUsername)
+		public async Task<IActionResult> UpdateUsername(ChangeUsernameViewModel newUsernameModel)
         {
             //return BadRequest if ModelState is invalid
             if (!ModelState.IsValid)
@@ -203,18 +202,18 @@ namespace Calendar_Web_App.Controllers
             }
 
             //Validate changing username
-            var validate = await _userRepository.ChangeUsernameAsync(HttpContext.User, newUsername);
+            var UserChangeUsernameResult = await _userRepository.ChangeUsernameAsync(HttpContext.User, newUsernameModel);
 
 
             //Check validation result
-            if (validate.Succeeded)
+            if (UserChangeUsernameResult.Succeeded)
             {
                 return Ok();
             }
             else
             {
                 //Validation failed, return all errors
-                foreach (var error in validate.Errors)
+                foreach (var error in UserChangeUsernameResult.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
                     Console.WriteLine($"Error: {error.Description}");
@@ -232,7 +231,7 @@ namespace Calendar_Web_App.Controllers
         [HttpPost]
         [Authorize]
 
-		public async Task<IActionResult> UpdateEmail(ChangeEmailViewModel newEmail)
+		public async Task<IActionResult> UpdateEmail(ChangeEmailViewModel newEmailModel)
         {
 
 	        //return BadRequest if ModelState is invalid
@@ -246,18 +245,18 @@ namespace Calendar_Web_App.Controllers
 			}
 
 			//Validate changing Email
-			var validate = await _userRepository.ChangeEmailAsync(HttpContext.User, newEmail);
+			var UserChangeEmailResult = await _userRepository.ChangeEmailAsync(HttpContext.User, newEmailModel);
 
 
 			//Check validation result
-			if (validate.Succeeded)
+			if (UserChangeEmailResult.Succeeded)
             {
                 return Ok();
             }
             else
             {
 	            //Validation failed, return all errors
-				foreach (var error in validate.Errors)
+				foreach (var error in UserChangeEmailResult.Errors)
 	            {
 		            ModelState.AddModelError(string.Empty, error.Description);
 		            Console.WriteLine($"Error: {error.Description}");
@@ -276,7 +275,7 @@ namespace Calendar_Web_App.Controllers
         [HttpPost]
         [Authorize]
 
-		public async Task<IActionResult> UpdateName(ChangeNameViewModel newName)
+		public async Task<IActionResult> UpdateName(ChangeNameViewModel newNameModel)
         {
 
 	        //return BadRequest if ModelState is invalid
@@ -291,18 +290,18 @@ namespace Calendar_Web_App.Controllers
 			}
 
             //Validate changing Name
-			var validate = await _userRepository.ChangeNameAsync(HttpContext.User, newName);
+			var UserChangeNameResult = await _userRepository.ChangeNameAsync(HttpContext.User, newNameModel);
 
 
 			//Check validation result
-			if (validate.Succeeded)
+			if (UserChangeNameResult.Succeeded)
             {
                 return Ok();
             }
             else
             {
 	            //Validation failed, return all errors
-				foreach (var error in validate.Errors)
+				foreach (var error in UserChangeNameResult.Errors)
 	            {
 		            ModelState.AddModelError(string.Empty, error.Description);
 		            Console.WriteLine($"Error: {error.Description}");
@@ -324,13 +323,13 @@ namespace Calendar_Web_App.Controllers
 		public async Task<IActionResult> SettingsAsync()
         {
             //Get the current User
-	        var user = await _userRepository.GetCurrentUserAsync(HttpContext.User);
+	        var CurrentUser = await _userRepository.GetCurrentUserAsync(HttpContext.User);
 
 
             //store user information in ViewBag
-            ViewBag.Username = user.UserName;
-            ViewBag.Email = user.Email;
-            ViewBag.Name = user.Name;
+            ViewBag.Username = CurrentUser.UserName;
+            ViewBag.Email = CurrentUser.Email;
+            ViewBag.Name = CurrentUser.Name;
             ViewBag.Password = "*******";
 
 
@@ -342,21 +341,21 @@ namespace Calendar_Web_App.Controllers
         public async Task<IActionResult> CloseAccount()
         {
             //Retrieve current user
-            var user = await _userRepository.GetCurrentUserAsync(HttpContext.User);
+            var CurrentUser = await _userRepository.GetCurrentUserAsync(HttpContext.User);
 
 
             //logout user
-            if (user != null)
+            if (CurrentUser != null)
             {
                 _userRepository.LogoutUserAsync();
             }
 
             //close account
-			var validation = await _userRepository.CloseAccountAsync(user);
-            if (validation.Succeeded) { 
+			var UserCloseAccountResult = await _userRepository.CloseAccountAsync(CurrentUser);
+            if (UserCloseAccountResult.Succeeded) { 
                 return Ok();
             }
-			return BadRequest(validation.Errors);
+			return BadRequest(UserCloseAccountResult.Errors);
 		}
     }
 }
