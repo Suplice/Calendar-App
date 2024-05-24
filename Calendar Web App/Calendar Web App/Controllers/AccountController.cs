@@ -11,6 +11,7 @@ namespace Calendar_Web_App.Controllers
     public class AccountController : Controller
     {
         private readonly IUserRepository _userRepository;
+ 
 
         public AccountController(IUserRepository userRepository)
         {
@@ -23,7 +24,6 @@ namespace Calendar_Web_App.Controllers
         [HttpGet]
         public IActionResult Login()
         {
-            // Action returns login view
             return View();
         }
 
@@ -33,24 +33,28 @@ namespace Calendar_Web_App.Controllers
         [HttpPost]
 		public async Task<IActionResult> Login(LoginViewModel user)
         {
-            //Checking whether ModelState is valid
-            if (!ModelState.IsValid)
+	        
+			if (!ModelState.IsValid)
             {
                 //Model invalid - action returns login view with old model as parameter
                 return View(user);
             }
 
 
+         
             //validating user data
             var validate = await _userRepository.LoginUserAsync(user);
 
 
             //data is correct, log in and proceed to Calendar view
             if (validate.Succeeded)
-                return RedirectToAction("Calendar", "Calendar");
+            {
+	            return RedirectToAction("Calendar", "Calendar");
+			}
 
-            //Account is on lockout
-            if(validate.IsLockedOut)
+
+			//Account is on lockout
+			if (validate.IsLockedOut)
             {
                 ModelState.AddModelError(string.Empty, "Account is on Lockout");
             }
@@ -60,8 +64,8 @@ namespace Calendar_Web_App.Controllers
             }
 
 
-            //validation is incorrect, return login view with odl model
-            return View(user);
+			//validation is incorrect, return login view with odl model
+			return View(user);
         }
 
 

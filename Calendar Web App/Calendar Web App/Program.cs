@@ -1,5 +1,6 @@
 using Calendar_Web_App.Data;
 using Calendar_Web_App.Interfaces;
+using Calendar_Web_App.Middleware;
 using Calendar_Web_App.Models;
 using Calendar_Web_App.Repositories;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -27,6 +28,7 @@ builder.Services.AddScoped<EventRepository>();
 builder.Services.AddScoped<UserRepository>();
 
 
+
 builder.Services.Configure<StaticFileOptions>(options =>
 {
     options.DefaultContentType = "application/javascript";
@@ -35,7 +37,6 @@ builder.Services.Configure<StaticFileOptions>(options =>
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-    options.UseLazyLoadingProxies();
     
 });
 
@@ -63,6 +64,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
                 options.LoginPath = "/Account/Login"; 
             });
 
+
 builder.Services.AddControllersWithViews();
 
 
@@ -82,6 +84,8 @@ app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthentication();
 
+
+app.UseMiddleware<ControllerMiddleware>();
 
 app.UseAntiforgery();
 app.UseAuthorization();

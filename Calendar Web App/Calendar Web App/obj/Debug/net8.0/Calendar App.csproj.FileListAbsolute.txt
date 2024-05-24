@@ -421,3 +421,14 @@ C:\Users\skire\Desktop\git\Calendar App\Calendar Web App\Calendar Web App\obj\De
 C:\Users\skire\Desktop\git\Calendar App\Calendar Web App\Calendar Web App\obj\Debug\net8.0\Calendar App.pdb
 C:\Users\skire\Desktop\git\Calendar App\Calendar Web App\Calendar Web App\obj\Debug\net8.0\Calendar App.genruntimeconfig.cache
 C:\Users\skire\Desktop\git\Calendar App\Calendar Web App\Calendar Web App\obj\Debug\net8.0\ref\Calendar App.dll
+C:\Users\skire\Desktop\git\Calendar App\Calendar Web App\Calendar Web App\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\skire\Desktop\git\Calendar App\Calendar Web App\Calendar Web App\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\skire\Desktop\git\Calendar App\Calendar Web App\Calendar Web App\bin\Debug\net8.0\Serilog.dll
+C:\Users\skire\Desktop\git\Calendar App\Calendar Web App\Calendar Web App\bin\Debug\net8.0\Serilog.AspNetCore.dll
+C:\Users\skire\Desktop\git\Calendar App\Calendar Web App\Calendar Web App\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+C:\Users\skire\Desktop\git\Calendar App\Calendar Web App\Calendar Web App\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\Users\skire\Desktop\git\Calendar App\Calendar Web App\Calendar Web App\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+C:\Users\skire\Desktop\git\Calendar App\Calendar Web App\Calendar Web App\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+C:\Users\skire\Desktop\git\Calendar App\Calendar Web App\Calendar Web App\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\Users\skire\Desktop\git\Calendar App\Calendar Web App\Calendar Web App\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+C:\Users\skire\Desktop\git\Calendar App\Calendar Web App\Calendar Web App\bin\Debug\net8.0\Serilog.Sinks.File.dll
