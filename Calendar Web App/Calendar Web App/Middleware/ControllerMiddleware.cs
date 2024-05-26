@@ -6,7 +6,7 @@
 		private readonly RequestDelegate _next;
 		private readonly ILogger<ControllerMiddleware> _logger;
 
-		public AccountControllerMiddleware(RequestDelegate next, ILogger<ControllerMiddleware> logger)
+		public ControllerMiddleware(RequestDelegate next, ILogger<ControllerMiddleware> logger)
 		{
 			_next = next;
 			_logger = logger;

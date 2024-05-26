@@ -8,10 +8,10 @@ namespace Calendar_Web_App.Repositories
 {
     public class EventRepository : IEventRepository
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IApplicationDbContext _context;
         private readonly ILogger<EventRepository> _logger;
 
-        public EventRepository(ApplicationDbContext context, ILogger<EventRepository> logger)
+        public EventRepository(IApplicationDbContext context, ILogger<EventRepository> logger)
         {
             _context = context;
             _logger = logger;
@@ -36,6 +36,11 @@ namespace Calendar_Web_App.Repositories
                     return events;
                 }
             }
+            catch(InvalidOperationException ex)
+            {
+	            _logger.LogError(ex, "An InvalidOperationException occurred while trying to retrieve events for user {UserId}",UserId);
+				throw;
+			}
             catch (Exception ex)
             {
                 _logger.LogError(ex, "an unexpected error occured while trying to retrieve user {userId} events", UserId);

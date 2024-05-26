@@ -22,10 +22,11 @@ Log.Logger = new LoggerConfiguration()
 
 builder.Host.UseSerilog();
 
+
+builder.Services.AddScoped<IApplicationDbContext>(provider => provider.GetService<ApplicationDbContext>());
 builder.Services.AddScoped<IEventRepository, EventRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
-builder.Services.AddScoped<EventRepository>();
-builder.Services.AddScoped<UserRepository>();
+
 
 
 

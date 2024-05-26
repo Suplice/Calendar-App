@@ -23,8 +23,8 @@ namespace Calendar_Web_App.Controllers
                 return RedirectToAction("Calendar", "Calendar");
             }
 
-            return RedirectToAction("Login", "Account");
-        }
+			return View();
+		}
 
         [HttpGet]
         [AllowAnonymous]

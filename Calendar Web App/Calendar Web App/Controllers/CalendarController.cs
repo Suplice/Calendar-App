@@ -44,7 +44,7 @@ namespace Calendar_Web_App.Controllers
             return Json(events);
         }
 
-        [ValidateAntiForgeryToken]
+
         [HttpPost]
         [Authorize]
 		public IActionResult AddEvent(AddEventViewModel newEventModel)
@@ -69,7 +69,7 @@ namespace Calendar_Web_App.Controllers
 		
 		}
 
-        [ValidateAntiForgeryToken]
+        
         [HttpPost]
 		[Authorize]
         public IActionResult RemoveEvent(string eventId)
@@ -79,7 +79,6 @@ namespace Calendar_Web_App.Controllers
         }
 
 
-        [ValidateAntiForgeryToken]
         [HttpPost]
         [Authorize]
         public IActionResult UpdateEvent(UpdateEventViewModel updatedEventModel)
