@@ -2,6 +2,7 @@
 using Calendar_Web_App.Interfaces;
 using Calendar_Web_App.Models;
 using Calendar_Web_App.ViewModels.EventViewModels;
+using System.Linq;
 using System.Security.Claims;
 
 namespace Calendar_Web_App.Repositories
@@ -54,7 +55,7 @@ namespace Calendar_Web_App.Repositories
             {
                 _logger.LogInformation("Executing GetEventById operation in Event Repository");
 
-                var Event = _context.Events.Find(eventId);
+                var Event = _context.Events.FirstOrDefault(e => e.Id == eventId);
 
                 if(Event == null)
                 {
@@ -66,6 +67,11 @@ namespace Calendar_Web_App.Repositories
 				}
                 return Event;
 			}
+            catch(InvalidOperationException ex)
+            {
+                _logger.LogError(ex, "An InvalidOperationException occurred while trying to retrieve event using {eventId}", eventId);
+                throw;
+            }
             catch (Exception ex) 
             {
                 _logger.LogError(ex, "an error occured while trying to retrieve event {eventId} from database", eventId);
@@ -98,11 +104,11 @@ namespace Calendar_Web_App.Repositories
                     _context.Events.Add(EventToAdd);
                     _context.SaveChanges();
 
-                    _logger.LogInformation("New Event {eventId} was successfully added", EventToAdd.Id);
+                    _logger.LogInformation("New Event was successfully added");
                 }
                 else
                 {
-                    _logger.LogWarning("User with Id {UserId} does not exist", newEventModel.UserId);
+                    _logger.LogWarning("User does not exist");
                 }
             }
             catch (Exception ex)
@@ -155,7 +161,7 @@ namespace Calendar_Web_App.Repositories
 			{
                 _logger.LogInformation("Executing RemoveEvent method in EventRepository");
 				// Find event to remove
-				var eventToDelete = _context.Events.Find(eventId);
+				var eventToDelete = _context.Events.FirstOrDefault(eventId);
 
 				// Check whether event exists
 				if (eventToDelete != null)

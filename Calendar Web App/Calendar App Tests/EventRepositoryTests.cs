@@ -2,6 +2,7 @@ using Calendar_Web_App.Data;
 using Calendar_Web_App.Interfaces;
 using Calendar_Web_App.Models;
 using Calendar_Web_App.Repositories;
+using Calendar_Web_App.ViewModels.EventViewModels;
 using Castle.Core.Logging;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -76,7 +77,7 @@ namespace Calendar_App_Tests
 
 
 		[Fact]
-		public void EventRepository_GetAllEvents_ThrowsException()
+		public void EventRepository_GetAllEvents_ThrowsInvalidOperationException()
 		{
 			//Arrange 
 
@@ -94,6 +95,7 @@ namespace Calendar_App_Tests
 
 			var exception = Assert.Throws<InvalidOperationException>(() => repository.GetAllEvents(userId));
 
+			//Assert
 			mockLogger.Verify(
 				x => x.Log(
 					LogLevel.Error,
@@ -105,10 +107,184 @@ namespace Calendar_App_Tests
 			Assert.Equal(exceptionMessage, exception.Message);
 		}
 
-
-		public void EventRepository_GetEventById_ReturnsEvent()
+		[Theory]
+		[InlineData("event1", true)]
+		[InlineData("event2", true)] 
+		[InlineData("event3", false)] 
+		public void EventRepository_GetEventById_ReturnsEventOrNullWhenDoesNotExist(string eventId, bool EventExists)
 		{
+			//Arrange
+			var mockLogger = new Mock<ILogger<EventRepository>>();
+			var mockContext = new Mock<IApplicationDbContext>();
 
+			var events = new List<Event>
+			{
+				new Event { Id = "event1", UserId = "userId1", title = "Event1Title" },
+				new Event { Id = "event2", UserId = "userId2", title = "Event2Title" }
+			}.AsQueryable();
+
+			var mockSet = new Mock<DbSet<Event>>();
+
+			mockSet.As<IQueryable<Event>>().Setup(m => m.Provider).Returns(events.Provider);
+			mockSet.As<IQueryable<Event>>().Setup(m => m.Expression).Returns(events.Expression);
+			mockSet.As<IQueryable<Event>>().Setup(m => m.ElementType).Returns(events.ElementType);
+			mockSet.As<IQueryable<Event>>().Setup(m => m.GetEnumerator()).Returns(events.GetEnumerator());
+
+			mockSet.Setup(m => m.Find(It.IsAny<string>()))
+				.Returns((string EventId) =>
+				{
+					return events.FirstOrDefault(e => e.Id == EventId);
+				});
+
+			mockContext.Setup(c => c.Events).Returns(mockSet.Object);
+
+			var eventRepository = new EventRepository(mockContext.Object, mockLogger.Object);
+
+			// Act
+			var result = eventRepository.GetEventById(eventId);
+
+			//Assert
+			if (EventExists)
+			{
+				Assert.NotNull(result);
+				mockLogger.Verify(
+					x => x.Log(
+						LogLevel.Information,
+						It.IsAny<EventId>(),
+						It.Is<It.IsAnyType>((v, t) => v.ToString().Contains($"event {eventId} was successfully found")),
+						null,
+						It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once);
+			}
+			else
+			{
+				Assert.Null(result);
+				mockLogger.Verify(
+					x => x.Log(
+						LogLevel.Warning,
+						It.IsAny<EventId>(),
+						It.Is<It.IsAnyType>((v, t) => v.ToString().Contains($"Event {eventId} does not exist")),
+						null,
+						It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once);
+			}
+
+		}
+
+		[Fact]
+		public void EventRepository_GetEventById_ThrowsInvalidOperationException()
+		{
+			//Arrange
+			var eventId = "user1";
+			var exceptionMessage = "Exception Message";
+			var mockLogger = new Mock<ILogger<EventRepository>>();
+			var mockContext = new Mock<IApplicationDbContext>();
+			var repository = new EventRepository(mockContext.Object, mockLogger.Object);
+
+
+			mockContext.Setup(e => e.Events)
+				.Throws(new InvalidOperationException(exceptionMessage));
+
+			//Act
+			var exception = Assert.Throws<InvalidOperationException>(() => repository.GetEventById(eventId));
+
+			//Assert
+			mockLogger.Verify(
+				x => x.Log(
+					LogLevel.Error,
+					It.IsAny<EventId>(),
+					It.Is<It.IsAnyType>((v, t) => v.ToString().Contains($"An InvalidOperationException occurred while trying to retrieve event using {eventId}")),
+					It.IsAny<Exception>(),
+					It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once);
+		}
+
+		[Theory]
+		[InlineData("user1", true)]
+		[InlineData(null, false)]
+		public void EventRepository_AddEvent_AddsEventToDatabaseIfUserIdNotNullElseDoesNothing(string userId, bool AddedEvent) 
+		{
+			//Arrange
+			var mockLogger = new Mock<ILogger<EventRepository>>();
+			var mockContext = new Mock<IApplicationDbContext>();
+			var repository = new EventRepository(mockContext.Object, mockLogger.Object);
+			var mockSet = new Mock<DbSet<Event>>();
+
+			var EventToAddModel = new AddEventViewModel 
+			{ 
+			UserId = userId,
+			Description = "testDescription",
+			Title = "Test Title",
+			StartDate = DateTime.Now,
+			EndDate = DateTime.Now.AddHours(1),
+			};
+
+			mockContext.Setup(c => c.Events).Returns(mockSet.Object);
+
+			mockSet.Setup(m => m.Add(It.IsAny<Event>())).Verifiable();
+
+
+			//Act
+			repository.AddEvent(EventToAddModel);
+
+			//Assert
+			if (AddedEvent)
+			{
+				mockContext.Verify(m => m.SaveChanges(), Times.Once);
+				mockContext.Verify(m => m.Events.Add(It.IsAny<Event>()), Times.Once);
+				mockLogger.Verify(
+					x => x.Log(
+						LogLevel.Information,
+						It.IsAny<EventId>(),
+						It.Is<It.IsAnyType>((v, t) => v.ToString().Contains($"New Event was successfully added")),
+						null,
+						It.IsAny<Func<It.IsAnyType, Exception, string>>()),
+					Times.Once);
+						
+			}
+			else
+			{
+				mockContext.Verify(m => m.SaveChanges(), Times.Never);
+				mockContext.Verify(m => m.Events.Add(It.IsAny<Event>()), Times.Never);
+				mockLogger.Verify(
+					x => x.Log(
+						LogLevel.Warning,
+						It.IsAny<EventId>(),
+						It.Is<It.IsAnyType>((v, t) => v.ToString().Contains($"User does not exist")),
+						null,
+						It.IsAny<Func<It.IsAnyType, Exception, string>>()),
+					Times.Once);
+			}
+
+		}
+
+		[Fact]
+		public void EventRepository_AddEvent_ThrowsInvalidOperationException()
+		{
+			//Arrange
+			var mockLogger = new Mock<ILogger<EventRepository>>();
+			var mockContext = new Mock<IApplicationDbContext>();
+			var repository = new EventRepository(mockContext.Object, mockLogger.Object);
+			var exceptionMessage = "exceptionMessage";
+
+			mockContext.Setup(e => e.Events).Throws(new InvalidOperationException(exceptionMessage));
+
+			var EventToAddModel = new AddEventViewModel
+			{
+				UserId = "user1",
+				Description = "testDescription",
+				Title = "Test Title",
+				StartDate = DateTime.Now,
+				EndDate = DateTime.Now.AddHours(1),
+			};
+
+			//Act
+			Assert.Throws<InvalidOperationException>(() => repository.AddEvent(EventToAddModel));
+
+			mockLogger.Verify(
+				x => x.Log(
+					LogLevel.Error,
+					It.IsAny<EventId>(),
+					It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("An unexpected error occured while trying to add event")),
+					It.IsAny<Exception>(),
+					It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once);
 		}
 	}
 }
