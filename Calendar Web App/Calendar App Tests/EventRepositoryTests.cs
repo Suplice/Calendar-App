@@ -135,7 +135,7 @@ namespace Calendar_App_Tests
 				{
 					return events.FirstOrDefault(e => e.Id == EventId);
 				});
-
+			
 			mockContext.Setup(c => c.Events).Returns(mockSet.Object);
 
 			var eventRepository = new EventRepository(mockContext.Object, mockLogger.Object);
@@ -187,6 +187,7 @@ namespace Calendar_App_Tests
 			var exception = Assert.Throws<InvalidOperationException>(() => repository.GetEventById(eventId));
 
 			//Assert
+			Assert.Equal(exception.Message, exceptionMessage);
 			mockLogger.Verify(
 				x => x.Log(
 					LogLevel.Error,
@@ -276,15 +277,205 @@ namespace Calendar_App_Tests
 			};
 
 			//Act
-			Assert.Throws<InvalidOperationException>(() => repository.AddEvent(EventToAddModel));
+			var exception = Assert.Throws<InvalidOperationException>(() => repository.AddEvent(EventToAddModel));
 
+			//Assert
+			Assert.Equal(exception.Message, exceptionMessage);
 			mockLogger.Verify(
 				x => x.Log(
 					LogLevel.Error,
 					It.IsAny<EventId>(),
-					It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("An unexpected error occured while trying to add event")),
+					It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("An InvalidOperationException occurred while trying to add event")),
 					It.IsAny<Exception>(),
 					It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once);
 		}
+
+		[Theory]
+		[InlineData("event1", true)]
+		[InlineData("event2", false)]
+		public void EventRepository_UpdateEvent_UpdatesEventIfFoundElseDoesNothing(string eventId, bool UpdatedEventSuccessfully)
+		{
+			//Arrange
+			var mockLogger = new Mock<ILogger<EventRepository>>();
+			var mockContext = new Mock<IApplicationDbContext>();
+			var repository = new EventRepository(mockContext.Object, mockLogger.Object);
+
+			var events = new List<Event>
+			{
+				new Event {Id = "event1", UserId = "user1", title = "testevent1", start = DateTime.Now, end = DateTime.Now.AddHours(1)}
+			}.AsQueryable();
+
+			var mockSet = new Mock<DbSet<Event>>();
+
+			var eventToUpdate = new UpdateEventViewModel
+			{
+				EventId = eventId,
+			};
+
+			mockSet.As<IQueryable<Event>>().Setup(m => m.Provider).Returns(events.Provider);
+			mockSet.As<IQueryable<Event>>().Setup(m => m.Expression).Returns(events.Expression);
+			mockSet.As<IQueryable<Event>>().Setup(m => m.ElementType).Returns(events.ElementType);
+			mockSet.As<IQueryable<Event>>().Setup(m => m.GetEnumerator()).Returns(events.GetEnumerator());
+
+			mockSet.Setup(m => m.Find(It.IsAny<string>()))
+				.Returns((string EventId) =>
+				{
+					return events.FirstOrDefault(e => e.Id == EventId);
+				}); 
+
+			mockContext.Setup(c => c.Events).Returns(mockSet.Object);
+
+			//Act
+			repository.UpdateEvent(eventToUpdate);
+
+			//Assert
+			if (UpdatedEventSuccessfully)
+			{
+				mockContext.Verify(m => m.SaveChanges(), Times.Once);
+				mockLogger.Verify(
+					x => x.Log(
+						LogLevel.Information,
+						It.IsAny<EventId>(),
+						It.Is<It.IsAnyType>((v, t) => v.ToString().Contains($"Event {eventId} was successfully updated")),
+						null,
+						It.IsAny<Func<It.IsAnyType, Exception, string>>()),
+						Times.Once);
+
+			}
+			else
+			{
+				mockContext.Verify(m => m.SaveChanges(), Times.Never);
+				mockContext.Verify(m => m.Events.Update(It.IsAny<Event>()), Times.Never);
+				mockLogger.Verify(
+					x => x.Log(
+						LogLevel.Warning,
+						It.IsAny<EventId>(),
+						It.Is<It.IsAnyType>((v, t) => v.ToString().Contains($"Event with Id {eventId} does not exist")),
+						null,
+						It.IsAny<Func<It.IsAnyType, Exception, string>>()),
+					Times.Once);
+			}
+		}
+
+		[Fact]
+		public void EventRepository_UpdateEvent_ThrowsInvalidOperationException()
+		{
+			//Arrange
+			var mockLogger = new Mock<ILogger<EventRepository>>();
+			var mockContext = new Mock<IApplicationDbContext>();
+			var repository = new EventRepository(mockContext.Object, mockLogger.Object);
+			var exceptionMessage = "exceptionMessage";
+
+			mockContext.Setup(e => e.Events).Throws(new InvalidOperationException(exceptionMessage));
+
+			var eventToUpdate = new UpdateEventViewModel
+			{
+				EventId = "event1"
+			};
+
+			//Act
+			var exception = Assert.Throws<InvalidOperationException>(() => repository.UpdateEvent(eventToUpdate));
+
+			//Assert
+			Assert.Equal(exception.Message, exceptionMessage);
+			mockLogger.Verify(
+				x => x.Log(
+					LogLevel.Error,
+					It.IsAny<EventId>(),
+					It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("An InvalidOperationException occurred while trying to update event")),
+					It.IsAny<Exception>(),
+					It.IsAny<Func<It.IsAnyType, Exception, string>>()),
+				Times.Once);
+		}
+
+		[Theory]
+		[InlineData("event1", true)]
+		[InlineData("event2", false)]
+		public void EventRepository_RemoveEvent_RemovesEventIfExistsElseDoesNothing(string eventId, bool RemovedEventSuccessfully)
+		{
+			//Arrange
+			var mockLogger = new Mock<ILogger<EventRepository>>();
+			var mockContext = new Mock<IApplicationDbContext>();
+			var repository = new EventRepository(mockContext.Object, mockLogger.Object);
+
+			var events = new List<Event>
+			{
+				new Event {Id = "event1", UserId = "user1", title = "testevent1", start = DateTime.Now, end = DateTime.Now.AddHours(1)}
+			}.AsQueryable();
+
+			var mockSet = new Mock<DbSet<Event>>();
+
+
+			mockSet.As<IQueryable<Event>>().Setup(m => m.Provider).Returns(events.Provider);
+			mockSet.As<IQueryable<Event>>().Setup(m => m.Expression).Returns(events.Expression);
+			mockSet.As<IQueryable<Event>>().Setup(m => m.ElementType).Returns(events.ElementType);
+			mockSet.As<IQueryable<Event>>().Setup(m => m.GetEnumerator()).Returns(events.GetEnumerator());
+
+			mockSet.Setup(m => m.Find(It.IsAny<string>()))
+				.Returns((string EventId) =>
+				{
+					return events.FirstOrDefault(e => e.Id == EventId);
+				});
+
+			mockContext.Setup(c => c.Events).Returns(mockSet.Object);
+
+			//Act
+			repository.RemoveEvent(eventId);
+
+			//Assert
+			if (RemovedEventSuccessfully)
+			{
+				mockContext.Verify(m => m.SaveChanges(), Times.Once);
+				mockContext.Verify(m => m.Events.Remove(It.IsAny<Event>()), Times.Once);
+				mockLogger.Verify(
+					x => x.Log(
+						LogLevel.Information,
+						It.IsAny<EventId>(),
+						It.Is<It.IsAnyType>((v, t) => v.ToString().Contains($"Event with Id {eventId} was removed successfully")),
+						null,
+						It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once);
+			}
+			else
+			{
+				mockContext.Verify(m => m.SaveChanges(), Times.Never);
+				mockContext.Verify(m => m.Events.Remove(It.IsAny<Event>()), Times.Never);
+				mockLogger.Verify(
+					x => x.Log(
+						LogLevel.Warning,
+						It.IsAny<EventId>(),
+						It.Is<It.IsAnyType>((v, t) => v.ToString().Contains($"Event with Id {eventId} not found")),
+						null,
+						It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once);
+			}
+		}
+
+		[Fact]
+		public void EventRepository_RemoveEvent_ThrowInvalidOperationException()
+		{
+			//Arrange
+			var mockLogger = new Mock<ILogger<EventRepository>>();
+			var mockContext = new Mock<IApplicationDbContext>();
+			var repository = new EventRepository(mockContext.Object, mockLogger.Object);
+			var exceptionMessage = "exceptionMessage";
+
+			mockContext.Setup(c => c.Events).Throws(new InvalidOperationException(exceptionMessage));
+
+			var eventId = "event1";
+
+			//Act
+			var exception = Assert.Throws<InvalidOperationException>(() => repository.RemoveEvent(eventId));
+
+			//Assert
+			Assert.Equal(exception.Message, exceptionMessage);
+			mockLogger.Verify(
+				x => x.Log(
+					LogLevel.Error,
+					It.IsAny<EventId>(),
+					It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("An InvalidOperationException occurred while trying to update event")),
+					It.IsAny<Exception>(),
+					It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once);
+
+		}
+
 	}
 }

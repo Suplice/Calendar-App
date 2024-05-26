@@ -111,6 +111,11 @@ namespace Calendar_Web_App.Repositories
                     _logger.LogWarning("User does not exist");
                 }
             }
+            catch (InvalidOperationException ex)
+            {
+	            _logger.LogError(ex, "An InvalidOperationException occurred while trying to add event");
+	            throw;
+			}
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An unexpected error occured while trying to add event");
@@ -127,12 +132,7 @@ namespace Calendar_Web_App.Repositories
                 //Find event to update
                 Event UpdatedEvent = _context.Events.FirstOrDefault(e => e.Id == UpdateEventModel.EventId);
 
-                //Check whether event is connected to actual User
-                if (UpdatedEvent.UserId != UpdateEventModel.UserId)
-                {
-                    _logger.LogWarning("The event with Id {eventId} does not belong to User {toUpdate.UserId}", UpdateEventModel.EventId, UpdateEventModel.UserId);
-                }
-                else if(UpdatedEvent == null)
+                if(UpdatedEvent == null)
                 {
                     _logger.LogWarning("Event with Id {eventId} does not exist", UpdateEventModel.EventId);
                     return;
@@ -147,6 +147,11 @@ namespace Calendar_Web_App.Repositories
                     _logger.LogInformation("Event {eventId} was successfully updated", UpdateEventModel.EventId);
                 }
             }
+            catch(InvalidOperationException ex)
+            {
+	            _logger.LogError(ex, "An InvalidOperationException occurred while trying to update event");
+	            throw;
+			}
             catch(Exception ex)
             {
                 _logger.LogError(ex, "an unexpected error occured while trying to update Event {eventId}", UpdateEventModel.EventId);
@@ -161,7 +166,7 @@ namespace Calendar_Web_App.Repositories
 			{
                 _logger.LogInformation("Executing RemoveEvent method in EventRepository");
 				// Find event to remove
-				var eventToDelete = _context.Events.FirstOrDefault(eventId);
+				var eventToDelete = _context.Events.FirstOrDefault(e => e.Id == eventId);
 
 				// Check whether event exists
 				if (eventToDelete != null)
@@ -176,6 +181,11 @@ namespace Calendar_Web_App.Repositories
                     _logger.LogWarning("Event with Id {eventId} not found", eventId);
                 }
 			}
+            catch (InvalidOperationException ex)
+            {
+                _logger.LogError("An InvalidOperationException occurred while trying to update event");
+                throw;
+            }
 			catch (Exception ex)
 			{
 
