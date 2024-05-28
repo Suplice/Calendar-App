@@ -123,7 +123,6 @@ namespace Calendar_Web_App.Controllers
                 foreach (var error in UserRegisterResult.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
-                    Console.WriteLine($"Error: {error.Description}");
                 }
 
 
@@ -172,7 +171,6 @@ namespace Calendar_Web_App.Controllers
                     }
                     else {
                         ModelState.AddModelError(string.Empty, error.Description);
-                        Console.WriteLine($"Error: {error.Description}");
                     }
 				}
 

@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{B0BFA08A-850E-4157-BFF1-0393406C2BB8}|Calendar App Tests\\Calendar App Tests.csproj|solutionrelative:calendar app tests\\userrepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\repositories\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,8 +23,8 @@
       "RelativeMoniker": "D:0:0:{B0BFA08A-850E-4157-BFF1-0393406C2BB8}|Calendar App Tests\\Calendar App Tests.csproj|solutionrelative:calendar app tests\\eventrepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|solutionrelative:calendar web app\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{240A10EE-4D97-4B4F-9460-276F4CF1FF95}|Calendar Web App\\Calendar App.csproj|c:\\users\\skire\\desktop\\git\\calendar app\\calendar web app\\calendar web app\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -86,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -113,7 +113,7 @@
               "RelativeDocumentMoniker": "Calendar App Tests\\UserRepositoryTests.cs",
               "ToolTip": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar App Tests\\UserRepositoryTests.cs",
               "RelativeToolTip": "Calendar App Tests\\UserRepositoryTests.cs",
-              "ViewState": "AQIAAIAAAAAAAAAAAAAIwJ0AAABpAAAA",
+              "ViewState": "AQIAAPoAAAAAAAAAAAAAABEBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T09:26:44.466Z",
               "EditorCaption": ""
@@ -126,7 +126,7 @@
               "RelativeDocumentMoniker": "Calendar App Tests\\EventRepositoryTests.cs",
               "ToolTip": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar App Tests\\EventRepositoryTests.cs",
               "RelativeToolTip": "Calendar App Tests\\EventRepositoryTests.cs",
-              "ViewState": "AQIAAHEAAAAAAAAAAAAwwBIAAAA8AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-25T18:12:13.715Z",
               "EditorCaption": ""
@@ -193,19 +193,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Calendar Web App\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\Controllers\\AccountController.cs",
               "RelativeToolTip": "Calendar Web App\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwAoAAAAiAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAKwAAABSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T21:28:22.471Z"
+              "WhenOpened": "2024-05-24T21:28:22.471Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Calendar Web App\\Data\\ApplicationDbContext.cs",
@@ -213,8 +214,7 @@
               "RelativeToolTip": "Calendar Web App\\Data\\ApplicationDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAQwA4AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T19:47:39.94Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-25T19:47:39.94Z"
             },
             {
               "$type": "Document",
@@ -335,13 +335,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "Calendar Web App\\Repositories\\UserRepository.cs",
               "ToolTip": "C:\\Users\\skire\\Desktop\\git\\Calendar App\\Calendar Web App\\Calendar Web App\\Repositories\\UserRepository.cs",
               "RelativeToolTip": "Calendar Web App\\Repositories\\UserRepository.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAowEoAAABfAAAA",
+              "ViewState": "AQIAADgAAAAAAAAAAAAkwHkAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-28T15:13:57.202Z",
               "EditorCaption": ""

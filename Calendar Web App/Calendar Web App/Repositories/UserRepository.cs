@@ -60,7 +60,7 @@ namespace Calendar_Web_App.Repositories
 
                 var PasswordSignInResult = await _signInManager.PasswordSignInAsync(LoginModel.Login, LoginModel.Password, true, false);
 
-                if (PasswordSignInResult.Succeeded)
+                if (PasswordSignInResult != null && PasswordSignInResult.Succeeded)
                 {
                     _logger.LogInformation("Successfully logged in");
                 }
@@ -86,6 +86,12 @@ namespace Calendar_Web_App.Repositories
 
         public async Task<IdentityResult> RegisterUserAsync(RegisterViewModel RegisterModel)
         {
+            if(RegisterModel == null)
+            {
+                _logger.LogWarning("RegisterModel is null");
+                return IdentityResult.Failed(new IdentityError { Description = "Register model cannot be null" });
+            }
+
             try
             {
                 _logger.LogInformation("Executing RegisterUserAsync operation in UserRepository");
@@ -101,7 +107,7 @@ namespace Calendar_Web_App.Repositories
                 //Try to add new user to database
                 var RegisterUserResult = await _userManager.CreateAsync(CurrentUser, RegisterModel.Password);
 
-                if(RegisterUserResult.Succeeded)
+                if(RegisterUserResult != null && RegisterUserResult.Succeeded)
                 {
                     _logger.LogInformation("Registering User was successful");
                 }
@@ -110,6 +116,11 @@ namespace Calendar_Web_App.Repositories
                     _logger.LogWarning("User could not be registered");
                 }
                 return RegisterUserResult;
+            }
+            catch(InvalidOperationException ex)
+            {
+                _logger.LogError(ex, "An InvalidOperationException occured while trying to Register");
+                throw;
             }
             catch(Exception ex)
             {

@@ -2,17 +2,7 @@
 project.lock.json
 project.fragment.lock.json
 artifacts/
-bin/
-obj/
-# User-specific files
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
-# .NET Core
-project.lock.json
-project.fragment.lock.json
-artifacts/
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
@@ -27,29 +17,28 @@ bld/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
+
 # User-specific files
 *.rsuser
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
+
 # Visual Studio specific files
 *.obj
 *.pdb
-*.user
 *.aps
 *.pch
 *.vspscc
 *_i.c
 *_p.c
 *.ncb
-*.suo
 *.tlb
 *.tlh
 *.bak
 *.cache
 *.ilk
-*.log
 *.lib
 *.sbr
 *.sdf
@@ -59,13 +48,31 @@ bld/
 *.dotCover
 [Tt]humbs.db
 *.dbmdl
-[Bb]in
-[Dd]ebug*/
-[Rr]elease*/
 _ReSharper*/
-*.bak
 *.resharper
 *.resharper.user
 *.vspscc
 *.vssscc
 .builds
+
+# Rider specific files
+.idea/
+*.sln.iml
+
+# Logs
+*.log
+
+# Exclude bin and obj directories
+[Bb]in/
+[Oo]bj/
+
+# Exclude coverage results
+coverage/
+
+# Other
+.vscode/
+*.vs/
+*.vscode/
+*.vsidx/
+*.manifest
+*.v2

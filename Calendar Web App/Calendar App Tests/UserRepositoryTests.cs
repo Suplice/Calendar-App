@@ -135,10 +135,24 @@ namespace Calendar_App_Tests
 			if (LoginSucceeds)
 			{
 				Assert.True(result.Succeeded);
+				_mockLogger.Verify(
+					x => x.Log(
+						LogLevel.Information,
+						It.IsAny<EventId>(),
+						It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("Successfully logged in")),
+						null,
+						It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once);
 			}
 			else
 			{
 				Assert.False(result.Succeeded);
+				_mockLogger.Verify(
+					x => x.Log(
+						LogLevel.Warning,
+						It.IsAny<EventId>(),
+						It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("User could not be logged in")),
+						null,
+						It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once);
 			}
 		}
 
@@ -156,7 +170,104 @@ namespace Calendar_App_Tests
 
 			//Act + Assert
 			await Assert.ThrowsAsync<InvalidOperationException>(() => _userRepository.LoginUserAsync(loginModel));
+			_mockLogger.Verify(
+				x => x.Log(
+					LogLevel.Error,
+					It.IsAny<EventId>(),
+					It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("An InvalidOperationException occured while trying to Log In")),
+					It.IsAny<Exception>(),
+					It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once);
 		}
 
+
+		[Theory]
+		[InlineData("password1", false)]
+		[InlineData("password2", true)]
+		public async Task UserRepository_RegisterUserAsync_ReturnsPositiveResultIfCreatedUserElseNegativeResult(string userPassword, bool RegisterSuccessful)
+		{
+			//Arrange
+			var UserToRegister = RegisterSuccessful ? new RegisterViewModel
+			{Name = "user1",
+			 Email = "testemail@gmail.com",
+			 Login = "testUsername", 
+			 Password = userPassword 
+			} : (RegisterViewModel)null;
+
+			var User = UserToRegister != null ? new User {
+				Name = UserToRegister.Name,
+				Email = UserToRegister.Email,
+				UserName = UserToRegister.Login
+			} : (User)null;
+
+			if (UserToRegister != null)
+			{
+				_mockUserManager.Setup(um => um.CreateAsync(It.Is<User>(u => u.UserName == UserToRegister.Login && u.Email == UserToRegister.Email), UserToRegister.Password)).ReturnsAsync(RegisterSuccessful ? IdentityResult.Success : IdentityResult.Failed());
+			}
+
+			//Act
+
+			var result = await _userRepository.RegisterUserAsync(UserToRegister);
+
+
+			//Assert
+			if(UserToRegister == null)
+			{
+				
+				_mockLogger.Verify(x => x.Log(
+					LogLevel.Warning,
+					It.IsAny<EventId>(),
+					It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("RegisterModel is null")),
+					null,
+					It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once);
+				return;
+			}
+
+			if (RegisterSuccessful)
+			{
+				Assert.True(result.Succeeded);
+				_mockLogger.Verify(x => x.Log(
+					LogLevel.Information,
+					It.IsAny<EventId>(),
+					It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("Registering User was successful")),
+					null,
+					It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once);
+			}
+			else
+			{
+				Assert.False(result.Succeeded);
+				_mockLogger.Verify(x => x.Log(
+					LogLevel.Warning,
+					It.IsAny<EventId>(),
+					It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("User could not be registered")),
+					null,
+					It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once);
+			}
+		}
+
+
+		[Fact]
+		public async Task UserRepository_RegisterUserAsync_ThrowsInvalidOperationException()
+		{
+			//Arrange
+			var password = "testPassword";
+			var RegisterModel = new RegisterViewModel { Email = "testEmail@gmail.com", Login = "testLogin", Name = "testName", Password = password};
+			var User = new User { Name = RegisterModel.Name, Email = RegisterModel.Email, UserName = RegisterModel.Login };
+
+			_mockUserManager.Setup(um => um.CreateAsync(It.Is<User>(u => 
+			u.UserName == RegisterModel.Login &&
+			u.Email == RegisterModel.Email &&
+			u.Name == RegisterModel.Name), password)).ThrowsAsync(new InvalidOperationException("An InvalidOperationException occured while trying to Register"));
+
+			//Act + Assert
+			await Assert.ThrowsAsync<InvalidOperationException>(() => _userRepository.RegisterUserAsync(RegisterModel));
+			_mockLogger.Verify(
+				x => x.Log(
+					LogLevel.Error,
+					It.IsAny<EventId>(),
+					It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("An InvalidOperationException occured while trying to Register")),
+					It.IsAny<Exception>(),
+					It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once);
+
+		}
 	}
 }
