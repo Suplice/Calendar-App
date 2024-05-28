@@ -11,14 +11,12 @@ namespace Calendar_Web_App.Repositories
     public class UserRepository : IUserRepository
     {
 
-        private readonly ApplicationDbContext _context;
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
         private readonly ILogger<UserRepository> _logger;
 
-        public UserRepository(ApplicationDbContext context, UserManager<User> userManager, SignInManager<User> signInManager, ILogger<UserRepository> logger)
+        public UserRepository(UserManager<User> userManager, SignInManager<User> signInManager, ILogger<UserRepository> logger)
         {
-            _context = context;
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
@@ -40,6 +38,11 @@ namespace Calendar_Web_App.Repositories
                     _logger.LogInformation("User {Username} with Id {UserId} was successfully found", CurrentUser.Name, CurrentUser.Id);
                 }
                 return CurrentUser;
+            }
+            catch(InvalidOperationException ex)
+            {
+                _logger.LogError(ex, "An InvalidOperationException occured while trying to retrieve user from database");
+                throw;
             }
             catch (Exception ex)
             {
@@ -67,7 +70,12 @@ namespace Calendar_Web_App.Repositories
                 }
                 return PasswordSignInResult;
 			}
-            catch (Exception ex)
+            catch (InvalidOperationException ex)
+            {
+	            _logger.LogError(ex, "An InvalidOperationException occured while trying to Log In");
+	            throw;
+            }
+			catch (Exception ex)
             {
                 _logger.LogError(ex, "An Error occured while trying to log in");
                 throw;
