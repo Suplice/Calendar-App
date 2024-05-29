@@ -42,12 +42,12 @@ namespace Calendar_Web_App.Repositories
             catch(InvalidOperationException ex)
             {
                 _logger.LogError(ex, "An InvalidOperationException occured while trying to retrieve user from database");
-                throw;
+                return null;
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An error occured while trying to retrieve User {Username}", User.Identity.Name);
-                throw;
+                return null;
             }
 	    }
 
@@ -73,12 +73,12 @@ namespace Calendar_Web_App.Repositories
             catch (InvalidOperationException ex)
             {
 	            _logger.LogError(ex, "An InvalidOperationException occured while trying to Log In");
-	            throw;
+                return SignInResult.Failed;
             }
 			catch (Exception ex)
             {
                 _logger.LogError(ex, "An Error occured while trying to log in");
-                throw;
+                return SignInResult.Failed;
             }
 
         }
@@ -120,12 +120,12 @@ namespace Calendar_Web_App.Repositories
             catch(InvalidOperationException ex)
             {
                 _logger.LogError(ex, "An InvalidOperationException occured while trying to Register");
-                throw;
+                return IdentityResult.Failed();
             }
             catch(Exception ex)
             {
                 _logger.LogError(ex, "An unexpected error occured while trying to register User");
-                throw;
+                return IdentityResult.Failed();
             }
         }
 
@@ -153,10 +153,15 @@ namespace Calendar_Web_App.Repositories
                 }
                 return ChangePasswordResult;
 			}
+            catch(InvalidOperationException ex)
+            {
+                _logger.LogError(ex, "An InvalidOperationException occured while trying to Change Password");
+	            return IdentityResult.Failed();
+			}
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An unexpected error occured while trying to Change User password");
-                throw;
+                return IdentityResult.Failed();
             }
         }
 
@@ -168,6 +173,12 @@ namespace Calendar_Web_App.Repositories
             {
                 _logger.LogInformation("Executing LogoutUserAsync operation in UserRepository");
                 await _signInManager.SignOutAsync();
+                _logger.LogInformation("Successfully logged out");
+			}
+            catch(InvalidOperationException ex)
+            {
+	            _logger.LogError(ex, "An InvalidOperationException occured while trying to Change Password");
+                throw;
             }
             catch (Exception ex)
             {

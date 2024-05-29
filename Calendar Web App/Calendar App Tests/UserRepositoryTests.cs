@@ -1,6 +1,7 @@
 ﻿using Calendar_Web_App.Models;
 using Calendar_Web_App.Repositories;
 using Calendar_Web_App.ViewModels.AccountAccessViewModels;
+using Calendar_Web_App.ViewModels.AccountSettingsViewModels;
 using Castle.Core.Logging;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
@@ -28,7 +29,15 @@ namespace Calendar_App_Tests
 		public UserRepositoryTests()
 		{
 			var userStoreMock = new Mock<IUserStore<User>>();
-			_mockUserManager = new Mock<UserManager<User>>(userStoreMock.Object, null, null, null, null, null, null, null, null);
+			_mockUserManager = new Mock<UserManager<User>>(userStoreMock.Object,
+				new Mock<IOptions<IdentityOptions>>().Object,
+				new Mock<IPasswordHasher<User>>().Object,
+				new IUserValidator<User>[0],
+				new IPasswordValidator<User>[0],
+				new Mock<ILookupNormalizer>().Object,
+				new Mock<IdentityErrorDescriber>().Object,
+				new Mock<IServiceProvider>().Object,
+				new Mock<ILogger<UserManager<User>>>().Object);
 			_mockSignInManager = new Mock<SignInManager<User>>(
 				_mockUserManager.Object,
 				new Mock<IHttpContextAccessor>().Object,
@@ -99,8 +108,11 @@ namespace Calendar_App_Tests
 
 			_mockUserManager.Setup(um => um.GetUserAsync(claimsPrincipal)).ThrowsAsync(new InvalidOperationException("Test exception"));
 
-			//Act + Assert
-			await Assert.ThrowsAsync<InvalidOperationException>(() => _userRepository.GetCurrentUserAsync(claimsPrincipal));
+			//Act
+			var result = await _userRepository.GetCurrentUserAsync(claimsPrincipal);
+
+			//Assert
+			Assert.Equal(result, null);
 
 			_mockLogger.Verify(
 				x => x.Log(
@@ -157,7 +169,7 @@ namespace Calendar_App_Tests
 		}
 
 		[Fact]
-		public async Task UserRepository_LoginUserAsync_ThrowsInvalidOperationException()
+		public async Task UserRepository_LoginUserAsync_ThrowsInvalidOperationException_ReturnsSignInResultFailed()
 		{
 			//Arrange
 			var loginModel = new LoginViewModel
@@ -168,8 +180,12 @@ namespace Calendar_App_Tests
 
 			_mockSignInManager.Setup(sim => sim.PasswordSignInAsync(loginModel.Login, loginModel.Password, true, false)).ThrowsAsync(new InvalidOperationException("An InvalidOperationException occured while trying to Log In"));
 
-			//Act + Assert
-			await Assert.ThrowsAsync<InvalidOperationException>(() => _userRepository.LoginUserAsync(loginModel));
+			//Act
+			var result = await _userRepository.LoginUserAsync(loginModel);
+
+			//Assert
+
+			Assert.Equal(SignInResult.Failed, result);
 			_mockLogger.Verify(
 				x => x.Log(
 					LogLevel.Error,
@@ -259,7 +275,11 @@ namespace Calendar_App_Tests
 			u.Name == RegisterModel.Name), password)).ThrowsAsync(new InvalidOperationException("An InvalidOperationException occured while trying to Register"));
 
 			//Act + Assert
-			await Assert.ThrowsAsync<InvalidOperationException>(() => _userRepository.RegisterUserAsync(RegisterModel));
+			var result = await _userRepository.RegisterUserAsync(RegisterModel);
+
+			//Assert
+			Assert.Equal(IdentityResult.Failed().Succeeded, result.Succeeded);
+
 			_mockLogger.Verify(
 				x => x.Log(
 					LogLevel.Error,
@@ -269,5 +289,157 @@ namespace Calendar_App_Tests
 					It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once);
 
 		}
+
+		[Theory]
+		[InlineData("TestPassword1!", "TestPassword2!", true)]
+		[InlineData("TestPassword1!", "", false)]
+		public async Task UserRepository_ChangePasswordAsync_ReturnsPositiveResultIfPasswordChangedElseNegativeResult(string oldPassword, string newPassword, bool passwordChangedSuccessfully)
+		{
+			//Arrange
+			ClaimsPrincipal claimsPrincipal = new ClaimsPrincipal(new ClaimsIdentity(new Claim[]
+			{
+				new Claim(ClaimTypes.Name, "testuser")
+			}));
+
+			User user = new User
+			{
+				Email = "testemail@gmail.com",
+				Name = "testname",
+				UserName = "testUsername"
+			};
+
+			ChangePasswordViewModel changePasswordViewModel = new ChangePasswordViewModel
+			{
+				OldPassword = oldPassword,
+				NewPassword = newPassword,
+				ConfirmPassword = newPassword
+			};
+
+			_mockUserManager.Setup(um => um.GetUserAsync(claimsPrincipal)).ReturnsAsync(user);
+			_mockUserManager.Setup(um => um.ChangePasswordAsync(user, changePasswordViewModel.OldPassword, changePasswordViewModel.NewPassword)).
+				ReturnsAsync(passwordChangedSuccessfully ? IdentityResult.Success : IdentityResult.Failed());
+
+			//Act
+			var result = await _userRepository.ChangePasswordAsync(claimsPrincipal, changePasswordViewModel);
+
+			//Assert
+			if (passwordChangedSuccessfully)
+			{
+				Assert.Equal(IdentityResult.Success, result);
+				_mockLogger.Verify(
+					x => x.Log(
+						LogLevel.Information,
+						It.IsAny<EventId>(),
+						It.Is<It.IsAnyType>((v, t) => v.ToString().Contains($"Changing User {user.Name} password was successful")),
+						null,
+						It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once());
+
+			}
+			else
+			{
+				Assert.Equal(IdentityResult.Failed().Succeeded, result.Succeeded);
+				_mockLogger.Verify(
+					x => x.Log(
+						LogLevel.Warning,
+						It.IsAny<EventId>(),
+						It.Is<It.IsAnyType>((v, t) => v.ToString().Contains($"Changing User {user.Name} password has failed")),
+						null,
+						It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once());
+			}
+
+
+		}
+
+		[Fact]
+		public async Task UserRepository_ChangePasswordAsync_ThrowsInvalidOperationException()
+		{
+			//Arrange
+			ClaimsPrincipal claimsPrincipal = new ClaimsPrincipal(new ClaimsIdentity(new Claim[]
+			{
+				new Claim(ClaimTypes.Name, "testuser")
+			}));
+
+			User user = new User
+			{
+				Email = "testemail@gmail.com",
+				Name = "testname",
+				UserName = "testUsername"
+			};
+
+			ChangePasswordViewModel changePasswordViewModel = new ChangePasswordViewModel
+			{
+				OldPassword = "oldPassword",
+				NewPassword = "newPassword",
+				ConfirmPassword = "newPassword"
+			};
+
+			_mockUserManager.Setup(um => um.GetUserAsync(claimsPrincipal)).ReturnsAsync(user);
+			_mockUserManager.Setup(um => um.ChangePasswordAsync(user, changePasswordViewModel.OldPassword, changePasswordViewModel.NewPassword)).
+				ThrowsAsync(new InvalidOperationException("Invalid operation exception message"));
+
+			//Act
+			var result = await _userRepository.ChangePasswordAsync(claimsPrincipal, changePasswordViewModel);
+
+			//Assert
+			Assert.ThrowsAsync<InvalidOperationException>(() => _userRepository.ChangePasswordAsync(claimsPrincipal, changePasswordViewModel));
+			Assert.Equal(IdentityResult.Failed().Succeeded, result.Succeeded);
+			_mockLogger.Verify(
+				x => x.Log(
+					LogLevel.Error,
+					It.IsAny<EventId>(),
+					It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("An InvalidOperationException occured while trying to Change Password")),
+					It.IsAny<Exception>(),
+					It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.AtLeastOnce);
+
+		}
+
+
+		[Fact]
+		public async Task UserRepository_LogoutUserAsync_CallsSignOut()
+		{
+			//Arrange
+			_mockSignInManager.Setup(sim => sim.SignOutAsync()).Returns(Task.CompletedTask);
+			
+			
+			//Act
+			_userRepository.LogoutUserAsync();
+			
+			
+			//Assert
+			_mockSignInManager.Verify(sim => sim.SignOutAsync(), Times.Once);
+			_mockLogger.Verify(
+				x => x.Log(
+					LogLevel.Information,
+					It.IsAny<EventId>(),
+					It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("Successfully logged out")),
+					null,
+					It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once);
+		}
+
+
+		[Fact]
+		public async Task UserRepository_LogoutUserAsync_ThrowsInvalidOperationException()
+		{
+			//Arrange
+			_mockSignInManager.Setup(sim => sim.SignOutAsync()).ThrowsAsync(new InvalidOperationException("Invalid operation exception"));
+
+
+			//Act + Assert
+			_userRepository.LogoutUserAsync();
+
+			//Assert
+			_mockLogger.Verify(
+				x => x.Log(
+					LogLevel.Error,
+					It.IsAny<EventId>(),
+					It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("An InvalidOperationException occured while trying to Change Password")),
+					It.IsAny<Exception>(),
+					It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once);
+		}
+
+
+
+
+
 	}
 }

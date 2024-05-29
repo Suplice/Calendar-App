@@ -2,6 +2,7 @@
 using Calendar_Web_App.Interfaces;
 using Calendar_Web_App.Models;
 using Calendar_Web_App.ViewModels.EventViewModels;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using System.Linq;
 using System.Security.Claims;
 
@@ -40,13 +41,13 @@ namespace Calendar_Web_App.Repositories
             catch(InvalidOperationException ex)
             {
 	            _logger.LogError(ex, "An InvalidOperationException occurred while trying to retrieve events for user {UserId}",UserId);
-				throw;
+                return Enumerable.Empty<Event>();
 			}
             catch (Exception ex)
             {
                 _logger.LogError(ex, "an unexpected error occured while trying to retrieve user {userId} events", UserId);
-                throw;
-            }
+				return Enumerable.Empty<Event>();
+			}
         }
 
         public Event GetEventById(string eventId)
@@ -70,12 +71,12 @@ namespace Calendar_Web_App.Repositories
             catch(InvalidOperationException ex)
             {
                 _logger.LogError(ex, "An InvalidOperationException occurred while trying to retrieve event using {eventId}", eventId);
-                throw;
+                return null;
             }
             catch (Exception ex) 
             {
                 _logger.LogError(ex, "an error occured while trying to retrieve event {eventId} from database", eventId);
-                throw;
+                return null;
             }
 
 
@@ -114,12 +115,12 @@ namespace Calendar_Web_App.Repositories
             catch (InvalidOperationException ex)
             {
 	            _logger.LogError(ex, "An InvalidOperationException occurred while trying to add event");
-	            throw;
+                return;
 			}
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An unexpected error occured while trying to add event");
-                throw;
+                return;
             }
         }
 
@@ -150,12 +151,12 @@ namespace Calendar_Web_App.Repositories
             catch(InvalidOperationException ex)
             {
 	            _logger.LogError(ex, "An InvalidOperationException occurred while trying to update event");
-	            throw;
+                return;
 			}
             catch(Exception ex)
             {
                 _logger.LogError(ex, "an unexpected error occured while trying to update Event {eventId}", UpdateEventModel.EventId);
-                throw;
+                return;
             }
             
 	    }
@@ -184,13 +185,13 @@ namespace Calendar_Web_App.Repositories
             catch (InvalidOperationException ex)
             {
                 _logger.LogError("An InvalidOperationException occurred while trying to update event");
-                throw;
+                return;
             }
 			catch (Exception ex)
 			{
 
                 _logger.LogError(ex, "an unexpected error occured while removing the event with Id {EventId}", eventId);
-                throw;
+                return;
 			}
 		}
 

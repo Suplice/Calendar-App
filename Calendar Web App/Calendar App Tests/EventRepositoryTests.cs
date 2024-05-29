@@ -91,14 +91,13 @@ namespace Calendar_App_Tests
 		{
 			//Arrange 
 			var userId = "user1";
-			var exceptionMessage = "Exception Message";
 
 			_mockContext.Setup(c => c.Events)
-				.Throws(new InvalidOperationException(exceptionMessage));
+				.Throws(new InvalidOperationException("Invalid operation exception"));
 
 			//Act
-
-			var exception = Assert.Throws<InvalidOperationException>(() => _repository.GetAllEvents(userId));
+			var result = _repository.GetAllEvents(userId);
+	
 
 			//Assert
 			_mockLogger.Verify(
@@ -108,8 +107,7 @@ namespace Calendar_App_Tests
 					It.Is<It.IsAnyType>((v, t) => v.ToString().Contains($"An InvalidOperationException occurred while trying to retrieve events for user {userId}")),
 					It.IsAny<Exception>(),
 					It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once);
-
-			Assert.Equal(exceptionMessage, exception.Message);
+			Assert.Empty(result);
 		}
 
 		[Theory]
@@ -181,10 +179,10 @@ namespace Calendar_App_Tests
 				.Throws(new InvalidOperationException(exceptionMessage));
 
 			//Act
-			var exception = Assert.Throws<InvalidOperationException>(() => _repository.GetEventById(eventId));
+			var result = _repository.GetEventById(eventId);
 
 			//Assert
-			Assert.Equal(exception.Message, exceptionMessage);
+			Assert.Null(result);
 			_mockLogger.Verify(
 				x => x.Log(
 					LogLevel.Error,
@@ -266,10 +264,10 @@ namespace Calendar_App_Tests
 			};
 
 			//Act
-			var exception = Assert.Throws<InvalidOperationException>(() => _repository.AddEvent(EventToAddModel));
+
+			_repository.AddEvent(EventToAddModel);
 
 			//Assert
-			Assert.Equal(exception.Message, exceptionMessage);
 			_mockLogger.Verify(
 				x => x.Log(
 					LogLevel.Error,
@@ -355,10 +353,9 @@ namespace Calendar_App_Tests
 			};
 
 			//Act
-			var exception = Assert.Throws<InvalidOperationException>(() => _repository.UpdateEvent(eventToUpdate));
+			_repository.UpdateEvent(eventToUpdate);
 
 			//Assert
-			Assert.Equal(exception.Message, exceptionMessage);
 			_mockLogger.Verify(
 				x => x.Log(
 					LogLevel.Error,
@@ -435,10 +432,9 @@ namespace Calendar_App_Tests
 			var eventId = "event1";
 
 			//Act
-			var exception = Assert.Throws<InvalidOperationException>(() => _repository.RemoveEvent(eventId));
+			_repository.RemoveEvent(eventId);
 
 			//Assert
-			Assert.Equal(exception.Message, exceptionMessage);
 			_mockLogger.Verify(
 				x => x.Log(
 					LogLevel.Error,
