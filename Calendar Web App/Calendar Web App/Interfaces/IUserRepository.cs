@@ -18,6 +18,6 @@ namespace Calendar_Web_App.Interfaces
 		Task<User> GetCurrentUserAsync(ClaimsPrincipal User);
 
         Task<IdentityResult> CloseAccountAsync(User User);
-		void LogoutUserAsync();
+		Task LogoutUserAsync();
     }
 }

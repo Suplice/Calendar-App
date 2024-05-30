@@ -167,7 +167,7 @@ namespace Calendar_Web_App.Repositories
 
 
 
-        public async void LogoutUserAsync()
+        public async Task LogoutUserAsync()
         {
             try
             {
@@ -197,6 +197,11 @@ namespace Calendar_Web_App.Repositories
                 var CurrentUser = await GetCurrentUserAsync(User);
 
                 //Change username
+                if(CurrentUser == null) {
+					_logger.LogWarning("Updating Username has failed");
+                    return IdentityResult.Failed();
+				}
+
                 CurrentUser.UserName = newUsernameModel.Username;
 
                 //Update user in database
@@ -212,11 +217,16 @@ namespace Calendar_Web_App.Repositories
                 }
                 return UpdateUsernameResult;
             }
-            catch (Exception ex)
+            catch (InvalidOperationException ex)
             {
-                _logger.LogError(ex, "An unexpected error occured while trying to change Username");
-                throw;
+	            _logger.LogError(ex, "An InvalidOperationException occured while trying to Change Username");
+	            return IdentityResult.Failed();
             }
+			catch (Exception ex)
+            {
+				_logger.LogError(ex, "An unexpected error occured while trying to Change Username");
+				return IdentityResult.Failed();
+			}
         }
 
         public async Task<IdentityResult> ChangeEmailAsync(ClaimsPrincipal User, ChangeEmailViewModel newEmailModel)
@@ -228,6 +238,11 @@ namespace Calendar_Web_App.Repositories
                 //Get current user
                 var CurrentUser = await GetCurrentUserAsync(User);
 
+
+                if(CurrentUser == null) {
+					_logger.LogWarning("Changing email has failed");
+                    return IdentityResult.Failed();
+				}
                 CurrentUser.Email = newEmailModel.Email;
 
                 //update user in database
@@ -239,15 +254,20 @@ namespace Calendar_Web_App.Repositories
                 }
                 else
                 {
-                    _logger.LogWarning("Changing {Username}'s email has failed", CurrentUser.Name);
+                    _logger.LogWarning("Changing email has failed", CurrentUser.Name);
                 }
                 return ChangeEmailResult;
             }
+            catch(InvalidOperationException ex)
+            {
+	            _logger.LogError(ex, "An InvalidOperationException occured while trying to Change Email");
+	            return IdentityResult.Failed();
+			}
             catch (Exception ex)
             {
-                _logger.LogError(ex, "An unexpected Error occured while trying to Change Email");
-                throw;
-            }
+				_logger.LogError(ex, "An unexpected error occured while trying to Change Email");
+				return IdentityResult.Failed();
+			}
         }
 
         public async Task<IdentityResult> ChangeNameAsync(ClaimsPrincipal User, ChangeNameViewModel newNameModel)
@@ -261,6 +281,10 @@ namespace Calendar_Web_App.Repositories
 
 
                 //Change Name
+                if(CurrentUser == null) {
+	                _logger.LogWarning("Changing User's Name has failed");
+					return IdentityResult.Failed();
+                }
                 CurrentUser.Name = newNameModel.Name;
 
 
@@ -277,11 +301,16 @@ namespace Calendar_Web_App.Repositories
                 }
                 return UpdateNameResult;
             }
+            catch(InvalidOperationException ex)
+            {
+	            _logger.LogError(ex, "An InvalidOperationException occured while trying to Change Name");
+	            return IdentityResult.Failed();
+			}
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An unexpected error occured while trying to change User's Name");
-                throw;
-            }
+				return IdentityResult.Failed();
+			}
         }
 
         public async Task<IdentityResult> CloseAccountAsync(User CurrentUser)
@@ -295,20 +324,25 @@ namespace Calendar_Web_App.Repositories
 
                 if(CloseAccountResult.Succeeded)
                 {
-                    _logger.LogInformation("Closing {Username}'s account was successful", CurrentUser.Name);
+                    _logger.LogInformation("Closing account was successful");
                 }
                 else
                 {
-                    _logger.LogWarning("Closing {Username}'s account has failed", CurrentUser.Name);
+                    _logger.LogWarning("Closing account has failed");
                 }
                 return CloseAccountResult;
             }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "An unexpected error occured while trying to Close {Username}'s account", CurrentUser.Name);
-                throw;
-            }
-        }
+			catch (InvalidOperationException ex)
+			{
+				_logger.LogError(ex, "An InvalidOperationException occured while trying to Close Account");
+				return IdentityResult.Failed();
+			}
+			catch (Exception ex)
+			{
+				_logger.LogError(ex, "An unexpected error occured while trying to change Close Account");
+				return IdentityResult.Failed();
+			}
+		}
 
 	}
 

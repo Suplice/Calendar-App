@@ -333,6 +333,7 @@ namespace Calendar_App_Tests
 						It.Is<It.IsAnyType>((v, t) => v.ToString().Contains($"Changing User {user.Name} password was successful")),
 						null,
 						It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once());
+				_mockUserManager.Verify(um => um.ChangePasswordAsync(user, changePasswordViewModel.OldPassword, changePasswordViewModel.NewPassword), Times.Once);
 
 			}
 			else
@@ -345,6 +346,7 @@ namespace Calendar_App_Tests
 						It.Is<It.IsAnyType>((v, t) => v.ToString().Contains($"Changing User {user.Name} password has failed")),
 						null,
 						It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once());
+				_mockUserManager.Verify(um => um.ChangePasswordAsync(user, changePasswordViewModel.OldPassword, changePasswordViewModel.NewPassword), Times.Once);
 			}
 
 
@@ -381,7 +383,6 @@ namespace Calendar_App_Tests
 			var result = await _userRepository.ChangePasswordAsync(claimsPrincipal, changePasswordViewModel);
 
 			//Assert
-			Assert.ThrowsAsync<InvalidOperationException>(() => _userRepository.ChangePasswordAsync(claimsPrincipal, changePasswordViewModel));
 			Assert.Equal(IdentityResult.Failed().Succeeded, result.Succeeded);
 			_mockLogger.Verify(
 				x => x.Log(
@@ -389,7 +390,8 @@ namespace Calendar_App_Tests
 					It.IsAny<EventId>(),
 					It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("An InvalidOperationException occured while trying to Change Password")),
 					It.IsAny<Exception>(),
-					It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.AtLeastOnce);
+					It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once);
+			_mockUserManager.Verify(um => um.ChangePasswordAsync(user, changePasswordViewModel.OldPassword, changePasswordViewModel.NewPassword), Times.Once);
 
 		}
 
@@ -435,10 +437,388 @@ namespace Calendar_App_Tests
 					It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("An InvalidOperationException occured while trying to Change Password")),
 					It.IsAny<Exception>(),
 					It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once);
+			_mockSignInManager.Verify(um => um.SignOutAsync(), Times.Once);
+			await Assert.ThrowsAsync<InvalidOperationException>(() => _userRepository.LogoutUserAsync());
 		}
 
 
+		[Theory]
+		[InlineData("Username1", true)]
+		[InlineData("Username2", false)]
+		public async Task UserRepository_CahngeUsernameAsync_ReturnsPositiveResultIfUsernameChangedElseNegativeResult(string userName, bool changedUsernameSuccessfully)
+		{
+			//Setup
+			var claimsPrincipal = new ClaimsPrincipal(new ClaimsIdentity(new Claim[]
+			{
+				new Claim(ClaimTypes.Name, userName),
+			}));
 
+			var newUsernameModel = new ChangeUsernameViewModel
+			{
+				Username = userName
+			};
+
+			User user = changedUsernameSuccessfully ? new User
+			{
+				Email = "testemail@gmail.com",
+				Name = "testname",
+				UserName = userName
+			} : null;
+
+			_mockUserManager.Setup(um => um.GetUserAsync(claimsPrincipal)).ReturnsAsync(user);
+
+			_mockUserManager.Setup(um => um.UpdateAsync(user)).ReturnsAsync(changedUsernameSuccessfully ? IdentityResult.Success : IdentityResult.Failed());
+
+
+			//Act
+			var result = await _userRepository.ChangeUsernameAsync(claimsPrincipal, newUsernameModel);
+
+			//Assert
+			if (changedUsernameSuccessfully)
+			{
+				Assert.Equal(IdentityResult.Success, result);
+				_mockLogger.Verify(
+					x => x.Log(
+						LogLevel.Information,
+						It.IsAny<EventId>(),
+						It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("Updating Username was successful")),
+						null,
+						It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once());
+
+				_mockUserManager.Verify(um => um.UpdateAsync(user), Times.Once);
+
+			}
+			else
+			{
+				Assert.Equal(IdentityResult.Failed().Succeeded, result.Succeeded);
+				_mockLogger.Verify(
+					x => x.Log(
+						LogLevel.Warning,
+						It.IsAny<EventId>(),
+						It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("Updating Username has failed")),
+						null,
+						It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once());
+
+			}
+
+		}
+
+
+		[Fact]
+		public async Task UserRepository_ChangeUsernameAsync_ThrowsInvalidOperationException()
+		{
+			//Arrange
+			var claimsPrincipal = new ClaimsPrincipal(new ClaimsIdentity(new Claim[]
+			{
+				new Claim(ClaimTypes.Name, "testUsername"),
+			}));
+
+			var newUsernameModel = new ChangeUsernameViewModel
+			{
+				Username = "testUsername"
+			};
+
+			User user = new User
+			{
+				Email = "testemail@gmail.com",
+				Name = "testname",
+				UserName = "testUsername"
+			};
+
+			_mockUserManager.Setup(um => um.GetUserAsync(claimsPrincipal)).ReturnsAsync(user);
+
+			_mockUserManager.Setup(um => um.UpdateAsync(user)).ThrowsAsync(new InvalidOperationException("invalid operation exception"));
+
+			//Act
+			await _userRepository.ChangeUsernameAsync(claimsPrincipal, newUsernameModel);
+
+			//Assert
+			_mockLogger.Verify(
+				x => x.Log(
+					LogLevel.Error,
+					It.IsAny<EventId>(),
+					It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("An InvalidOperationException occured while trying to Change Username")),
+					It.IsAny<Exception>(),
+					It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once);
+			_mockUserManager.Verify(um => um.UpdateAsync(user), Times.Once);
+
+		}
+
+
+		[Theory]
+		[InlineData("testEmail@gmail.com", true)]
+		[InlineData("testEmail2@gmail.com", false)]
+		public async Task UserRepository_ChangeEmailAsync_ReturnsPositiveResultIfEmailChangedElseNegativeResult(string email, bool changedEmailSuccessfully)
+		{
+			//Setup
+			var claimsPrincipal = new ClaimsPrincipal(new ClaimsIdentity(new Claim[]
+			{
+				new Claim(ClaimTypes.Name, "testName"),
+			}));
+
+			var newEmailModel = new ChangeEmailViewModel
+			{
+				Email = email
+			};
+
+			User user = changedEmailSuccessfully ? new User
+			{
+				Email = email,
+				Name = "testname",
+				UserName = "testUsername"
+			} : null;
+
+			_mockUserManager.Setup(um => um.GetUserAsync(claimsPrincipal)).ReturnsAsync(user);
+
+			_mockUserManager.Setup(um => um.UpdateAsync(user)).ReturnsAsync(changedEmailSuccessfully ? IdentityResult.Success : IdentityResult.Failed());
+
+
+			//Act
+			var result = await _userRepository.ChangeEmailAsync(claimsPrincipal, newEmailModel);
+
+			//Assert
+			if (changedEmailSuccessfully)
+			{
+				Assert.Equal(IdentityResult.Success, result);
+				_mockLogger.Verify(
+					x => x.Log(
+						LogLevel.Information,
+						It.IsAny<EventId>(),
+						It.Is<It.IsAnyType>((v, t) => v.ToString().Contains($"Successfully updated {user.Name}'s email")),
+						null,
+						It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once());
+				_mockUserManager.Verify(um => um.UpdateAsync(user), Times.Once);
+
+			}
+			else
+			{
+				Assert.Equal(IdentityResult.Failed().Succeeded, result.Succeeded);
+				_mockLogger.Verify(
+					x => x.Log(
+						LogLevel.Warning,
+						It.IsAny<EventId>(),
+						It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("Changing email has failed")),
+						null,
+						It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once());
+			}
+
+		}
+		[Fact]
+		public async Task UserRepository_ChangeEmailAsync_ThrowsInvalidOperationException()
+		{
+			//Arrange
+			var claimsPrincipal = new ClaimsPrincipal(new ClaimsIdentity(new Claim[]
+			{
+				new Claim(ClaimTypes.Name, "testName"),
+			}));
+
+			var newEmailModel = new ChangeEmailViewModel
+			{
+				Email = "testEmail"
+			};
+
+			User user = new User
+			{
+				Email = "testEmail",
+				Name = "testname",
+				UserName = "testUsername"
+			};
+
+
+		
+			_mockUserManager.Setup(um => um.GetUserAsync(claimsPrincipal)).ReturnsAsync(user);
+
+			_mockUserManager.Setup(um => um.UpdateAsync(user)).ThrowsAsync(new InvalidOperationException("invalid operation exception"));
+
+			//Act
+			await _userRepository.ChangeEmailAsync(claimsPrincipal, newEmailModel);
+
+			//Assert
+			_mockLogger.Verify(
+				x => x.Log(
+					LogLevel.Error,
+					It.IsAny<EventId>(),
+					It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("An InvalidOperationException occured while trying to Change Email")),
+					It.IsAny<Exception>(),
+					It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once);
+			_mockUserManager.Verify(um => um.UpdateAsync(user), Times.Once);
+
+		}
+
+		[Theory]
+		[InlineData("testName", true)]
+		[InlineData("testName2", false)]
+		public async Task UserRepository_ChangeNameAsync_ReturnsPositiveResultIfNameChangedElseNegativeResult(string name, bool changedNameSuccessfully)
+		{
+			//Setup
+			var claimsPrincipal = new ClaimsPrincipal(new ClaimsIdentity(new Claim[]
+			{
+				new Claim(ClaimTypes.Name, "testName"),
+			}));
+
+			var newNameModel = new ChangeNameViewModel
+			{
+				Name = name
+			};
+
+			User user = changedNameSuccessfully ? new User
+			{
+				Email = "testEmail@gmail.com",
+				Name = name,
+				UserName = "testUsername"
+			} : null;
+
+			_mockUserManager.Setup(um => um.GetUserAsync(claimsPrincipal)).ReturnsAsync(user);
+
+			_mockUserManager.Setup(um => um.UpdateAsync(user)).ReturnsAsync(changedNameSuccessfully ? IdentityResult.Success : IdentityResult.Failed());
+
+
+			//Act
+			var result = await _userRepository.ChangeNameAsync(claimsPrincipal, newNameModel);
+
+			//Assert
+			if (changedNameSuccessfully)
+			{
+				Assert.Equal(IdentityResult.Success, result);
+				_mockLogger.Verify(
+					x => x.Log(
+						LogLevel.Information,
+						It.IsAny<EventId>(),
+						It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("Changing User's Name was successful")),
+						null,
+						It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once());
+
+				_mockUserManager.Verify(um => um.UpdateAsync(user), Times.Once);
+
+			}
+			else
+			{
+				Assert.Equal(IdentityResult.Failed().Succeeded, result.Succeeded);
+				_mockLogger.Verify(
+					x => x.Log(
+						LogLevel.Warning,
+						It.IsAny<EventId>(),
+						It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("Changing User's Name has failed")),
+						null,
+						It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once());
+			}
+
+		}
+
+		[Fact]
+		public async Task UserRepository_ChangeNameAsync_ThrowsInvalidOperationException()
+		{
+			//Arrange
+			var claimsPrincipal = new ClaimsPrincipal(new ClaimsIdentity(new Claim[]
+			{
+				new Claim(ClaimTypes.Name, "testName"),
+			}));
+
+			var newNameModel = new ChangeNameViewModel
+			{
+				Name = "testName"
+			};
+
+			User user = new User
+			{
+				Email = "testEmail@gmail.com",
+				Name = "testName",
+				UserName = "testUsername"
+			};
+
+			_mockUserManager.Setup(um => um.GetUserAsync(claimsPrincipal)).ReturnsAsync(user);
+
+			_mockUserManager.Setup(um => um.UpdateAsync(user)).ThrowsAsync(new InvalidOperationException("invalid operation exception"));
+
+			//Act
+			await _userRepository.ChangeNameAsync(claimsPrincipal, newNameModel);
+
+			//Assert
+			_mockLogger.Verify(
+				x => x.Log(
+					LogLevel.Error,
+					It.IsAny<EventId>(),
+					It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("An InvalidOperationException occured while trying to Change Name")),
+					It.IsAny<Exception>(),
+					It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once);
+			_mockUserManager.Verify(um => um.UpdateAsync(user), Times.Once);
+
+		}
+
+		[Theory]
+		[InlineData(false)]
+		[InlineData(true)]
+		public async Task UserRepository_CloseAccountAsync_ClosesAccountIfSuccessfulElseFails(bool closedAccountSuccessfully)
+		{
+			//Arrange
+			User user = closedAccountSuccessfully ? new User
+			{
+				Email = "testEmail",
+				Name = "testName",
+				UserName = "testUsername",
+			} : null;
+
+			_mockUserManager.Setup(um => um.DeleteAsync(user)).ReturnsAsync(closedAccountSuccessfully ? IdentityResult.Success : IdentityResult.Failed());
+
+			//Act
+			var result = await _userRepository.CloseAccountAsync(user);
+
+
+			//Assert
+			if (closedAccountSuccessfully)
+			{
+				Assert.Equal(IdentityResult.Success, result);
+				_mockLogger.Verify(
+					x => x.Log(
+						LogLevel.Information,
+						It.IsAny<EventId>(),
+						It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("Closing account was successful")),
+						null,
+						It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once());
+
+				_mockUserManager.Verify(um => um.DeleteAsync(user), Times.Once);
+
+			}
+			else
+			{
+				Assert.Equal(IdentityResult.Failed().Succeeded, result.Succeeded);
+				_mockLogger.Verify(
+					x => x.Log(
+						LogLevel.Warning,
+						It.IsAny<EventId>(),
+						It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("Closing account has failed")),
+						null,
+						It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once());
+			}
+		}
+
+		[Fact]
+		public async Task UserRepository_CloseAccountAsync_ThrowsInvalidOperationException()
+		{
+			//Arrange
+			User user = new User
+			{
+				Email = "testEmail",
+				Name = "testName",
+				UserName = "testUsername",
+			};
+
+			_mockUserManager.Setup(um => um.DeleteAsync(user)).ThrowsAsync(new InvalidOperationException("invalid operation exception"));
+
+			//Act
+			var result = _userRepository.CloseAccountAsync(user);
+
+			//Assert
+			_mockLogger.Verify(
+				x => x.Log(
+					LogLevel.Error,
+					It.IsAny<EventId>(),
+					It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("An InvalidOperationException occured while trying to Close Account")),
+					It.IsAny<Exception>(),
+					It.IsAny<Func<It.IsAnyType, Exception, string>>()), Times.Once);
+			_mockUserManager.Verify(um => um.DeleteAsync(user), Times.Once);
+
+		}
 
 
 	}
