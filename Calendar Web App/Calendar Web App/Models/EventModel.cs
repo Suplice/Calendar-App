@@ -25,6 +25,7 @@ namespace Calendar_Web_App.Models
 
 		public User User { get; set; }
 
+
 		public RecurrencePattern? RecurrencePattern { get; set; }
 
 		public DateTime? RecurrenceEndDate { get; set; }

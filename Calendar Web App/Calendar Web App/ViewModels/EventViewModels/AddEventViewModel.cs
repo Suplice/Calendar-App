@@ -23,9 +23,11 @@ namespace Calendar_Web_App.ViewModels.EventViewModels
         public string eventId { get; set; }
         public string? UserId { get; set; }
 
-        public RecurrencePattern? RecurrencePattern { get; set; }
 
-        public DateTime? RecurrenceEndDate { get; set; }
+		[RecurrencePatternValidation("StartDate", "EndDate")]
+		public RecurrencePattern? RecurrencePattern { get; set; }
+
+		public DateTime? RecurrenceEndDate { get; set; }
 
 
     }
