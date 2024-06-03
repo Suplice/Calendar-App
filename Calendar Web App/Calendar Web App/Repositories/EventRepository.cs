@@ -3,6 +3,7 @@ using Calendar_Web_App.Interfaces;
 using Calendar_Web_App.Models;
 using Calendar_Web_App.ViewModels.EventViewModels;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.EntityFrameworkCore.SqlServer.Query.Internal;
 using System.Linq;
 using System.Security.Claims;
 
@@ -19,6 +20,67 @@ namespace Calendar_Web_App.Repositories
             _logger = logger;
         }
 
+        private IEnumerable<Event> ExpandReccuringEvents(IEnumerable<Event> events) { 
+        
+            List<Event> resultEvents = new List<Event>();
+
+            var recurrenceMaxDate = DateTime.Now.AddYears(1);
+
+            foreach(var ev in events)
+            {
+                if (ev.RecurrencePattern == null)
+                {
+                    resultEvents.Add(ev);
+                    continue;
+                }
+                else 
+                {
+                    var StartDate = ev.start;
+                    var EndDate = ev.end;
+
+                    while (StartDate <= recurrenceMaxDate && (!ev.RecurrenceEndDate.HasValue || StartDate <= ev.RecurrenceEndDate.Value))
+                    {
+                        if(StartDate >= DateTime.Now)
+                        {
+                            var recurringEvent = new Event
+                            {
+                                Id = ev.Id,
+                                UserId = ev.UserId,
+                                title = ev.title,
+                                description = ev.description,
+                                start = StartDate,
+                                end = EndDate,
+                                RecurrencePattern = ev.RecurrencePattern,
+                                RecurrenceEndDate = ev.RecurrenceEndDate
+                            };
+
+                            resultEvents.Add(recurringEvent);
+                        };
+
+                        switch(ev.RecurrencePattern)
+                        {
+                            case RecurrencePattern.daily:
+                                StartDate = StartDate.AddDays(1);
+                                EndDate = EndDate.AddDays(1);
+                                break;
+                            case RecurrencePattern.weekly:
+	                            StartDate = StartDate.AddDays(7);
+	                            EndDate = EndDate.AddDays(7);
+	                            break;
+                            case RecurrencePattern.monthly:
+                                StartDate = StartDate.AddMonths(1);
+								EndDate = EndDate.AddMonths(1);
+                                break;
+						}
+
+                    }
+                }
+            }
+
+            return resultEvents;
+
+        }
+
         public IEnumerable<Event> GetAllEvents(string UserId)
         {
             try
@@ -26,7 +88,7 @@ namespace Calendar_Web_App.Repositories
                 _logger.LogInformation("Executing GetAllEvents operation in Event Repository");
 
                 var events = _context.Events.Where(e => e.UserId == UserId).ToList();
-
+                
                 if(!events.Any())
                 {
                     _logger.LogWarning("user {UserId} does have any events", UserId);
@@ -34,6 +96,9 @@ namespace Calendar_Web_App.Repositories
                 }
                 else
                 {
+                    events = (List<Event>) ExpandReccuringEvents(events);
+
+
                     _logger.LogInformation("Events for {UserId} were successfully retrieved", UserId);
                     return events;
                 }
@@ -99,7 +164,9 @@ namespace Calendar_Web_App.Repositories
                         title = newEventModel.Title,
                         description = newEventModel.Description,
                         start = newEventModel.StartDate,
-                        end = newEventModel.EndDate
+                        end = newEventModel.EndDate,
+                        RecurrencePattern = newEventModel.RecurrencePattern,
+                        RecurrenceEndDate = newEventModel.RecurrenceEndDate
                     };
                     //Add event to Db
                     _context.Events.Add(EventToAdd);
@@ -184,7 +251,7 @@ namespace Calendar_Web_App.Repositories
 			}
             catch (InvalidOperationException ex)
             {
-                _logger.LogError("An InvalidOperationException occurred while trying to update event");
+                _logger.LogError(ex, "An InvalidOperationException occurred while trying to update event");
                 return;
             }
 			catch (Exception ex)
