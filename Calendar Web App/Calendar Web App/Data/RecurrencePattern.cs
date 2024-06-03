@@ -2,8 +2,9 @@
 {
 	public enum RecurrencePattern
 	{
-		daily = 0,
-		weekly = 1,
-		monthly = 2
+		none = 0,
+		daily = 1,
+		weekly = 2,
+		monthly = 3
 	}
 }

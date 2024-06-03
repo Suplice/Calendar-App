@@ -26,6 +26,7 @@ function addEvent(formData) {
 function displayAddEventValidationErrors(errors) {
     // Loop through the errors object and display validation messages above corresponding fields
     hideAllErrorMessages();
+    debugger
     for (var key in errors) {
         if (errors.hasOwnProperty(key)) {
             var errorMessage = errors[key];
@@ -42,7 +43,7 @@ function handleFormSubmission(event) {
     //Get the form data
 
     var formData = $(this).serialize();
-    debugger
+
 
     //Call the function to add the event
     addEvent(formData);

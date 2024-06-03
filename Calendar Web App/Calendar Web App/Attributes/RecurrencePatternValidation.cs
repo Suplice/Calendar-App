@@ -18,7 +18,7 @@ namespace Calendar_Web_App.Attributes
 		}
 
 
-		public override ValidationResult IsValid(object value, ValidationContext validationContext)
+		protected override ValidationResult IsValid(object value, ValidationContext validationContext)
 		{
 			var startDateProperty = validationContext.ObjectType.GetProperty(_startDatePropertyName);
 			var endDateProperty = validationContext.ObjectType.GetProperty(_endDatePropertyName);

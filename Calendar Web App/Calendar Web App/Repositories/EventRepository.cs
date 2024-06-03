@@ -28,7 +28,7 @@ namespace Calendar_Web_App.Repositories
 
             foreach(var ev in events)
             {
-                if (ev.RecurrencePattern == null)
+                if (ev.RecurrencePattern == RecurrencePattern.none)
                 {
                     resultEvents.Add(ev);
                     continue;
@@ -211,6 +211,8 @@ namespace Calendar_Web_App.Repositories
                     UpdatedEvent.description = UpdateEventModel.Description;
                     UpdatedEvent.start = UpdateEventModel.StartDate;
                     UpdatedEvent.end = UpdateEventModel.EndDate;
+                    UpdatedEvent.RecurrencePattern = UpdateEventModel.RecurrencePattern;
+                    UpdatedEvent.RecurrenceEndDate = UpdateEventModel.RecurrenceEndDate;
                     _context.SaveChanges();
                     _logger.LogInformation("Event {eventId} was successfully updated", UpdateEventModel.EventId);
                 }

@@ -1,5 +1,6 @@
 ﻿using Calendar_Web_App.Attributes;
 using System.ComponentModel.DataAnnotations;
+using Calendar_Web_App.Data;
 
 namespace Calendar_Web_App.ViewModels.EventViewModels
 {
@@ -22,5 +23,11 @@ namespace Calendar_Web_App.ViewModels.EventViewModels
         public string? UserId { get; set; }
 
         public string EventId { get; set; }
-    }
+
+        [RecurrencePatternValidation("StartDate", "EndDate")]
+        public RecurrencePattern? RecurrencePattern { get; set; }
+
+
+        public DateTime? RecurrenceEndDate { get; set; }
+	}
 }

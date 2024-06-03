@@ -25,6 +25,7 @@ namespace Calendar_Web_App.Attributes
 			var startDate = (DateTime)startDateProperty.GetValue(Context.ObjectInstance);
 			var endDate = (DateTime)endDateProperty.GetValue(Context.ObjectInstance);
 
+
 			if(startDate < endDate)
 			{
 				return ValidationResult.Success;

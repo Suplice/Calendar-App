@@ -72,6 +72,21 @@
 						<input type="datetime-local" class="form-control" id="end" name="EndDate">
 							<span id="EndDate-AddValidation" class="text-danger"></span>
 					</div>
+					<div class="mb-3">
+							<label for="recurrencePattern" class="form-label">Recurrence Pattern:</label>
+						<select id="recurrencePattern" name="RecurrencePattern">
+							<option value="None">None</option>
+							<option value="Daily">Daily</option>
+							<option value="Weekly">Weekly</option>
+							<option value="Monthly">Monthly</option>
+						</select>
+					<span id="RecurrencePattern-AddValidation" class="text-danger"></span>
+					</div>
+					<div class="mb-3">
+					<label for="recurrenceEndDate">Recurrence End Date:</label>
+					<input type="datetime-local" id="recurrenceEndDate" name="RecurrenceEndDate" />
+					<span id="RecurrenceEndDate-AddValidation" class="text-danger"></span>
+					</div>
 					<button type="submit" class="btn btn-primary">Add Event</button>
 					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 				</form>
@@ -111,6 +126,21 @@
 							<label for="EndDate" class="form-label">End Date:</label>
 							<input type="datetime-local" class="form-control" id="end" name="EndDate">
 							<span id="EndDate-UpdateValidation" class="text-danger"></span>
+						</div>
+						<div class="mb-3">
+							<label for="RecurrencePattern" class="form-label">Recurrence Pattern:</label>
+							<select id="RecurrencePattern" name="RecurrencePattern">
+								<option value="None">None</option>
+								<option value="Daily">Daily</option>
+								<option value="Weekly">Weekly</option>
+								<option value="Monthly">Monthly</option>
+							</select>
+							<span id="RecurrencePattern-UpdateValidation" class="text-danger"></span>
+						</div>
+						<div class="mb-3">
+							<label for="RecurrenceEndDate">Recurrence End Date:</label>
+							<input type="datetime-local" id="RecurrenceEndDate" name="RecurrenceEndDate" />
+							<span id="RecurrenceEndDate-UpdateValidation" class="text-danger"></span>
 						</div>
 						<button type="submit" class="btn btn-primary">Update Event</button>
 						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
