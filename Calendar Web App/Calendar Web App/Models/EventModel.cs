@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Calendar_Web_App.Data;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Calendar_Web_App.Models
@@ -23,5 +24,9 @@ namespace Calendar_Web_App.Models
 		public string UserId { get; set; }
 
 		public User User { get; set; }
+
+		public RecurrencePattern? RecurrencePattern { get; set; }
+
+		public DateTime RecurrenceEndDate { get; set; }
 	}
 }

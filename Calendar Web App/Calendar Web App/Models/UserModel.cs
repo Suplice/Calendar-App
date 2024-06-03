@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Identity;
 
+
 namespace Calendar_Web_App.Models
 {
     public class User : IdentityUser
@@ -17,6 +18,8 @@ namespace Calendar_Web_App.Models
         public override required string UserName { get; set; }    
 
         public ICollection<Event> Events { get; set; }
+
+ 
 
     }
 }
