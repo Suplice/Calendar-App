@@ -11,6 +11,9 @@
 	<script src="/js/SettingsScripts/ChangePassword.js"></script>
 	<script src="/js/SettingsScripts/Logout.js"></script>
 	<script src="/js/SettingsScripts/CloseAccount.js"></script>
+	<script src="/js/SettingsScripts/ChangeProfilePicture.js"></script>
+
+
 
 
     
@@ -21,6 +24,10 @@
 
 	<div>
 		<h2>Informations:</h2>
+		
+			<img src="@ViewBag.ProfilePicturePath" alt="There is no profile picture" id="profilePicture" />
+			<button id="changeProfilePictureBtn">Change Profile picture</button>
+		
 			<p>Username: <span id="username">@ViewBag.Username</span> <button id="changeUsernameBtn">Change Username</button></p>
 			<p>Email address: <span id="email">@ViewBag.Email</span> <button id="changeEmailBtn">Change Email Address</button></p>
 			<p>Name: <span id="name">@ViewBag.Name</span> <button id="changeNameBtn">Change Name</button></p>
@@ -33,6 +40,32 @@
 		<button id="closeAccountBtn">Zamknij konto</button>
 	</div>
 </div>
+
+
+
+	<!--Change Profile Picture form-->
+	<div class="modal fade" id="ProfilePictureUpdateModal" tabindex="-1" aria-labelledby="ProfilePictureUpdateModalLabel" aria-hidden="true" data-bs-backdrop="false">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="ProfilePictureUpdateModalLabel">Update profile picture form</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form id="ProfilePictureUpdateForm">
+						<div class="mb-3">
+							<label for="ProfilePicture" class="form-label" id="ProfilePictureLabel">New Profile Picture</label>
+							<input type="file" class="form-control" id="ProfilePicture" name="ProfilePicture" accept=".jpg, .jpeg, .png">
+							<span id="ProfilePicture-UpdateValidation" class="text-danger"></span>
+						</div>
+						<button type="submit" class="btn btn-primary">Update Profile Picture</button>
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+<
 
 <!--Change username form-->
 <div class="modal fade" id="UsernameUpdateModal" tabindex="-1" aria-labelledby="UsernameUpdateModalLabel" aria-hidden="true" data-bs-backdrop="false">

@@ -329,9 +329,11 @@ namespace Calendar_Web_App.Controllers
             ViewBag.Email = CurrentUser.Email;
             ViewBag.Name = CurrentUser.Name;
             ViewBag.Password = "*******";
+            ViewBag.ProfilePicturePath = CurrentUser.ProfilePicturePath;
 
 
-            return View();
+
+			return View();
         }
 
         [HttpPost]
@@ -355,5 +357,45 @@ namespace Calendar_Web_App.Controllers
             }
 			return BadRequest(UserCloseAccountResult.Errors);
 		}
-    }
+
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> ChangeProfilePicture(ChangeProfilePictureViewModel model)
+        {
+	        if (!ModelState.IsValid)
+	        {
+		        var errors = ModelState.ToDictionary(
+			        kvp => kvp.Key,
+			        kvp => kvp.Value.Errors.Select(e => e.ErrorMessage).ToList()
+		        );
+
+		        return BadRequest(errors);
+	        }
+
+
+
+	        
+		    var (result, newFilePath) = await _userRepository.ChangeProfilePictureAsync(User, model);
+            if (result.Succeeded)
+            {
+                return Ok(new { newProfilePictureUrl = newFilePath});
+            }
+            else
+            {
+
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError(string.Empty, error.Description);
+                    Console.WriteLine($"Error: {error.Description}");
+                }
+
+                var errors = ModelState.ToDictionary(
+                    kvp => kvp.Key,
+                    kvp => kvp.Value.Errors.Select(e => e.ErrorMessage).ToList()
+                );
+
+                return BadRequest(errors);
+            }
+		}
+	}
 }

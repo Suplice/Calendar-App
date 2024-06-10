@@ -54,6 +54,12 @@ builder.Services.AddIdentity<User, IdentityRole>(options =>
 }).AddEntityFrameworkStores<ApplicationDbContext>();
 
 
+builder.Services.AddServerSideBlazor().AddHubOptions(options =>
+{
+    options.MaximumReceiveMessageSize = 20000000000;
+});
+
+
 builder.Services.AddRazorPages().AddMvcOptions(options =>
 {
     options.ModelBindingMessageProvider.SetValueMustNotBeNullAccessor(_ => "The field is Required");

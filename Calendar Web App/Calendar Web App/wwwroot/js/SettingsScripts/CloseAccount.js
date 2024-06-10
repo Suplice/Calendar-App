@@ -1,5 +1,5 @@
 
-document.getElementById('closeAccountBtn').addEventListener('click', closeAccount);
+
 
 function HandleCloseAccountForm() {
     $.ajax({

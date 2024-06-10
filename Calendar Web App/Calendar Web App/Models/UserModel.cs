@@ -19,6 +19,8 @@ namespace Calendar_Web_App.Models
 
         public ICollection<Event> Events { get; set; }
 
+        public string ProfilePicturePath {  get; set; }
+
  
 
     }

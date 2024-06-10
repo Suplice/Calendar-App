@@ -6,7 +6,11 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('logoutBtn').addEventListener('click', logout);
     document.getElementById('closeAccountBtn').addEventListener('click', closeAccount);
     document.getElementById('ConfirmCloseAccount').addEventListener('click', HandleCloseAccountForm);
+    document.getElementById('changeProfilePictureBtn').addEventListener('click', changeProfilePicture);
 
+
+
+    document.getElementById('ProfilePictureUpdateForm').addEventListener('submit', handleUpdateProfilePictureSubmit);
     document.getElementById('UsernameUpdateForm').addEventListener('submit', HandleUsernameUpdateSubmit);
     document.getElementById('EmailUpdateForm').addEventListener('submit', HandleEmailUpdateSubmit);
     document.getElementById('NameUpdateForm').addEventListener('submit', HandleNameUpdateSubmit);

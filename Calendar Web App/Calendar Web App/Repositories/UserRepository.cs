@@ -344,6 +344,65 @@ namespace Calendar_Web_App.Repositories
 			}
 		}
 
+        public async Task<(IdentityResult result, string newFilePath)> ChangeProfilePictureAsync(ClaimsPrincipal user, ChangeProfilePictureViewModel model)
+        {
+	        try
+	        {
+		        _logger.LogInformation("Executing ChangeProfilePictureAsync operation in User Repository");
+
+		        var currentUser = await GetCurrentUserAsync(user);
+		        if (currentUser == null)
+		        {
+			        _logger.LogWarning("User not found");
+			        return (IdentityResult.Failed(new IdentityError { Description = "User not found" }), null);
+		        }
+
+		        if(!string.IsNullOrEmpty(currentUser.ProfilePicturePath))
+                {
+                    var oldFilePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", currentUser.ProfilePicturePath.TrimStart('/'));
+                    if(File.Exists(oldFilePath))
+                    {
+						File.Delete(oldFilePath);
+                    }
+                }
+
+		        var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "profile-pictures");
+
+		        Directory.CreateDirectory(uploadsFolder); 
+
+		        var uniqueFileName = Guid.NewGuid().ToString() + "_" + model.ProfilePicture.FileName;
+
+		        var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+
+
+		    
+		        using (var fileStream = new FileStream(filePath, FileMode.Create))
+		        {
+			        await model.ProfilePicture.CopyToAsync(fileStream);
+		        }
+
+		        // Aktualizacja ścieżki do pliku w bazie danych
+		        currentUser.ProfilePicturePath = "/profile-pictures/" + uniqueFileName;
+		        var result = await _userManager.UpdateAsync(currentUser);
+
+		        if (result.Succeeded)
+		        {
+			        _logger.LogInformation("Profile picture changed successfully");
+		        }
+		        else
+		        {
+			        _logger.LogWarning("Changing profile picture failed");
+		        }
+		        return (result, currentUser.ProfilePicturePath);
+	        }
+	        catch (Exception ex)
+	        {
+		        _logger.LogError(ex, "An error occurred while changing profile picture");
+		        return (IdentityResult.Failed(new IdentityError { Description = "An error occurred while changing profile picture" }), null);
+	        }
+        }
+
 	}
 
     

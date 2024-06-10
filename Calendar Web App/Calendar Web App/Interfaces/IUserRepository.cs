@@ -4,12 +4,14 @@ using Calendar_Web_App.ViewModels.AccountAccessViewModels;
 using Calendar_Web_App.ViewModels.AccountSettingsViewModels;
 using Microsoft.AspNetCore.Identity;
 
+
 namespace Calendar_Web_App.Interfaces
 {
     public interface IUserRepository
     {
+        Task<(IdentityResult result, string newFilePath)> ChangeProfilePictureAsync(ClaimsPrincipal user, ChangeProfilePictureViewModel model);
 
-        Task<IdentityResult> ChangePasswordAsync(ClaimsPrincipal User, ChangePasswordViewModel ChangePasswordModel);
+		Task<IdentityResult> ChangePasswordAsync(ClaimsPrincipal User, ChangePasswordViewModel ChangePasswordModel);
         Task<IdentityResult> RegisterUserAsync(RegisterViewModel RegisterModel);
         Task<SignInResult> LoginUserAsync(LoginViewModel LoginModel);
         Task<IdentityResult> ChangeUsernameAsync(ClaimsPrincipal User, ChangeUsernameViewModel newUsername);

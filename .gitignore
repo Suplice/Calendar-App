@@ -76,3 +76,6 @@ coverage/
 *.vsidx/
 *.manifest
 *.v2
+*.png
+*.jpg
+*.jpeg
