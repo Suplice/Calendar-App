@@ -213,6 +213,14 @@ namespace Calendar_Web_App.Repositories
                     return IdentityResult.Failed();
 				}
 
+                bool UsernameAlreadyExists = await _context.Users.AnyAsync(u => u.UserName == newUsernameModel.Username);
+
+                if(UsernameAlreadyExists)
+                {
+                    _logger.LogWarning("Chosen username already exists");
+                    return IdentityResult.Failed(new IdentityError { Description = "Username already exists" });
+                }
+
                 CurrentUser.UserName = newUsernameModel.Username;
 
                 //Update user in database
@@ -254,6 +262,14 @@ namespace Calendar_Web_App.Repositories
 					_logger.LogWarning("Changing email has failed");
                     return IdentityResult.Failed();
 				}
+
+                bool emailAlreadyExists = await _context.Users.AnyAsync(u => u.Email == newEmailModel.Email);
+
+                if(emailAlreadyExists) {
+					_logger.LogWarning("Email already exists");
+                    return IdentityResult.Failed(new IdentityError { Description = "Email already exists"});
+				}
+
                 CurrentUser.Email = newEmailModel.Email;
 
                 //update user in database

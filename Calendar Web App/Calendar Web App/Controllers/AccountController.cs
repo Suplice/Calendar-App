@@ -215,7 +215,7 @@ namespace Calendar_Web_App.Controllers
                 //Validation failed, return all errors
                 foreach (var error in UserChangeUsernameResult.Errors)
                 {
-                    ModelState.AddModelError(string.Empty, error.Description);
+                    ModelState.AddModelError("Username", error.Description);
                     Console.WriteLine($"Error: {error.Description}");
                 }
 
@@ -258,7 +258,7 @@ namespace Calendar_Web_App.Controllers
 	            //Validation failed, return all errors
 				foreach (var error in UserChangeEmailResult.Errors)
 	            {
-		            ModelState.AddModelError(string.Empty, error.Description);
+		            ModelState.AddModelError("Email", error.Description);
 		            Console.WriteLine($"Error: {error.Description}");
 	            }
 
