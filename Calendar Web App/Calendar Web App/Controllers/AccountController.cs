@@ -170,7 +170,7 @@ namespace Calendar_Web_App.Controllers
                         ModelState.AddModelError("OldPassword", error.Description);
                     }
                     else {
-                        ModelState.AddModelError(string.Empty, error.Description);
+                        ModelState.AddModelError("NewPassword", error.Description);
                     }
 				}
 
