@@ -35,8 +35,8 @@ namespace Calendar_App_Tests
 			//Arrange
 
 			var events = new List<Event>{
-				new Event {Id = "event1", UserId = "user1"},
-				new Event {Id = "event2", UserId = "user1"}
+				new Event {Id = "event1", UserId = "user1", RecurrencePattern = RecurrencePattern.none},
+				new Event {Id = "event2", UserId = "user1", RecurrencePattern = RecurrencePattern.none}
 			}.AsQueryable();
 
 			_MockEventsDbSet.As<IQueryable<Event>>().Setup(m => m.Provider).Returns(events.Provider);
