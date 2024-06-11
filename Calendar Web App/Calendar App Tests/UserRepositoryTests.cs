@@ -1,4 +1,5 @@
-﻿using Calendar_Web_App.Models;
+﻿using Calendar_Web_App.Interfaces;
+using Calendar_Web_App.Models;
 using Calendar_Web_App.Repositories;
 using Calendar_Web_App.ViewModels.AccountAccessViewModels;
 using Calendar_Web_App.ViewModels.AccountSettingsViewModels;
@@ -24,7 +25,9 @@ namespace Calendar_App_Tests
 		private readonly Mock<UserManager<User>> _mockUserManager;
 		private readonly Mock<SignInManager<User>> _mockSignInManager;
 		private readonly Mock<ILogger<UserRepository>> _mockLogger;
+		private readonly Mock<IApplicationDbContext> _context;
 		private readonly UserRepository _userRepository;
+
 
 		public UserRepositoryTests()
 		{
@@ -48,7 +51,8 @@ namespace Calendar_App_Tests
 				new Mock<IUserConfirmation<User>>().Object);
 
 			_mockLogger = new Mock<ILogger<UserRepository>>();
-			_userRepository = new UserRepository(_mockUserManager.Object, _mockSignInManager.Object, _mockLogger.Object);
+			_context = new Mock<IApplicationDbContext>();
+			_userRepository = new UserRepository(_mockUserManager.Object, _mockSignInManager.Object, _mockLogger.Object, _context.Object);
 		}
 
 

@@ -14,6 +14,7 @@
 	<input type="password"  placeholder="Password" asp-for="Password" />
 	<span asp-validation-for="Password" class="text-danger"></span>
 
+	<span class="text-danger">@ViewBag.ErrorMessage</span>
 
 	<button type="submit" class="btn btn-primary btn-block btn-large">Submit</button>
 </form>

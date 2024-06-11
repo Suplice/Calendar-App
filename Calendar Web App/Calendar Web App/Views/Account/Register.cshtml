@@ -20,6 +20,7 @@
 		<input type="password" placeholder="Confirm Password" asp-for="ConfirmPassword" />
 		<span asp-validation-for="ConfirmPassword" class="text-danger"></span>
 
+		<span class="text-danger">@ViewBag.ErrorMessage</span>
 		<button type="submit" class="btn btn-primary btn-block btn-large">Submit</button>
 </form>
 </div>

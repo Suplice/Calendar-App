@@ -63,6 +63,7 @@ namespace Calendar_Web_App.Controllers
                 ModelState.AddModelError(string.Empty, "Invalid Login Attempt, Check your login or password");
             }
 
+            ViewBag.ErrorMessage = ModelState.Values.SelectMany(v => v.Errors).FirstOrDefault()?.ErrorMessage;
 
 			//validation is incorrect, return login view with odl model
 			return View(UserLoginModel);
@@ -125,9 +126,10 @@ namespace Calendar_Web_App.Controllers
                     ModelState.AddModelError(string.Empty, error.Description);
                 }
 
+                ViewBag.ErrorMessage = ModelState.Values.SelectMany(v => v.Errors).FirstOrDefault()?.ErrorMessage;
 
-                //return to register view with old model as parameter
-                return View(NewUserModel);
+				//return to register view with old model as parameter
+				return View(NewUserModel);
             }
 
 

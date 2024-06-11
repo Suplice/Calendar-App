@@ -5,6 +5,7 @@ using Calendar_Web_App.Models;
 using Calendar_Web_App.ViewModels.AccountAccessViewModels;
 using Calendar_Web_App.ViewModels.AccountSettingsViewModels;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 namespace Calendar_Web_App.Repositories
 {
@@ -14,12 +15,14 @@ namespace Calendar_Web_App.Repositories
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
         private readonly ILogger<UserRepository> _logger;
+        private readonly IApplicationDbContext _context;
 
-        public UserRepository(UserManager<User> userManager, SignInManager<User> signInManager, ILogger<UserRepository> logger)
+        public UserRepository(UserManager<User> userManager, SignInManager<User> signInManager, ILogger<UserRepository> logger, IApplicationDbContext context)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
+            _context = context;
         }
 
         public async Task<User> GetCurrentUserAsync(ClaimsPrincipal User){
@@ -86,18 +89,26 @@ namespace Calendar_Web_App.Repositories
 
         public async Task<IdentityResult> RegisterUserAsync(RegisterViewModel RegisterModel)
         {
-            if(RegisterModel == null)
-            {
-                _logger.LogWarning("RegisterModel is null");
-                return IdentityResult.Failed(new IdentityError { Description = "Register model cannot be null" });
-            }
 
             try
             {
                 _logger.LogInformation("Executing RegisterUserAsync operation in UserRepository");
 
-                //Create new user to be added
-                var CurrentUser = new User
+                if (RegisterModel == null)
+                {
+	                _logger.LogWarning("RegisterModel is null");
+	                return IdentityResult.Failed(new IdentityError { Description = "Register model cannot be null" });
+                }
+
+                bool emailAlreadyExists = await _context.Users.AnyAsync(u => u.Email == RegisterModel.Email);
+
+                if (emailAlreadyExists)
+                {
+	                return IdentityResult.Failed(new IdentityError { Description = "Email already Exists" });
+                }
+
+				//Create new user to be added
+				var CurrentUser = new User
                 {
                     Name = RegisterModel.Name,
                     Email = RegisterModel.Email,
