@@ -5,6 +5,7 @@
     <Nullable>disable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>Calendar_Web_App</RootNamespace>
+    <UserSecretsId>75b3788d-27f2-4081-9a0c-4bf7865ec19e</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
