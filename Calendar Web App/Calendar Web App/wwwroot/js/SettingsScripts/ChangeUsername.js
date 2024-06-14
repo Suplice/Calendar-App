@@ -55,3 +55,9 @@ function HandleUsernameUpdateSubmit(event) {
 }
 
 
+
+function clearUsernameDataOnClose() {
+    document.getElementById('UsernameUpdateForm').reset();
+    document.getElementById('Username-UpdateValidation').innerText = '';
+}
+

@@ -39,3 +39,9 @@ function handleUpdateProfilePictureSubmit(event) {
 
     UpdateProfilePicture(formData);
 }
+
+
+function clearProfilePictureDataOnClose() {
+    document.getElementById('ProfilePictureUpdateForm').reset();
+    document.getElementById('ProfilePicture-UpdateValidation').innerText = '';
+}

@@ -8,6 +8,12 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('ConfirmCloseAccount').addEventListener('click', HandleCloseAccountForm);
     document.getElementById('changeProfilePictureBtn').addEventListener('click', changeProfilePicture);
 
+    document.getElementById('ProfilePictureUpdateModal').addEventListener('hidden.bs.modal', clearProfilePictureDataOnClose);
+    document.getElementById('UsernameUpdateModal').addEventListener('hidden.bs.modal', clearUsernameDataOnClose);
+    document.getElementById('EmailUpdateModal').addEventListener('hidden.bs.modal', clearEmailDataOnClose);
+    document.getElementById('NameUpdateModal').addEventListener('hidden.bs.modal', clearNameDataOnClose);
+    document.getElementById('PasswordUpdateModal').addEventListener('hidden.bs.modal', clearPasswordDataOnClose);
+
 
 
     document.getElementById('ProfilePictureUpdateForm').addEventListener('submit', handleUpdateProfilePictureSubmit);

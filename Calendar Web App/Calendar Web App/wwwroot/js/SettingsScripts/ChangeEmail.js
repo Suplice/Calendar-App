@@ -50,3 +50,10 @@ function HandleEmailUpdateSubmit(event) {
     //send data to update in db
     UpdateEmail(formData);
 }
+
+
+
+function clearEmailDataOnClose() {
+    document.getElementById('EmailUpdateForm').reset();
+    document.getElementById('Email-UpdateValidation').innerText = '';
+}

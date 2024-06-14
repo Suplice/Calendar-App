@@ -49,3 +49,10 @@ function HandleNameUpdateSubmit(event) {
     UpdateName(formData);
 
 }
+
+
+
+function clearNameDataOnClose() {
+    document.getElementById('NameUpdateForm').reset();
+    document.getElementById('Name-UpdateValidation').innerText = '';
+}

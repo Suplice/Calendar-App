@@ -43,3 +43,12 @@ function HandlePasswordUpdateSubmit(event) {
     //send data to be updated in db
     UpdatePassword(formData);
 }
+
+
+
+function clearPasswordDataOnClose() {
+    document.getElementById('PasswordUpdateForm').reset();
+    document.getElementById('OldPassword-UpdateValidation').innerText = '';
+    document.getElementById('NewPassword-UpdateValidation').innerText = '';
+    document.getElementById('ConfirmPassword-UpdateValidation').innerText = '';
+}
