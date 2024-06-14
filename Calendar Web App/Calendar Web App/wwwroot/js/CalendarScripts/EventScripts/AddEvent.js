@@ -60,6 +60,19 @@ function HandleAddEvent() {
   
     $('#eventFormModal').modal('show');
 }
-$(document).ready(function () {
+
+
+function clearAddEventDataOnClose() {
+    document.getElementById('eventForm').reset();
+    document.getElementById('Title-AddValidation').innerText = '';
+    document.getElementById('Description-AddValidation').innerText = '';
+    document.getElementById('StartDate-AddValidation').innerText = '';
+    document.getElementById('EndDate-AddValidation').innerText = '';
+    document.getElementById('RecurrencePattern-AddValidation').innerText = '';
+    document.getElementById('RecurrenceEndDate-AddValidation').innerText = '';
+}
+
+document.addEventListener('DOMContentLoaded', function () {
     $('#eventForm').on('submit', handleFormSubmission);
-});
+    document.getElementById('eventFormModal').addEventListener('hidden.bs.modal', clearAddEventDataOnClose);
+})

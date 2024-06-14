@@ -35,7 +35,7 @@ function updateCalendar(response, info, calendar) {
 
 
     event.setExtendedProp('description', response.description)
-    event.setProp('title', response.description)
+    event.setProp('title', response.title)
     event.setStart(response.startDate);
     event.setEnd(response.endDate)
 
@@ -86,3 +86,15 @@ function TestHandleEditEvent(info, calendar) {
 
     document.getElementById('eventId').value = info.event.id;
 } 
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('TestEventUpdateModal').addEventListener('hidden.bs.modal', clearUpdateEventDataOnClose);
+})
+
+function clearUpdateEventDataOnClose() {
+    document.getElementById('TestEventUpdateForm').reset();
+    document.getElementById('Title-UpdateValidation').innerText = '';
+    document.getElementById('Description-UpdateValidation').innerText = '';
+    document.getElementById('StartDate-UpdateValidation').innerText = '';
+    document.getElementById('EndDate-UpdateValidation').innerText = '';
+}

@@ -66,3 +66,18 @@ function HandleEditEvent(info) {
     document.getElementById('eventId').value = info.event.id;
 }
 
+function clearUpdateEventDataOnClose() {
+    document.getElementById('eventUpdateForm').reset();
+    document.getElementById('Title-UpdateValidation').innerText = '';
+    document.getElementById('Description-UpdateValidation').innerText = '';
+    document.getElementById('StartDate-UpdateValidation').innerText = '';
+    document.getElementById('EndDate-UpdateValidation').innerText = '';
+    document.getElementById('RecurrencePattern-UpdateValidation').innerText = '';
+    document.getElementById('RecurrenceEndDate-UpdateValidation').innerText = '';
+}
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('eventUpdateModal').addEventListener('hidden.bs.modal', clearUpdateEventDataOnClose);
+})
+

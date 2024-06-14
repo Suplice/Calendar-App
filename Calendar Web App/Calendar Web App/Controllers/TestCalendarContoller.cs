@@ -8,10 +8,9 @@ namespace Calendar_Web_App.Controllers
 {
 	public class TestCalendarController : Controller
 	{
-		[ValidateAntiForgeryToken]
 		[AllowAnonymous]
 		[HttpPost]
-		public IActionResult AddEvent(AddEventViewModel NewEventModel)
+		public IActionResult AddEvent(AddTestEventViewModel NewEventModel)
 		{
 
 			//validate Model 
@@ -27,10 +26,9 @@ namespace Calendar_Web_App.Controllers
 			return Ok(NewEventModel);
 		}
 
-		[ValidateAntiForgeryToken]
 		[AllowAnonymous]
 		[HttpPost]
-		public IActionResult UpdateEvent(UpdateEventViewModel UpdateEventModel)
+		public IActionResult UpdateEvent(UpdateTestEventViewModel UpdateEventModel)
 		{
 
 			//Validate Model

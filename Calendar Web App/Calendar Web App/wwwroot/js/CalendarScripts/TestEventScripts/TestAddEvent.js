@@ -4,7 +4,7 @@
 function ValidateOnServer(formData, calendar) {
 
 
-    
+
     $.ajax({
         url: '/TestCalendar/AddEvent',
         type: 'POST',
@@ -22,7 +22,7 @@ function ValidateOnServer(formData, calendar) {
                 start: response.startDate,
                 end: response.endDate
             };
-            debugger
+
             $('#TestEventFormModal').modal('hide');
 
             calendar.addEvent(event);
@@ -79,3 +79,16 @@ function TestHandleAddEvent(calendar) {
     });
 
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('TestEventFormModal').addEventListener('hidden.bs.modal', clearAddEventDataOnClose);
+})
+
+function clearAddEventDataOnClose() {
+    document.getElementById('TestEventForm').reset();
+    document.getElementById('Title-AddValidation').innerText = '';
+    document.getElementById('Description-AddValidation').innerText = '';
+    document.getElementById('StartDate-AddValidation').innerText = '';
+    document.getElementById('EndDate-AddValidation').innerText = '';
+}
+
