@@ -54,4 +54,4 @@ jobs:
           app-name: 'SupliceCalendarApp'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_410DD4576E1C47438D2C96382C694EEB }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F77FBE049EEF454285DEB47D32423698 }}
