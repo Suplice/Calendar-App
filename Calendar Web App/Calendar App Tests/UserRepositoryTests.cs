@@ -7,6 +7,8 @@ using Castle.Core.Logging;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Query;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Moq;
@@ -26,6 +28,7 @@ namespace Calendar_App_Tests
 		private readonly Mock<SignInManager<User>> _mockSignInManager;
 		private readonly Mock<ILogger<UserRepository>> _mockLogger;
 		private readonly Mock<IApplicationDbContext> _context;
+		private readonly Mock<DbSet<User>> _mockDbSetUsers;
 		private readonly UserRepository _userRepository;
 
 
@@ -49,10 +52,10 @@ namespace Calendar_App_Tests
 				new Mock<ILogger<SignInManager<User>>>().Object,
 				new Mock<IAuthenticationSchemeProvider>().Object,
 				new Mock<IUserConfirmation<User>>().Object);
-
 			_mockLogger = new Mock<ILogger<UserRepository>>();
 			_context = new Mock<IApplicationDbContext>();
 			_userRepository = new UserRepository(_mockUserManager.Object, _mockSignInManager.Object, _mockLogger.Object, _context.Object);
+			_mockDbSetUsers = new Mock<DbSet<User>>();
 		}
 
 
@@ -219,6 +222,26 @@ namespace Calendar_App_Tests
 				UserName = UserToRegister.Login
 			} : (User)null;
 
+			var users = new List<User> {
+				new User {Email = "testemail1@gmail.com", Name = "testname", UserName = "testUsername1"}
+			}.AsQueryable();
+
+			var mockAsyncQueryProvider = new Mock<IAsyncQueryProvider>();
+
+			_mockDbSetUsers.As<IQueryable<User>>().Setup(m => m.Provider).Returns(mockAsyncQueryProvider.Object);
+			_mockDbSetUsers.As<IQueryable<User>>().Setup(m => m.Expression).Returns(users.Expression);
+			_mockDbSetUsers.As<IQueryable<User>>().Setup(m => m.ElementType).Returns(users.ElementType);
+			_mockDbSetUsers.As<IQueryable<User>>().Setup(m => m.GetEnumerator()).Returns(users.GetEnumerator());
+
+			_mockDbSetUsers.Setup(m => m.Find(It.IsAny<User>()))
+				.Returns((string username) =>
+				{
+					return users.FirstOrDefault(u => u.UserName == "testUsername1");
+				});
+
+			_context.Setup(c => c.Users).Returns(_mockDbSetUsers.Object);
+
+
 			if (UserToRegister != null)
 			{
 				_mockUserManager.Setup(um => um.CreateAsync(It.Is<User>(u => u.UserName == UserToRegister.Login && u.Email == UserToRegister.Email), UserToRegister.Password)).ReturnsAsync(RegisterSuccessful ? IdentityResult.Success : IdentityResult.Failed());
@@ -272,6 +295,27 @@ namespace Calendar_App_Tests
 			var password = "testPassword";
 			var RegisterModel = new RegisterViewModel { Email = "testEmail@gmail.com", Login = "testLogin", Name = "testName", Password = password};
 			var User = new User { Name = RegisterModel.Name, Email = RegisterModel.Email, UserName = RegisterModel.Login };
+
+			var users = new List<User> {
+				new User {Email = "testemail1@gmail.com", Name = "testname", UserName = "testUsername1"}
+			}.AsQueryable();
+
+			var mockAsyncQueryProvider = new Mock<IAsyncQueryProvider>();
+
+			_mockDbSetUsers.As<IQueryable<User>>().Setup(m => m.Provider).Returns(mockAsyncQueryProvider.Object);
+			_mockDbSetUsers.As<IQueryable<User>>().Setup(m => m.Expression).Returns(users.Expression);
+			_mockDbSetUsers.As<IQueryable<User>>().Setup(m => m.ElementType).Returns(users.ElementType);
+			_mockDbSetUsers.As<IQueryable<User>>().Setup(m => m.GetEnumerator()).Returns(users.GetEnumerator());
+
+			_mockDbSetUsers.Setup(m => m.Find(It.IsAny<User>()))
+				.Returns((string username) =>
+				{
+					return users.FirstOrDefault(u => u.UserName == "testUsername1");
+				});
+
+			_context.Setup(c => c.Users).Returns(_mockDbSetUsers.Object);
+
+
 
 			_mockUserManager.Setup(um => um.CreateAsync(It.Is<User>(u => 
 			u.UserName == RegisterModel.Login &&
@@ -447,9 +491,9 @@ namespace Calendar_App_Tests
 
 
 		[Theory]
-		[InlineData("Username1", true)]
-		[InlineData("Username2", false)]
-		public async Task UserRepository_CahngeUsernameAsync_ReturnsPositiveResultIfUsernameChangedElseNegativeResult(string userName, bool changedUsernameSuccessfully)
+		[InlineData("Username", true)]
+		[InlineData("Username1", false)]
+		public async Task UserRepository_ChangeUsernameAsync_ReturnsPositiveResultIfUsernameChangedElseNegativeResult(string userName, bool changedUsernameSuccessfully)
 		{
 			//Setup
 			var claimsPrincipal = new ClaimsPrincipal(new ClaimsIdentity(new Claim[]
@@ -469,11 +513,31 @@ namespace Calendar_App_Tests
 				UserName = userName
 			} : null;
 
+
+			var users = new List<User> {
+			new User {Email = "testemail@gmail.com", Name = "testname", UserName = "Username"}
+			}.AsQueryable();
+
+			var mockAsyncQueryProvider = new Mock<IAsyncQueryProvider>();
+
+			_mockDbSetUsers.As<IQueryable<User>>().Setup(m => m.Provider).Returns(mockAsyncQueryProvider.Object);
+			_mockDbSetUsers.As<IQueryable<User>>().Setup(m => m.Expression).Returns(users.Expression);
+			_mockDbSetUsers.As<IQueryable<User>>().Setup(m => m.ElementType).Returns(users.ElementType);
+			_mockDbSetUsers.As<IQueryable<User>>().Setup(m => m.GetEnumerator()).Returns(users.GetEnumerator());
+
+			_mockDbSetUsers.Setup(m => m.Find(It.IsAny<User>()))
+				.Returns((string username) =>
+				{
+					return users.FirstOrDefault(u => u.UserName == newUsernameModel.Username);
+			});
+
+			_context.Setup(c => c.Users).Returns(_mockDbSetUsers.Object);
+
 			_mockUserManager.Setup(um => um.GetUserAsync(claimsPrincipal)).ReturnsAsync(user);
 
 			_mockUserManager.Setup(um => um.UpdateAsync(user)).ReturnsAsync(changedUsernameSuccessfully ? IdentityResult.Success : IdentityResult.Failed());
 
-
+		
 			//Act
 			var result = await _userRepository.ChangeUsernameAsync(claimsPrincipal, newUsernameModel);
 
@@ -529,6 +593,27 @@ namespace Calendar_App_Tests
 				UserName = "testUsername"
 			};
 
+			var users = new List<User> {
+				new User {Email = "testemail@gmail.com", Name = "testname", UserName = "Username"}
+			}.AsQueryable();
+
+			var mockAsyncQueryProvider = new Mock<IAsyncQueryProvider>();
+
+			_mockDbSetUsers.As<IQueryable<User>>().Setup(m => m.Provider).Returns(mockAsyncQueryProvider.Object);
+			_mockDbSetUsers.As<IQueryable<User>>().Setup(m => m.Expression).Returns(users.Expression);
+			_mockDbSetUsers.As<IQueryable<User>>().Setup(m => m.ElementType).Returns(users.ElementType);
+			_mockDbSetUsers.As<IQueryable<User>>().Setup(m => m.GetEnumerator()).Returns(users.GetEnumerator());
+
+			_mockDbSetUsers.Setup(m => m.Find(It.IsAny<User>()))
+				.Returns((string username) =>
+				{
+					return users.FirstOrDefault(u => u.UserName == "Username");
+				});
+
+			_context.Setup(c => c.Users).Returns(_mockDbSetUsers.Object);
+
+
+
 			_mockUserManager.Setup(um => um.GetUserAsync(claimsPrincipal)).ReturnsAsync(user);
 
 			_mockUserManager.Setup(um => um.UpdateAsync(user)).ThrowsAsync(new InvalidOperationException("invalid operation exception"));
@@ -571,6 +656,26 @@ namespace Calendar_App_Tests
 				Name = "testname",
 				UserName = "testUsername"
 			} : null;
+
+			var users = new List<User> {
+				new User {Email = "testEmail2@gmail.com", Name = "testname", UserName = "Username"}
+			}.AsQueryable();
+
+			var mockAsyncQueryProvider = new Mock<IAsyncQueryProvider>();
+
+			_mockDbSetUsers.As<IQueryable<User>>().Setup(m => m.Provider).Returns(mockAsyncQueryProvider.Object);
+			_mockDbSetUsers.As<IQueryable<User>>().Setup(m => m.Expression).Returns(users.Expression);
+			_mockDbSetUsers.As<IQueryable<User>>().Setup(m => m.ElementType).Returns(users.ElementType);
+			_mockDbSetUsers.As<IQueryable<User>>().Setup(m => m.GetEnumerator()).Returns(users.GetEnumerator());
+
+			_mockDbSetUsers.Setup(m => m.Find(It.IsAny<User>()))
+				.Returns((string email) =>
+				{
+					return users.FirstOrDefault(u => u.Email == newEmailModel.Email);
+				});
+
+			_context.Setup(c => c.Users).Returns(_mockDbSetUsers.Object);
+
 
 			_mockUserManager.Setup(um => um.GetUserAsync(claimsPrincipal)).ReturnsAsync(user);
 
@@ -628,8 +733,27 @@ namespace Calendar_App_Tests
 				UserName = "testUsername"
 			};
 
+			var users = new List<User> {
+				new User {Email = "testEmail2@gmail.com", Name = "testname", UserName = "Username"}
+			}.AsQueryable();
 
-		
+			var mockAsyncQueryProvider = new Mock<IAsyncQueryProvider>();
+
+			_mockDbSetUsers.As<IQueryable<User>>().Setup(m => m.Provider).Returns(mockAsyncQueryProvider.Object);
+			_mockDbSetUsers.As<IQueryable<User>>().Setup(m => m.Expression).Returns(users.Expression);
+			_mockDbSetUsers.As<IQueryable<User>>().Setup(m => m.ElementType).Returns(users.ElementType);
+			_mockDbSetUsers.As<IQueryable<User>>().Setup(m => m.GetEnumerator()).Returns(users.GetEnumerator());
+
+			_mockDbSetUsers.Setup(m => m.Find(It.IsAny<User>()))
+				.Returns((string email) =>
+				{
+					return users.FirstOrDefault(u => u.Email == "testEmail2@gmail.com");
+				});
+
+			_context.Setup(c => c.Users).Returns(_mockDbSetUsers.Object);
+
+
+
 			_mockUserManager.Setup(um => um.GetUserAsync(claimsPrincipal)).ReturnsAsync(user);
 
 			_mockUserManager.Setup(um => um.UpdateAsync(user)).ThrowsAsync(new InvalidOperationException("invalid operation exception"));
@@ -671,6 +795,8 @@ namespace Calendar_App_Tests
 				Name = name,
 				UserName = "testUsername"
 			} : null;
+
+
 
 			_mockUserManager.Setup(um => um.GetUserAsync(claimsPrincipal)).ReturnsAsync(user);
 

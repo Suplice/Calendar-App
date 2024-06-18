@@ -107,6 +107,13 @@ namespace Calendar_Web_App.Repositories
 	                return IdentityResult.Failed(new IdentityError { Description = "Email already Exists" });
                 }
 
+                bool usernameAlreadyExists = await _context.Users.AnyAsync(u => u.UserName == RegisterModel.Login);
+
+                if (usernameAlreadyExists)
+                {
+                    return IdentityResult.Failed(new IdentityError { Description = "Login already exists" });
+                }
+
 				//Create new user to be added
 				var CurrentUser = new User
                 {
